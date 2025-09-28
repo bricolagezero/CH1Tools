@@ -1,0 +1,54 @@
+RootComponents:
+  RootComponent:
+  - '@type': 1
+    '@schemaName': cr96e_bc_projects
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': cr96e_clientrequirementrecord
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': cr96e_document1
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': cr96e_elearninginteraction
+    '@behavior': 1
+  - '@type': 1
+    '@schemaName': cr96e_employee
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': cr96e_favoriteitem
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': cr96e_fileupload
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': cr96e_knowledgearticle
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': cr96e_menuitems
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': cr96e_message
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': cr96e_note
+    '@behavior': 0
+  - '@type': 300
+    '@schemaName': cr96e_ch1toolkit_598a1
+    '@behavior': 0
+  - '@type': 300
+    '@schemaName': cr96e_menueditor_e72a7
+    '@behavior': 0
+  - '@type': 372
+    '@id': '{c2aefb4d-5de7-4e3e-a6bd-edf402b21a8a}'
+    '@schemaName': cr96e_5Fbasecamp-20read
+    '@behavior': 0
+  - '@type': 401
+    '@id': '{45d7d660-54bb-4a83-998c-46e9a8f20dcc}'
+    '@behavior': 0
+  - '@type': 431
+    '@schemaName': cr96e_elearninginteraction cr96e_image
+    '@behavior': 0
+  - '@type': 432
+    '@schemaName': cr96e_elearninginteraction
+    '@behavior': 0

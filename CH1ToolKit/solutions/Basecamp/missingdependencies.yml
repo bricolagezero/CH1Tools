@@ -1,0 +1,68 @@
+MissingDependencies:
+  MissingDependency:
+  - Required:
+      '@type': 1
+      '@schemaName': cr96e_elearninginteraction
+      '@displayName': eLearning Interaction
+      '@solution': Active
+    Dependent:
+      '@type': 1
+      '@schemaName': cr96e_elearninginteraction
+      '@displayName': eLearning Interaction
+  - Required:
+      '@type': 300
+      '@schemaName': cat_powercatcomponentlibrary_0be3a
+      '@displayName': Power CAT Component Library
+      '@solution': CreatorKitCore (1.0.20250310.1)
+      package:
+        '@appName': Creator Kit
+        '@version': 1.0.20250310.1
+        '#text': CreatorKitCore (1.0.20250310.1)
+    Dependent:
+      '@type': 300
+      '@schemaName': cr96e_ch1toolkit_598a1
+      '@displayName': CH1 Toolkit
+  - Required:
+      '@type': connectionreference
+      '@displayName': msdyn_ContentConversion
+      '@solution': msdynce_KnowledgeManagementOnlineExtension (9.0.25081.5003)
+      '@id.connectionreferencelogicalname': msdyn_ContentConversion
+      package:
+        '@appName': msdynce_KnowledgeManagement
+        '@version': 9.0.25081.5003
+        '#text': msdynce_KnowledgeManagementAnchor (9.0.25081.5003)
+    Dependent:
+      '@type': connectionreference
+      '@displayName': msdyn_ContentConversion
+      '@id.connectionreferencelogicalname': msdyn_ContentConversion
+  - Required:
+      '@type': connectionreference
+      '@displayName': msdyn_Dataverse
+      '@solution': msdynce_KnowledgeManagementOnlineExtension (9.0.25081.5003)
+      '@id.connectionreferencelogicalname': msdyn_Dataverse
+      package:
+        '@appName': msdynce_KnowledgeManagement
+        '@version': 9.0.25081.5003
+        '#text': msdynce_KnowledgeManagementAnchor (9.0.25081.5003)
+    Dependent:
+      '@type': connectionreference
+      '@displayName': msdyn_Dataverse
+      '@id.connectionreferencelogicalname': msdyn_Dataverse
+  - Required:
+      '@type': EnvironmentVariableDefinition
+      '@displayName': new_shared_sharepointonline_8abee0588cff4c529feb54ba595604a1
+      '@solution': Active
+      '@id.schemaname': new_shared_sharepointonline_8abee0588cff4c529feb54ba595604a1
+    Dependent:
+      '@type': 300
+      '@schemaName': cr96e_ch1toolkit_598a1
+      '@displayName': CH1 Toolkit
+  - Required:
+      '@type': EnvironmentVariableDefinition
+      '@displayName': new_shared_sharepointonline_e5fd0ba222614f3c9844bbae82e07956
+      '@solution': Active
+      '@id.schemaname': new_shared_sharepointonline_e5fd0ba222614f3c9844bbae82e07956
+    Dependent:
+      '@type': 300
+      '@schemaName': cr96e_ch1toolkit_598a1
+      '@displayName': CH1 Toolkit
