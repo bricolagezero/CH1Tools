@@ -1,0 +1,47 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 0
+  savedqueryid: '{da4e3ac2-abe9-470e-a094-2615d7b8396c}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr96e_documenttitle
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr96e_document1id
+        cell:
+        - '@name': cr96e_documenttitle
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_document1
+        attribute:
+        - '@name': cr96e_document1id
+        - '@name': cr96e_documenttitle
+        - '@name': createdon
+        order:
+          '@attribute': cr96e_documenttitle
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 1
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Inactive Document
+      '@languagecode': 1033

@@ -1,0 +1,78 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+App:
+  Properties:
+    OnStart: |+
+      =// ✳️ 0) Set default folder path
+      Set(varRootPath, "Content Templates/Business Development/Capabilities/");
+
+      // ✳️ 1) Load SharePoint doc library into ContentLibrary
+      ClearCollect(
+          ContentLibrary,
+          Filter(
+              'Content Templates',
+              'Folder path' = varRootPath
+          )
+      );
+
+      // ✳️ 2) Seed colDocPanelCrumbs with correct schema
+      ClearCollect(
+          colDocPanelCrumbs,
+          Table(
+              {
+                  Title: "",
+                  Path: ""
+              }
+          )
+      );
+      Clear(colDocPanelCrumbs); // wipe dummy row
+
+      // ✳️ 3) Add first breadcrumb from varRootPath
+      With(
+          {
+              folderParts: Split(Left(varRootPath, Len(varRootPath) - 1), "/")
+          },
+          Collect(
+              colDocPanelCrumbs,
+              {
+                  Title: Text(Last(folderParts).Value), // <-- Text() ensures type safety
+                  Path: varRootPath
+              }
+          )
+      );
+
+      // ✳️ 4) Seed pill collections (clean start)
+      ClearCollect(colKBCatPick, { Cat: "" });
+      Clear(colKBCatPick);
+
+      ClearCollect(colCatPick, { Value: "" });
+      Clear(colCatPick);  // Clean up empty record
+
+      // ✳️ 5) Independent setup (parallel)
+      Concurrent(
+          Set(varKBOpen, false),
+          Set(varKBMode, "View"),
+          Set(varKBCurrent, Blank()),
+          ClearCollect(
+              colMenu,
+               { ID: 1, Title: "Launch Pad", ScreenName: LaunchPad },
+               { ID: 2, Title: "Brain Stash", ScreenName: BrainStash },
+               { ID: 3, Title: "The Pantry",  ScreenName: ThePantry }
+          )
+      );
+
+      // ✳️ 6) Build unique category list from actual document metadata
+      ClearCollect(
+          colCategoryStrings,
+          ForAll(
+              Filter(ContentLibrary, !IsBlank(Category.Value)),
+              { CategoryText: Category.Value }
+          )
+      );
+    Theme: ='CH1 Theme'

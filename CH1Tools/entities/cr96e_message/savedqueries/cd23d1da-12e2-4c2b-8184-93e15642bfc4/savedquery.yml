@@ -1,0 +1,66 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{cd23d1da-12e2-4c2b-8184-93e15642bfc4}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr96e_messageidentifier
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr96e_messageid
+        cell:
+        - '@name': cr96e_messageidentifier
+          '@width': 300
+        - '@name': cr96e_projectidentifier
+          '@width': 150
+        - '@name': cr96e_messagetitle
+          '@width': 150
+        - '@name': cr96e_messagebodyhtml
+          '@width': 150
+        - '@name': cr96e_creationdate
+          '@width': 150
+        - '@name': cr96e_lastupdatedate
+          '@width': 150
+        - '@name': cr96e_authorname
+          '@width': 150
+        - '@name': cr96e_messageurl
+          '@width': 150
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_message
+        attribute:
+        - '@name': cr96e_messageid
+        - '@name': cr96e_messageidentifier
+        - '@name': createdon
+        - '@name': cr96e_projectidentifier
+        - '@name': cr96e_messagetitle
+        - '@name': cr96e_messagebodyhtml
+        - '@name': cr96e_creationdate
+        - '@name': cr96e_lastupdatedate
+        - '@name': cr96e_authorname
+        - '@name': cr96e_messageurl
+        order:
+          '@attribute': cr96e_messageidentifier
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Active Message
+      '@languagecode': 1033

@@ -1,0 +1,41 @@
+CanvasApp:
+  Name: cr96e_menueditor_e72a7
+  AppVersion: 2025-09-08T16:49:02.0000000Z
+  Status: Ready
+  CreatedByClientVersion: 3.25083.8.0
+  MinClientVersion: 3.25083.8.0
+  Tags: '{"primaryDeviceWidth":"1717","primaryDeviceHeight":"1167","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.25083.8","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false"}'
+  IsCdsUpgraded: 0
+  GalleryItemId:
+    '@xsi:nil': true
+    '@xmlns:xsi': http://www.w3.org/2001/XMLSchema-instance
+  BackgroundColor: RGBA(0,176,240,1)
+  DisplayName: Menu Editor
+  Description:
+    '@xsi:nil': true
+    '@xmlns:xsi': http://www.w3.org/2001/XMLSchema-instance
+  CommitMessage:
+    '@xsi:nil': true
+    '@xmlns:xsi': http://www.w3.org/2001/XMLSchema-instance
+  Publisher:
+    '@xsi:nil': true
+    '@xmlns:xsi': http://www.w3.org/2001/XMLSchema-instance
+  AuthorizationReferences: '[]'
+  ConnectionReferences: '{}'
+  DatabaseReferences: '{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"MenuItemses":{"entitySetName":"cr96e_menuitemses","logicalName":"cr96e_menuitems"}}}}'
+  AppComponents: '[]'
+  AppComponentDependencies: '[]'
+  CanConsumeAppPass: 1
+  CanvasAppType: 0
+  BypassConsent: 0
+  AdminControlBypassConsent: 0
+  EmbeddedApp:
+    '@xsi:nil': true
+    '@xmlns:xsi': http://www.w3.org/2001/XMLSchema-instance
+  IntroducedVersion: 1.0
+  CdsDependencies: '{"cdsdependencies":[{"logicalname":"cr96e_menuitems","componenttype":1}]}'
+  IsCustomizable: 1
+  BackgroundImageUri: /canvasapps/cr96e_menueditor_e72a7/cr96e_menueditor_e72a7_BackgroundImageUri
+  DocumentUri: /canvasapps/cr96e_menueditor_e72a7/cr96e_menueditor_e72a7_DocumentUri.msapp
+  AdditionalUris:
+    AdditionalUri: /canvasapps/cr96e_menueditor_e72a7/cr96e_menueditor_e72a7_AdditionalUris0_identity.json

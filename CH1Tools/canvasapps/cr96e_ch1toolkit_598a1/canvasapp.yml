@@ -1,0 +1,41 @@
+CanvasApp:
+  Name: cr96e_ch1toolkit_598a1
+  AppVersion: 2025-09-28T16:49:27.0000000Z
+  Status: Ready
+  CreatedByClientVersion: 3.25092.9.0
+  MinClientVersion: 3.25092.9.0
+  Tags: '{"primaryDeviceWidth":"1200","primaryDeviceHeight":"860","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.25092.9","minimumRequiredApiVersion":"2.2.0","hasComponent":"true","hasUnlockedComponent":"true","isUnifiedRootApp":"false","sienaVersion":"20250928T164333Z-3.25092.9.0"}'
+  IsCdsUpgraded: 0
+  GalleryItemId:
+    '@xsi:nil': true
+    '@xmlns:xsi': http://www.w3.org/2001/XMLSchema-instance
+  BackgroundColor: rgba(247, 249, 250, 1)
+  DisplayName: CH1 Toolkit
+  Description:
+    '@xsi:nil': true
+    '@xmlns:xsi': http://www.w3.org/2001/XMLSchema-instance
+  CommitMessage:
+    '@xsi:nil': true
+    '@xmlns:xsi': http://www.w3.org/2001/XMLSchema-instance
+  Publisher:
+    '@xsi:nil': true
+    '@xmlns:xsi': http://www.w3.org/2001/XMLSchema-instance
+  AuthorizationReferences: '[]'
+  ConnectionReferences: '{"ce3f8802-9652-4a25-b906-d88160ef1857":{"id":"/providers/microsoft.powerapps/apis/shared_office365users","displayName":"Office 365 Users","iconUri":"https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/v1.0.1767/1.0.1767.4341/office365users/icon.png","dataSources":["Office365Users"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"e2580fcc-3435-428b-9c62-aa426b210ec1":{"id":"/providers/microsoft.powerapps/apis/shared_sharepointonline","displayName":"SharePoint","iconUri":"https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/v1.0.1762/1.0.1762.4298/sharepointonline/icon.png","dataSources":["Content Templates"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{"https://cassiehartmanch1pcsdlenovo.sharepoint.com/sites/CH1ConsultingHub_new_shared_sharepointonline_8abee0588cff4c529feb54ba595604a1":{"datasetOverride":{"name":"https://cassiehartmanch1pcsdlenovo.sharepoint.com/sites/CH1ConsultingHub","environmentVariableName":"new_shared_sharepointonline_8abee0588cff4c529feb54ba595604a1"},"dataSources":{"Content Templates":{"tableName":"30024ddf-ebe3-44a2-b118-58f63c9249b3","tableNameOverride":{"name":"30024ddf-ebe3-44a2-b118-58f63c9249b3","environmentVariableName":"new_shared_sharepointonline_e5fd0ba222614f3c9844bbae82e07956"}}}}},"apiTier":"Standard","actions":["providers/PowerPlatform.Governance/Operations/Read"]}}'
+  DatabaseReferences: '{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"Knowledge Article":{"entitySetName":"cr96e_knowledgearticles","logicalName":"cr96e_knowledgearticle"},"Favorite Item":{"entitySetName":"cr96e_favoriteitems","logicalName":"cr96e_favoriteitem"},"Employee":{"entitySetName":"cr96e_employees","logicalName":"cr96e_employee"},"MenuItemses":{"entitySetName":"cr96e_menuitemses","logicalName":"cr96e_menuitems"}}}}'
+  AppComponents: '[]'
+  AppComponentDependencies: '[{"appComponentName":"952d39d80fc84420b772a5058b19d909","appName":"524530d3-18eb-49dd-8714-7bda60b457f7","appComponentLibraryName":"e6394b99-19e0-4a2e-9caf-65ce0e970ad7","appComponentLibraryVersion":"2025-09-28T02:04:19Z","appComponentLibraryLogicalName":"cat_powercatcomponentlibrary_0be3a","tenantId":"278deba8-fbe2-4606-9ec6-06a4a1cdcca3","environmentName":"f2593cf1-6f1d-e263-8479-84a3948b7718"},{"appComponentName":"2e88179d732a402184a767c94eab038b","appName":"524530d3-18eb-49dd-8714-7bda60b457f7","appComponentLibraryName":"e6394b99-19e0-4a2e-9caf-65ce0e970ad7","appComponentLibraryVersion":"2025-09-28T02:04:19Z","appComponentLibraryLogicalName":"cat_powercatcomponentlibrary_0be3a","tenantId":"278deba8-fbe2-4606-9ec6-06a4a1cdcca3","environmentName":"f2593cf1-6f1d-e263-8479-84a3948b7718"},{"appComponentName":"44e7951b1fad4ad98126f8c108dd1e9f","appName":"524530d3-18eb-49dd-8714-7bda60b457f7","appComponentLibraryName":"e6394b99-19e0-4a2e-9caf-65ce0e970ad7","appComponentLibraryVersion":"2025-09-28T02:04:19Z","appComponentLibraryLogicalName":"cat_powercatcomponentlibrary_0be3a","tenantId":"278deba8-fbe2-4606-9ec6-06a4a1cdcca3","environmentName":"f2593cf1-6f1d-e263-8479-84a3948b7718"},{"appComponentName":"5fa30e35dad34bf5ae3f78bd0875ed3f","appName":"524530d3-18eb-49dd-8714-7bda60b457f7","appComponentLibraryName":"e6394b99-19e0-4a2e-9caf-65ce0e970ad7","appComponentLibraryVersion":"2025-09-28T02:04:19Z","appComponentLibraryLogicalName":"cat_powercatcomponentlibrary_0be3a","tenantId":"278deba8-fbe2-4606-9ec6-06a4a1cdcca3","environmentName":"f2593cf1-6f1d-e263-8479-84a3948b7718"},{"appComponentName":"6da4b2f929d240969e49e05e10e720ce","appName":"524530d3-18eb-49dd-8714-7bda60b457f7","appComponentLibraryName":"e6394b99-19e0-4a2e-9caf-65ce0e970ad7","appComponentLibraryVersion":"2025-09-28T02:04:19Z","appComponentLibraryLogicalName":"cat_powercatcomponentlibrary_0be3a","tenantId":"278deba8-fbe2-4606-9ec6-06a4a1cdcca3","environmentName":"f2593cf1-6f1d-e263-8479-84a3948b7718"}]'
+  CanConsumeAppPass: 1
+  CanvasAppType: 0
+  BypassConsent: 0
+  AdminControlBypassConsent: 0
+  EmbeddedApp:
+    '@xsi:nil': true
+    '@xmlns:xsi': http://www.w3.org/2001/XMLSchema-instance
+  IntroducedVersion: 1.0
+  CdsDependencies: '{"cdsdependencies":[{"logicalname":"cr96e_knowledgearticle","componenttype":1},{"logicalname":"cr96e_favoriteitem","componenttype":1},{"logicalname":"cr96e_employee","componenttype":1},{"logicalname":"cr96e_menuitems","componenttype":1},{"logicalname":"new_shared_sharepointonline_8abee0588cff4c529feb54ba595604a1","componenttype":380,"componenttypeplatformname":"EnvironmentVariableDefinition"},{"logicalname":"new_shared_sharepointonline_e5fd0ba222614f3c9844bbae82e07956","componenttype":380,"componenttypeplatformname":"EnvironmentVariableDefinition"},{"logicalname":"cat_powercatcomponentlibrary_0be3a","componenttype":300,"componenttypeplatformname":"CanvasApp"}]}'
+  IsCustomizable: 1
+  BackgroundImageUri: /canvasapps/cr96e_ch1toolkit_598a1/cr96e_ch1toolkit_598a1_BackgroundImageUri
+  DocumentUri: /canvasapps/cr96e_ch1toolkit_598a1/cr96e_ch1toolkit_598a1_DocumentUri.msapp
+  AdditionalUris:
+    AdditionalUri: /canvasapps/cr96e_ch1toolkit_598a1/cr96e_ch1toolkit_598a1_AdditionalUris0_identity.json

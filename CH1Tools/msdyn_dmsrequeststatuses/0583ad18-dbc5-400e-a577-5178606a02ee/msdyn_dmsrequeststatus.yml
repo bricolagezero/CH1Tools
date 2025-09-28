@@ -1,0 +1,13 @@
+msdyn_dmsrequeststatus:
+  '@msdyn_dmsrequeststatusid': 0583ad18-dbc5-400e-a577-5178606a02ee
+  iscustomizable: 1
+  msdyn_errordetails: '{"Version":"1.0","RequestErrorMessage":null,"RequestErrorCulprit":null,"EntityErrorDetails":[{"EntityName":"table","EntityErrorCulprit":"None","TaskErrors":[]}],"RetryAfter":null}'
+  msdyn_lookupfield_uploadrequest:
+    msdyn_dmsrequestid: bac66d81-29dc-4474-a129-c1c294f9aaa0
+  msdyn_uploadendtime: 9/26/2025 4:02:24 PM
+  msdyn_uploadstarttime: 9/26/2025 4:02:18 PM
+  msdyn_uploadstatus: Succeeded
+  msdyn_uploadstatusdetails: '{"Version":"1.0","EntityStatusDetails":[{"EntityName":"table","EntityId":"edef1f1f-f679-4cb9-bffc-dd3273d42a8d","Status":"Succeeded","StartTime":"2025-09-26T16:02:18.271998+00:00","EndTime":"2025-09-26T16:02:24.8390502+00:00","CreatedRecords":226,"UpdatedRecords":0,"DeletedRecords":0,"ErrorRecords":0}]}'
+  statecode: 0
+  statuscode: 1
+  timezoneruleversionnumber: 4

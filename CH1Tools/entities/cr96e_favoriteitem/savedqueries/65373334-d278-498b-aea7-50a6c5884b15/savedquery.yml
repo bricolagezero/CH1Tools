@@ -1,0 +1,63 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{65373334-d278-498b-aea7-50a6c5884b15}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr96e_favoriteidentifier
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr96e_favoriteitemid
+        cell:
+        - '@name': cr96e_favoriteidentifier
+          '@width': 300
+        - '@name': cr96e_userprincipalname
+          '@width': 150
+        - '@name': cr96e_itemtype
+          '@width': 150
+        - '@name': cr96e_referenceidentifier
+          '@width': 150
+        - '@name': cr96e_title
+          '@width': 150
+        - '@name': cr96e_url
+          '@width': 150
+        - '@name': cr96e_creationdate
+          '@width': 150
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_favoriteitem
+        attribute:
+        - '@name': cr96e_favoriteitemid
+        - '@name': cr96e_favoriteidentifier
+        - '@name': createdon
+        - '@name': cr96e_userprincipalname
+        - '@name': cr96e_itemtype
+        - '@name': cr96e_referenceidentifier
+        - '@name': cr96e_title
+        - '@name': cr96e_url
+        - '@name': cr96e_creationdate
+        order:
+          '@attribute': cr96e_favoriteidentifier
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Active Favorite Item
+      '@languagecode': 1033

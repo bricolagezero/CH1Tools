@@ -1,0 +1,11 @@
+{
+  "AppName": "CH1 Toolkit",
+  "BackgroundColor": "rgba(247, 249, 250, 1)",
+  "PublishTarget": "player",
+  "LogoFileName": "3gnrxyad.jpg",
+  "IconColor": "RGBA(255,255,255,1)",
+  "IconName": "",
+  "PublishResourcesLocally": false,
+  "PublishDataLocally": false,
+  "UserLocale": "en-US"
+}

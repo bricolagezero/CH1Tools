@@ -1,0 +1,11 @@
+EntityKey:
+  Name: cr96e_MessageId
+  LogicalName: cr96e_messageid
+  IntroducedVersion: 1.0.0.0
+  IsCustomizable: 0
+  EntityKeyAttributes:
+    AttributeName: cr96e_messageidentifier
+  displaynames:
+    displayname:
+      '@description': MessageId
+      '@languagecode': 1033

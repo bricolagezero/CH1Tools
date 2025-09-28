@@ -1,0 +1,4 @@
+AttributeImageConfig:
+  attributelogicalname: cr96e_image
+  parententitylogicalname: cr96e_menuitems
+  canstorefullimage: 1

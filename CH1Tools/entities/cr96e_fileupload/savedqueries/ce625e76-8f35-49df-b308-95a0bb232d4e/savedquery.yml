@@ -1,0 +1,41 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{ce625e76-8f35-49df-b308-95a0bb232d4e}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr96e_uploadidentifier
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr96e_fileuploadid
+        cell:
+        - '@name': cr96e_uploadidentifier
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 1
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_fileupload
+        attribute:
+        - '@name': cr96e_fileuploadid
+        - '@name': cr96e_uploadidentifier
+        - '@name': createdon
+        order:
+          '@attribute': cr96e_uploadidentifier
+          '@descending': false
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': File Upload Advanced Find View
+      '@languagecode': 1033

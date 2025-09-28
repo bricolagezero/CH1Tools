@@ -1,0 +1,66 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{79ad8237-1b8c-4bf7-a22d-5ef73ed82fd7}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr96e_documenttitle
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr96e_document1id
+        cell:
+        - '@name': cr96e_documenttitle
+          '@width': 300
+        - '@name': cr96e_documentidentifier
+          '@width': 150
+        - '@name': cr96e_projectidentifier
+          '@width': 150
+        - '@name': cr96e_htmlcontent
+          '@width': 150
+        - '@name': cr96e_creationdate
+          '@width': 150
+        - '@name': cr96e_lastupdateddate
+          '@width': 150
+        - '@name': cr96e_authorname
+          '@width': 150
+        - '@name': cr96e_documenturl
+          '@width': 150
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_document1
+        attribute:
+        - '@name': cr96e_document1id
+        - '@name': cr96e_documenttitle
+        - '@name': createdon
+        - '@name': cr96e_documentidentifier
+        - '@name': cr96e_projectidentifier
+        - '@name': cr96e_htmlcontent
+        - '@name': cr96e_creationdate
+        - '@name': cr96e_lastupdateddate
+        - '@name': cr96e_authorname
+        - '@name': cr96e_documenturl
+        order:
+          '@attribute': cr96e_documenttitle
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Active Document
+      '@languagecode': 1033

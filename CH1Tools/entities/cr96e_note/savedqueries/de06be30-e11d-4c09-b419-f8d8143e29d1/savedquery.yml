@@ -1,0 +1,45 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{de06be30-e11d-4c09-b419-f8d8143e29d1}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr96e_notecontent
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr96e_noteid
+        cell:
+          '@name': cr96e_notecontent
+          '@width': 300
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_note
+        attribute:
+        - '@name': cr96e_noteid
+        - '@name': cr96e_notecontent
+        - '@name': createdon
+        order:
+          '@attribute': cr96e_notecontent
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Active Note
+      '@languagecode': 1033

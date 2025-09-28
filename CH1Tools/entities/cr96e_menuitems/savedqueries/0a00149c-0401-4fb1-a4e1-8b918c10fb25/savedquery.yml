@@ -1,0 +1,53 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 1
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{0a00149c-0401-4fb1-a4e1-8b918c10fb25}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr96e_title
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr96e_menuitemsid
+        cell:
+        - '@name': cr96e_title
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 4
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_menuitems
+        attribute:
+        - '@name': cr96e_menuitemsid
+        - '@name': cr96e_title
+        - '@name': createdon
+        order:
+          '@attribute': cr96e_title
+          '@descending': false
+        filter:
+        - '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+        - '@type': or
+          '@isquickfindfields': 1
+          condition:
+            '@attribute': cr96e_title
+            '@operator': like
+            '@value': '{0}'
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Quick Find Active MenuItemses
+      '@languagecode': 1033

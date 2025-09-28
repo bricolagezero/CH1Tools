@@ -1,0 +1,215 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  LaunchPad:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 0.24)
+      Height: =860
+      ImagePosition: =ImagePosition.Fill
+      OnVisible: |+
+        =// Always create the collection (empty, with Cat as text)
+        ClearCollect(colKBCatPick, { Cat: "" });
+        Clear(colKBCatPick); // slightly cleaner than RemoveIf(..., true)
+
+
+        // Modal defaults
+        Set(varKBOpen, false);
+        Set(varKBMode, Blank());
+
+        Clear(colBreadcrumbs);
+        Set(varModalLevel, 0);
+
+      Width: =1200
+    Children:
+      - Header1_2:
+          Control: Header@0.0.44
+          Properties:
+            Height: =65
+            Width: =332
+      - Container1_2:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            Height: =795
+            LayoutDirection: =LayoutDirection.Horizontal
+            LayoutGap: =20
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            PaddingBottom: =40
+            PaddingLeft: =40
+            PaddingRight: =40
+            PaddingTop: =40
+            Width: =1200
+            Y: =65
+          Children:
+            - Left_2:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  DropShadow: =DropShadow.Semilight
+                  LayoutMinHeight: =50
+                  PaddingBottom: =30
+                  PaddingLeft: =30
+                  PaddingRight: =30
+                  PaddingTop: =30
+                  RadiusBottomLeft: =15
+                  RadiusBottomRight: =15
+                  RadiusTopLeft: =15
+                  RadiusTopRight: =15
+                Children:
+                  - ExpandMenu_1:
+                      Control: CanvasComponent
+                      ComponentName: ExpandMenu
+                      ComponentLibraryUniqueName: cat_powercatcomponentlibrary_0be3a
+                      Properties:
+                        DefaultExpandValue: =true
+                        Fill: =ColorValue(ExpandMenu_1.Theme.palette.white)
+                        Height: =569
+                        IsNavigationEnabled: =true
+                        Items: |-
+                          =Table(
+                          {Icon: "PowerApps", Label: "Power Apps", Screen:App.ActiveScreen, Tooltip:"Power Apps Tooltip"}, 
+                          {Icon: "PowerBILogo", Label: "Power BI", Screen:App.ActiveScreen, Tooltip:"Power BI Tooltip"}, 
+                          {Icon: "PowerAutomateLogo", Label: "Power Automate", Screen:App.ActiveScreen, Tooltip:"Power Automate Tooltip"}, 
+                          {Icon: "Dataverse", Label: "Dataverse", Screen:App.ActiveScreen, Tooltip:"Dataverse Tooltip"}
+                          )
+                        OnButtonSelect: =
+                        OnExpandSelect: =
+                        Theme: |-
+                          ={
+                          	palette: {
+                          		themePrimary: "#0078d4",
+                          		themeLighterAlt: "#eff6fc",
+                          		themeLighter: "#deecf9",
+                          		themeLight: "#c7e0f4",
+                          		themeTertiary: "#71afe5",
+                          		themeSecondary: "#2b88d8",
+                          		themeDarkAlt: "#106ebe",
+                          		themeDark: "#005a9e",
+                          		themeDarker: "#004578",
+                          		neutralLighterAlt: "#faf9f8",
+                          		neutralLighter: "#f3f2f1",
+                          		neutralLight: "#edebe9",
+                          		neutralQuaternaryAlt: "#e1dfdd",
+                          		neutralQuaternary: "#d0d0d0",
+                          		neutralTertiaryAlt: "#c8c6c4",
+                          		neutralTertiary: "#a19f9d",
+                          		neutralSecondary: "#605e5c",
+                          		neutralPrimaryAlt: "#3b3a39",
+                          		neutralPrimary: "#323130",
+                          		neutralDark: "#201f1e",
+                          		black: "#000000",
+                          		white: "#ffffff"
+                          	}
+                          }
+                        Width: =250
+                        Y: =144
+            - Right_2:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  DropShadow: =DropShadow.None
+                  FillPortions: =4
+                Children:
+                  - Container3:
+                      Control: GroupContainer@1.3.0
+                      Variant: ManualLayout
+                      Properties:
+                        Height: =89
+                        Width: =766
+                        X: =40
+                        Y: =40
+                      Children:
+                        - Label1:
+                            Control: Label@2.5.1
+                            Properties:
+                              Height: =35
+                              Text: ="Welcome!"
+                              Width: =711
+                              Y: =24
+                  - Gallery3:
+                      Control: Gallery@2.15.0
+                      Variant: BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0
+                      Properties:
+                        FocusedBorderColor: =
+                        FocusedBorderThickness: =
+                        Height: =291
+                        Items: =MenuItemses
+                        ShowNavigation: =true
+                        TemplatePadding: =20
+                        TemplateSize: =300
+                        Transition: =Transition.Push
+                        Width: =850
+                        Y: =424
+                      Children:
+                        - ctrGalleryItem:
+                            Control: GroupContainer@1.3.0
+                            Variant: ManualLayout
+                            Properties:
+                              DropShadow: =DropShadow.Regular
+                              Height: =226
+                              RadiusBottomLeft: =15
+                              RadiusBottomRight: =15
+                              RadiusTopLeft: =15
+                              RadiusTopRight: =15
+                              Width: =300
+                            Children:
+                              - Subtitle3:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    FontWeight: =
+                                    Height: =111
+                                    OnSelect: =
+                                    PaddingBottom: =0
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =12
+                                    Text: =ThisItem.Description
+                                    Width: =226
+                                    X: =36
+                                    Y: =73
+                              - Title6:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(50, 49, 48, 1)
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =33
+                                    OnSelect: =
+                                    PaddingBottom: =0
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =14
+                                    Text: =ThisItem.Title
+                                    VerticalAlign: =VerticalAlign.Top
+                                    Width: =146
+                                    X: =101
+                                    Y: =20
+                              - Image6:
+                                  Control: Image@2.2.3
+                                  Properties:
+                                    Height: =73
+                                    Image: =ThisItem.Image
+                                    ImagePosition: =ImagePosition.Fill
+                                    OnSelect: =""
+                                    RadiusBottomLeft: =8
+                                    RadiusBottomRight: =8
+                                    RadiusTopLeft: =8
+                                    RadiusTopRight: =8
+                                    Width: =61
+                                    X: =24
+                              - ButtonCanvas1:
+                                  Control: Button@0.0.45
+                                  Properties:
+                                    X: =101
+                                    Y: =194

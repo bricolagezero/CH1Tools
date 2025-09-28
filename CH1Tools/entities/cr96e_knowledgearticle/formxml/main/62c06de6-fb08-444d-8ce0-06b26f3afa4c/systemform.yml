@@ -1,0 +1,150 @@
+systemform:
+  formid: '{62c06de6-fb08-444d-8ce0-06b26f3afa4c}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{997adfc2-ce0a-4682-8997-d4a5b1cb57ee}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': General
+            '@languagecode': 1033
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{0e2a2076-c19c-4789-9027-89782f23049e}'
+                labels:
+                  label:
+                    '@description': General
+                    '@languagecode': 1033
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{ed7fdc4e-2d75-4ae4-9a58-d98eff317d98}'
+                      labels:
+                        label:
+                          '@description': Title
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_articletitle
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': cr96e_articletitle
+                  - cell:
+                      '@id': '{30a67b2a-7ffc-4bbf-a5f8-fdbd3e44f462}'
+                      labels:
+                        label:
+                          '@description': Owner
+                          '@languagecode': 1033
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+                  - cell:
+                      '@id': '{1a154b93-4a7b-4026-958a-bbb4a23aed7e}'
+                      labels:
+                        label:
+                          '@description': ArticleId
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_articleidentifier
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_articleidentifier
+                  - cell:
+                      '@id': '{aef56f8d-7350-4250-8314-be1149b10c93}'
+                      labels:
+                        label:
+                          '@description': Category
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_articlecategory
+                        '@classid': '{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}'
+                        '@datafieldname': cr96e_articlecategory
+                  - cell:
+                      '@id': '{ccc049a2-1d01-42c2-976b-16ed62c98eb4}'
+                      labels:
+                        label:
+                          '@description': Description
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_articledescription
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_articledescription
+                  - cell:
+                      '@id': '{4606de84-5a54-484a-8295-398405d393ae}'
+                      labels:
+                        label:
+                          '@description': ContentHtml
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_articlecontenthtml
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_articlecontenthtml
+                  - cell:
+                      '@id': '{21f7828f-5df7-46dd-a7b8-22fc5b81f594}'
+                      labels:
+                        label:
+                          '@description': Author
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_authorname
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_authorname
+                  - cell:
+                      '@id': '{919902f2-a8d4-464a-a424-bb2bfe66e4a4}'
+                      labels:
+                        label:
+                          '@description': CreatedOn
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_creationdate
+                        '@classid': '{5b773807-9fb2-42db-97c3-7a91eff8adff}'
+                        '@datafieldname': cr96e_creationdate
+                  - cell:
+                      '@id': '{f46e4e58-e07d-4cdc-b94f-4af95dfc6b46}'
+                      labels:
+                        label:
+                          '@description': LastEditedBy
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_lasteditor
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_lasteditor
+                  - cell:
+                      '@id': '{36ce77be-8fe2-41c5-a92f-21af9d320637}'
+                      labels:
+                        label:
+                          '@description': LastEditedOn
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_lastediteddate
+                        '@classid': '{5b773807-9fb2-42db-97c3-7a91eff8adff}'
+                        '@datafieldname': cr96e_lastediteddate
+                  - cell:
+                      '@id': '{75a750d0-432f-48bb-9764-36539a6a3574}'
+                      labels:
+                        label:
+                          '@description': IsPublished
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_publishedstatus
+                        '@classid': '{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}'
+                        '@datafieldname': cr96e_publishedstatus
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Information
+      '@languagecode': 1033
+  Descriptions:
+    Description:
+      '@description': A form for this entity.
+      '@languagecode': 1033

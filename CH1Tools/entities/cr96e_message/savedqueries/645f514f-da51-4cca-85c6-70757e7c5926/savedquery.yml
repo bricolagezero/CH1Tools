@@ -1,0 +1,44 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{645f514f-da51-4cca-85c6-70757e7c5926}'
+  layoutxml:
+    grid:
+      '@name': cr96e_messages
+      '@jump': cr96e_messageidentifier
+      '@select': 1
+      '@icon': 1
+      '@preview': 0
+      row:
+        '@name': cr96e_message
+        '@id': cr96e_messageid
+        cell:
+        - '@name': cr96e_messageidentifier
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 64
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_message
+        attribute:
+        - '@name': cr96e_messageid
+        - '@name': cr96e_messageidentifier
+        - '@name': createdon
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Message Lookup View
+      '@languagecode': 1033

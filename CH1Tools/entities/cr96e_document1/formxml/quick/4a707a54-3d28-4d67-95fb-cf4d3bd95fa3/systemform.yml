@@ -1,0 +1,56 @@
+systemform:
+  formid: '{4a707a54-3d28-4d67-95fb-cf4d3bd95fa3}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{8d4d12f0-36b1-4c9d-83fc-9b7b2d288cf7}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': ''
+            '@languagecode': 1033
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{fcc366c5-6fc0-4e9a-ae72-04cb79c8775b}'
+                labels:
+                  label:
+                    '@description': GENERAL
+                    '@languagecode': 1033
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{4a29dc04-8f48-418b-b49b-a2698bfca6ab}'
+                      labels:
+                        label:
+                          '@description': Title
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_documenttitle
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': cr96e_documenttitle
+                  - cell:
+                      '@id': '{f13fd621-0acc-4e9a-9727-22d420b93525}'
+                      labels:
+                        label:
+                          '@description': Owner
+                          '@languagecode': 1033
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Information
+      '@languagecode': 1033

@@ -1,0 +1,90 @@
+systemform:
+  formid: '{41f0a59b-1356-4331-8df9-ee41264e72f2}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{1912a1cb-608f-4e98-b30f-6fa55ef207d8}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': General
+            '@languagecode': 1033
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{c6ec107a-5f87-4099-b7cb-b688b5b88b13}'
+                labels:
+                  label:
+                    '@description': General
+                    '@languagecode': 1033
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{672b786c-7b3e-49a5-b310-87f9c3f4f1f4}'
+                      labels:
+                        label:
+                          '@description': Title
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_title
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': cr96e_title
+                  - cell:
+                      '@id': '{757c07dc-f9ed-4dd0-b082-3a3afd95e110}'
+                      labels:
+                        label:
+                          '@description': Owner
+                          '@languagecode': 1033
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+                  - cell:
+                      '@id': '{e1fca2ac-909e-469a-8506-f7d8b1505cf9}'
+                      labels:
+                        label:
+                          '@description': ScreenName
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_screenname
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_screenname
+                  - cell:
+                      '@id': '{94985b95-8bc9-4554-ad4b-a0d0216e4c2e}'
+                      labels:
+                        label:
+                          '@description': Description
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_description
+                        '@classid': '{e0dece4b-6fc8-4a8f-a065-082708572369}'
+                        '@datafieldname': cr96e_description
+                  - cell:
+                      '@id': '{2353aeee-8c89-487a-a35e-41979ad57d8c}'
+                      labels:
+                        label:
+                          '@description': Icon
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_icon
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_icon
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Information
+      '@languagecode': 1033
+  Descriptions:
+    Description:
+      '@description': A form for this entity.
+      '@languagecode': 1033

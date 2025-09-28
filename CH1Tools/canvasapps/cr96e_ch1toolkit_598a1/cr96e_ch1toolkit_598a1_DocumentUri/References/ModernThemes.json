@@ -1,0 +1,35 @@
+{
+  "Themes": [
+    {
+      "EntityName": "PowerAppsTheme",
+      "ThemeName": "PowerAppsTheme"
+    },
+    {
+      "EntityName": "CH1 Theme",
+      "ThemeName": "CH1 Theme",
+      "BasePaletteColor": "#ffffff",
+      "HueTorsion": 0,
+      "Vibrancy": 0,
+      "ThemePrimaryColorLocked": false,
+      "ColorOverrides": [
+        "#2c2f25",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "#71855f",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "#f0f3e2"
+      ],
+      "Font": "'Segoe UI', 'Open Sans', sans-serif"
+    }
+  ]
+}

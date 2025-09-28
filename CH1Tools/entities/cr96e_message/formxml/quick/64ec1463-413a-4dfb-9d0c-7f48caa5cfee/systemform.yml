@@ -1,0 +1,56 @@
+systemform:
+  formid: '{64ec1463-413a-4dfb-9d0c-7f48caa5cfee}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{73c02945-7bff-4372-a331-d3bdbb4bfb98}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': ''
+            '@languagecode': 1033
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{41379a74-8ad9-464b-929b-20a0a4f565cf}'
+                labels:
+                  label:
+                    '@description': GENERAL
+                    '@languagecode': 1033
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{d8aadce3-fbd4-4ecd-8d23-a4ba59ea4b6f}'
+                      labels:
+                        label:
+                          '@description': MessageId
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_messageidentifier
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': cr96e_messageidentifier
+                  - cell:
+                      '@id': '{5c1f3ee3-f5ba-4c15-b18f-d6ed29b6cafa}'
+                      labels:
+                        label:
+                          '@description': Owner
+                          '@languagecode': 1033
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Information
+      '@languagecode': 1033

@@ -1,0 +1,942 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  BrainStash:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 0.24)
+      Height: =860
+      ImagePosition: =ImagePosition.Fill
+      OnVisible: |-
+        =// Always create the collection (empty, with Cat as text)
+        ClearCollect(colKBCatPick, { Cat: "" });
+        Clear(colKBCatPick); // slightly cleaner than RemoveIf(..., true)
+
+        // Clear search
+        Reset(txtKBSearch);
+
+        // Modal defaults
+        Set(varKBOpen, false);
+        Set(varKBMode, Blank());
+
+        Clear(colBreadcrumbs);
+        Set(varModalLevel, 0);
+      Width: =1200
+    Children:
+      - Container1:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            Height: =795
+            LayoutDirection: =LayoutDirection.Horizontal
+            LayoutGap: =20
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            PaddingBottom: =40
+            PaddingLeft: =40
+            PaddingRight: =40
+            PaddingTop: =40
+            Width: =1200
+            Y: =65
+          Children:
+            - Left:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  DropShadow: =DropShadow.Semilight
+                  LayoutMinHeight: =50
+                  PaddingBottom: =30
+                  PaddingLeft: =30
+                  PaddingRight: =30
+                  PaddingTop: =30
+                  RadiusBottomLeft: =15
+                  RadiusBottomRight: =15
+                  RadiusTopLeft: =15
+                  RadiusTopRight: =15
+                Children:
+                  - cmpNav_2:
+                      Control: CanvasComponent
+                      ComponentName: cmpNav
+                      Properties:
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =715
+                        Width: =250
+            - Right:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  DropShadow: =DropShadow.None
+                  FillPortions: =4
+                Children:
+                  - galKB:
+                      Control: Gallery@2.15.0
+                      Variant: BrowseLayout_Vertical_ThreeTextVariant_ver5.0
+                      Properties:
+                        AccessibleLabel: =
+                        BorderColor: =RGBA(214, 221, 224, 1)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =1
+                        Fill: =RGBA(214, 221, 224, 0.1)
+                        Height: =629
+                        Items: "=With(\r\n    { picks: colKBCatPick, q: Trim(txtKBSearch.Text) },\r\n    SortByColumns(\r\n        Filter(\r\n            'Knowledge Article',\r\n\r\n            \r\n            If(\r\n                IsEmpty(picks),\r\n                true,\r\n                CountIf(picks, Cat = Text(cr96e_articlecategory)) > 0\r\n            ),\r\n\r\n           \r\n            Len(q) = 0\r\n                || StartsWith(Coalesce(Title, cr96e_articletitle, \"\"), q)\r\n                || StartsWith(Coalesce(Description, cr96e_articledescription, \"\"), q)\r\n        ),\r\n        \"modifiedon\",\r\n        SortOrder.Descending\r\n    )\r\n)\r\n\r\n\r\n"
+                        OnSelect: =Set(varKB, ThisItem); UpdateContext({ showKB:true, editKB:false })
+                        ShowNavigation: =true
+                        TemplatePadding: =30
+                        TemplateSize: =100
+                        Transition: =Transition.Push
+                        Width: =836
+                        X: =3
+                        Y: =86
+                      Children:
+                        - Background Container:
+                            Control: GroupContainer@1.3.0
+                            Variant: ManualLayout
+                            Properties:
+                              Fill: =RGBA(255, 255, 255, 1)
+                              Height: =100
+                              RadiusBottomLeft: =15
+                              RadiusBottomRight: =15
+                              RadiusTopLeft: =15
+                              RadiusTopRight: =15
+                              Width: =787
+                        - lblKBPill:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(54, 176, 75, 1)
+                              BorderThickness: =1
+                              FontWeight: =
+                              Height: =20
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =0
+                              PaddingLeft: =20
+                              PaddingRight: =20
+                              PaddingTop: =0
+                              Size: =9
+                              Text: =ThisItem.Category
+                              Width: =131
+                              X: =22
+                              Y: =14
+                        - lblKBTitle:
+                            Control: Label@2.5.1
+                            Properties:
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(50, 49, 48, 1)
+                              FontWeight: '=    '
+                              Height: =27
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =0
+                              PaddingLeft: =20
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =14
+                              Text: =ThisItem.Title
+                              Width: =517
+                              X: =153
+                              Y: =9
+                        - lblKBDesc:
+                            Control: Label@2.5.1
+                            Properties:
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              FontWeight: =
+                              Height: =21
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =0
+                              PaddingLeft: =20
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =12
+                              Text: =ThisItem.Description
+                              VerticalAlign: =VerticalAlign.Top
+                              Width: =517
+                              X: =153
+                              Y: =58
+                        - lblKBMeta:
+                            Control: Label@2.5.1
+                            Properties:
+                              Color: =RGBA(106, 122, 127, 1)
+                              Height: =17
+                              OnSelect: =Select(Parent)
+                              PaddingLeft: =20
+                              Size: =10
+                              Text: |
+                                =Concatenate(
+                                  "By ",
+                                  Coalesce(ThisItem.cr96e_authorname, "Unknown"),
+                                  " • ",
+                                  Text(Coalesce(ThisItem.cr96e_lastediteddate, ThisItem.modifiedon), "[$-en-US]mmm d, yyyy")
+                                )
+                              Width: =344
+                              X: =153
+                              Y: =36
+                        - btnOpen:
+                            Control: Button@0.0.45
+                            Properties:
+                              BorderRadius: =10
+                              FontSize: =14
+                              Icon: ="ArrowRight"
+                              Layout: ='ButtonCanvas.Layout'.IconAfter
+                              OnSelect: |
+                                =// Existing modal open logic
+                                Set(varKBCurrent, ThisItem);
+                                Set(varKBMode, "View");
+                                Set(varKBOpen, true);
+                                Set(varFadeIn, true);
+                                Set(varFading, false);   // edge
+                                Set(varFading, true);    // start fade-in
+
+                                With(
+                                    { next: varModalLevel + 1, title: Trim(lblKBTitle.Text) },
+                                    RemoveIf(colBreadcrumbs, ID > varModalLevel);
+                                    Collect(colBreadcrumbs, { ID: next, Title: title });
+                                    Set(varModalLevel, next)
+                                )
+                              Text: ="View"
+                              X: =670
+                              Y: =34
+                  - cntToolbar:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        DropShadow: =DropShadow.Semilight
+                        Fill: =RGBA(124, 141, 108, 1)
+                        Height: =86
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Horizontal
+                        LayoutGap: =20
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        RadiusBottomLeft: =15
+                        RadiusBottomRight: =15
+                        RadiusTopLeft: =15
+                        RadiusTopRight: =15
+                        Width: =Parent.Width
+                      Children:
+                        - Search:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              DropShadow: =DropShadow.None
+                              Height: =90
+                              LayoutAlignItems: =LayoutAlignItems.Center
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutGap: =10
+                              LayoutJustifyContent: =LayoutJustifyContent.Center
+                              LayoutMinHeight: =50
+                            Children:
+                              - txtKBSearch:
+                                  Control: Classic/TextInput@2.3.2
+                                  Properties:
+                                    Align: =Align.Center
+                                    BorderColor: =RGBA(214, 221, 224, 1)
+                                    BorderStyle: =BorderStyle.None
+                                    BorderThickness: =1
+                                    Clear: =true
+                                    Default: =
+                                    DisabledBorderColor: =
+                                    DisabledColor: =
+                                    DisabledFill: =
+                                    EnableSpellCheck: =true
+                                    FocusedBorderColor: =
+                                    FocusedBorderThickness: =1
+                                    Height: =35
+                                    HintText: ="Type to filter"
+                                    PaddingBottom: =0
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    RadiusBottomLeft: =20
+                                    RadiusBottomRight: =20
+                                    RadiusTopLeft: =20
+                                    RadiusTopRight: =20
+                                    Size: =10
+                                    Width: =250
+                        - Pills:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              DropShadow: =DropShadow.None
+                              Height: =50
+                              LayoutAlignItems: =LayoutAlignItems.Center
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutGap: =5
+                              LayoutJustifyContent: =LayoutJustifyContent.Center
+                              LayoutMinHeight: =50
+                              LayoutMinWidth: =300
+                              LayoutOverflowX: =LayoutOverflow.Scroll
+                              X: =40
+                              Y: =40
+                            Children:
+                              - galKBCatPills:
+                                  Control: Gallery@2.15.0
+                                  Variant: BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0
+                                  Properties:
+                                    Height: =40
+                                    Items: |
+                                      =SortByColumns(Choices('Category (Knowledge Article)'), "Value", SortOrder.Ascending)
+                                    LayoutMinHeight: =50
+                                    OnSelect: =
+                                    ShowNavigation: =true
+                                    TemplateSize: =100
+                                    Transition: =Transition.Push
+                                    Width: '=300 '
+                                    X: =40
+                                    Y: =40
+                                  Children:
+                                    - btnCat:
+                                        Control: Classic/Button@2.2.0
+                                        Properties:
+                                          BorderColor: =RGBA(214, 221, 224, 1)
+                                          BorderStyle: =BorderStyle.None
+                                          BorderThickness: =0
+                                          Color: =If( CountIf(colKBCatPick, Cat = Text(ThisItem.Value)) > 0, RGBA(44, 47, 37, 1 ), RGBA(44, 47, 37,1 ))
+                                          DisabledBorderColor: =
+                                          DisabledColor: =
+                                          DisabledFill: =
+                                          Fill: |
+                                            =If( CountIf(colKBCatPick, Cat = Text(ThisItem.Value)) > 0, RGBA(240, 243, 226, 1), RGBA(44, 47, 37,0.2) )
+                                          Height: =25
+                                          HoverBorderColor: =
+                                          HoverColor: =
+                                          HoverFill: =
+                                          OnSelect: |
+                                            =With(
+                                                { val: Text(ThisItem.Value) },    
+                                                If(
+                                                    CountIf(colKBCatPick, Cat = val) > 0,
+                                                    RemoveIf(colKBCatPick, Cat = val),
+                                                    Collect(colKBCatPick, { Cat: val })
+                                                )
+                                            )
+                                          PressedBorderColor: =
+                                          PressedColor: =
+                                          PressedFill: =
+                                          Size: =10
+                                          Text: =ThisItem.Value
+                                          Width: =92
+                                          Y: =30
+                        - Add Knowledge:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              DropShadow: =DropShadow.None
+                              Height: =Parent.Height
+                              LayoutAlignItems: =LayoutAlignItems.Center
+                              LayoutDirection: =LayoutDirection.Horizontal
+                              LayoutJustifyContent: =LayoutJustifyContent.Center
+                              LayoutMinHeight: =50
+                              PaddingLeft: =15
+                              PaddingRight: =15
+                              Width: =150
+                              X: =40
+                              Y: =40
+                            Children:
+                              - btnAddKB:
+                                  Control: Button@0.0.45
+                                  Properties:
+                                    BasePaletteColor: =RGBA(189, 178, 176, 1)
+                                    BorderRadius: =10
+                                    FontSize: =14
+                                    Icon: ="SaveCopy"
+                                    OnSelect: |-
+                                      =Set(varKBCurrent, Defaults('Knowledge Article'));
+                                      Set(varKBMode, "New");
+                                      Set(varKBOpen, true);
+                                      Set(varFadeIn, true);
+                                      Set(varFading, false);  // force edge
+                                      Set(varFading, true);   // start fade-in
+                                    Text: ="Add New"
+                                    Width: '=Parent.Width * 0.7       '
+                  - ctrKBModal:
+                      Control: GroupContainer@1.3.0
+                      Variant: ManualLayout
+                      Properties:
+                        DropShadow: =DropShadow.Bold
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =758
+                        Visible: =varKBOpen
+                        Width: =919
+                      Children:
+                        - cntKBCard:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              BorderColor: =RGBA(166, 215, 153, 1)
+                              BorderThickness: =1
+                              DropShadow: =DropShadow.None
+                              Height: =681
+                              LayoutAlignItems: =LayoutAlignItems.Center
+                              LayoutDirection: =LayoutDirection.Horizontal
+                              LayoutGap: =20
+                              LayoutJustifyContent: =LayoutJustifyContent.Center
+                              LayoutOverflowX: =LayoutOverflow.Scroll
+                              LayoutOverflowY: =LayoutOverflow.Scroll
+                              LayoutWrap: =true
+                              PaddingBottom: =5
+                              PaddingLeft: =5
+                              PaddingRight: =5
+                              PaddingTop: =5
+                              RadiusBottomLeft: =5
+                              RadiusBottomRight: =5
+                              RadiusTopLeft: =5
+                              RadiusTopRight: =5
+                              Visible: =varKBMode = "View"
+                              Width: =825
+                              X: =10
+                              Y: =15
+                            Children:
+                              - cntKBHeader:
+                                  Control: GroupContainer@1.3.0
+                                  Variant: AutoLayout
+                                  Properties:
+                                    DropShadow: =DropShadow.Regular
+                                    Fill: =RGBA(214, 221, 224, 0.34)
+                                    FillPortions: =0
+                                    Height: =100
+                                    LayoutAlignItems: =LayoutAlignItems.Center
+                                    LayoutDirection: =LayoutDirection.Horizontal
+                                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                                    PaddingLeft: =10
+                                    PaddingRight: =10
+                                    Width: =Parent.Width
+                                    X: =40
+                                    Y: =40
+                                  Children:
+                                    - Container7:
+                                        Control: GroupContainer@1.3.0
+                                        Variant: AutoLayout
+                                        Properties:
+                                          AlignInContainer: =AlignInContainer.SetByContainer
+                                          DropShadow: =DropShadow.None
+                                          Height: =100
+                                          LayoutDirection: =LayoutDirection.Vertical
+                                          LayoutGap: =15
+                                          LayoutJustifyContent: =LayoutJustifyContent.Center
+                                          PaddingBottom: =20
+                                          PaddingLeft: =20
+                                          PaddingRight: =20
+                                          PaddingTop: =20
+                                        Children:
+                                          - lblViewCategory:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                BorderColor: =RGBA(42, 173, 35, 1)
+                                                BorderThickness: =1
+                                                Color: =RGBA(12, 59, 94, 1)
+                                                Font: =Font.'Segoe UI'
+                                                FontWeight: =FontWeight.Bold
+                                                Height: =30
+                                                PaddingBottom: =15
+                                                PaddingLeft: =15
+                                                PaddingRight: =15
+                                                PaddingTop: =15
+                                                Size: =11
+                                                Text: |+
+                                                  =// was: Coalesce(varKBCurrent.cr96e_articlecategory.Value, Text(varKBCurrent.cr96e_articlecategory))
+                                                  Text(varKBCurrent.cr96e_articlecategory)
+
+                                                Width: =200
+                                                X: =40
+                                                Y: =40
+                                          - lblModalTitle:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                AutoHeight: =true
+                                                Color: =RGBA(13, 50, 61, 1)
+                                                FontWeight: =FontWeight.Bold
+                                                Height: =30
+                                                PaddingLeft: =15
+                                                PaddingTop: =0
+                                                Size: =16
+                                                Text: |
+                                                  =Switch(varKBMode, 
+                                                    "New",  "New Article",
+                                                    "Edit", "Edit Article",
+                                                    "View", "Article",
+                                                    "Article"
+                                                  )
+                                                Width: '=Parent.Width * 0.8 '
+                                                X: =40
+                                                Y: =40
+                                    - btnClose:
+                                        Control: Button@0.0.45
+                                        Properties:
+                                          Appearance: ='ButtonCanvas.Appearance'.Primary
+                                          Font: =Font.'Lato Black'
+                                          FontSize: =13
+                                          FontWeight: =FontWeight.Bold
+                                          Icon: ="Dismiss"
+                                          IconStyle: ='ButtonCanvas.IconStyle'.Filled
+                                          Layout: ='ButtonCanvas.Layout'.IconAfter
+                                          OnSelect: |
+                                            =Set(varKBOpen, false);
+                                            Set(varFadeIn, false);
+                                            Set(varFading, false);  // force edge
+                                            Set(varFading, true);   // start fade-out
+                                            Set(varKBMode, Blank());
+
+                                            // Close modal
+                                            Set(varKBOpen, false);
+                                            Set(varFadeIn, false);
+                                            Set(varFading, false);
+                                            Set(varFading, true);
+                                            Set(varKBMode, Blank());
+
+                                            // Remove the most recent breadcrumb (or all, if you prefer)
+                                            If(
+                                                CountRows(colBreadcrumbs) > 0,
+                                                RemoveIf(colBreadcrumbs, ID = Max(colBreadcrumbs, ID))
+                                            )
+                                          Text: ="Close"
+                                          X: =40
+                                          Y: =40
+                              - cntKBView:
+                                  Control: GroupContainer@1.3.0
+                                  Variant: AutoLayout
+                                  Properties:
+                                    AlignInContainer: =AlignInContainer.SetByContainer
+                                    Height: '=Parent.Height * 0.8 '
+                                    LayoutAlignItems: =LayoutAlignItems.Center
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutGap: =10
+                                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                                    LayoutMinHeight: =500
+                                    LayoutOverflowY: =LayoutOverflow.Scroll
+                                    PaddingBottom: =20
+                                    PaddingLeft: =15
+                                    PaddingRight: =15
+                                    PaddingTop: =15
+                                    Width: =Parent.Width * 1
+                                  Children:
+                                    - lblViewDesc:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(12, 59, 94, 1)
+                                          Fill: =RGBA(235, 235, 235, 0.25)
+                                          PaddingLeft: =30
+                                          Size: =11
+                                          Text: |
+                                            =varKBCurrent.cr96e_articledescription
+                                          Width: '=750 '
+                                    - htmlView:
+                                        Control: HtmlViewer@2.1.0
+                                        Properties:
+                                          BorderColor: =RGBA(242, 246, 247, 1)
+                                          BorderStyle: =BorderStyle.Solid
+                                          BorderThickness: =1
+                                          DisplayMode: =DisplayMode.View
+                                          FillPortions: =1
+                                          Font: =Font.'Open Sans'
+                                          HtmlText: |
+                                            =Coalesce(varKBCurrent.cr96e_articlecontenthtml, "")
+                                          LayoutMinHeight: =300
+                                          PaddingBottom: =30
+                                          PaddingLeft: =30
+                                          PaddingRight: =30
+                                          PaddingTop: =30
+                                          Width: '=750 '
+                                    - btnEdit:
+                                        Control: Button@0.0.45
+                                        Properties:
+                                          Appearance: ='ButtonCanvas.Appearance'.Outline
+                                          BasePaletteColor: =RGBA(5, 102, 178, 1)
+                                          FontSize: =12
+                                          Icon: ="Edit"
+                                          IconStyle: ='ButtonCanvas.IconStyle'.Outline
+                                          Layout: ='ButtonCanvas.Layout'.IconAfter
+                                          OnSelect: '=Set(varKBMode, "Edit"); '
+                                          PaddingBottom: =0
+                                          Text: ="Edit Information"
+                                          Width: =144
+                                          X: =40
+                                          Y: =40
+                        - cntKBEdit:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              DropShadow: =DropShadow.Bold
+                              Height: =603
+                              LayoutAlignItems: =LayoutAlignItems.Center
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutJustifyContent: =LayoutJustifyContent.Center
+                              PaddingBottom: =15
+                              PaddingLeft: =15
+                              PaddingRight: =15
+                              PaddingTop: =15
+                              Visible: |
+                                =varKBMode = "Edit" || varKBMode = "New"
+                              Width: =770
+                              X: =51
+                              Y: =(Parent.Height - Self.Height) / 2
+                            Children:
+                              - frmKB:
+                                  Control: Form@2.4.4
+                                  Variant: Classic
+                                  Layout: Vertical
+                                  Properties:
+                                    AlignInContainer: =AlignInContainer.SetByContainer
+                                    DataSource: ='Knowledge Article'
+                                    DefaultMode: |
+                                      =Switch(
+                                          varKBMode,
+                                          "New",  FormMode.New,
+                                          "Edit", FormMode.Edit,
+                                          FormMode.View
+                                      )
+                                    Item: |
+                                      =varKBCurrent
+                                    NumberOfColumns: =2
+                                    OnSuccess: |-
+                                      =Set(varKBOpen, false);
+                                      Set(varKBMode, Blank());
+                                      Set(varRunModalTimer, true);   // animate out on success
+                                      Notify("Article saved.", NotificationType.Success);
+                                      Reset(txtKBSearch);
+                                  Children:
+                                    - Title_DataCard1:
+                                        Control: TypedDataCard@1.0.7
+                                        Variant: ClassicTextualEdit
+                                        Properties:
+                                          DataField: ="cr96e_articletitle"
+                                          Default: =ThisItem.Title
+                                          DisplayName: =DataSourceInfo([@'Knowledge Article'],DataSourceInfo.DisplayName,'cr96e_articletitle')
+                                          Height: =105
+                                          MaxLength: =DataSourceInfo([@'Knowledge Article'], DataSourceInfo.MaxLength, 'cr96e_articletitle')
+                                          Required: =true
+                                          Update: =DataCardValue1.Text
+                                          Width: =400
+                                          X: =0
+                                          Y: =0
+                                        Children:
+                                          - DataCardKey1:
+                                              Control: Label@2.5.1
+                                              MetadataKey: FieldName
+                                              Properties:
+                                                BorderColor: =RGBA(0, 0, 0, 1)
+                                                Color: =App.Theme.Colors.Darker30
+                                                FontWeight: =FontWeight.Bold
+                                                Height: =28
+                                                Size: =10
+                                                Text: =Parent.DisplayName
+                                                Width: =Parent.Width - 60
+                                                Wrap: =false
+                                                X: =30
+                                                Y: =10
+                                          - DataCardValue1:
+                                              Control: Classic/TextInput@2.3.2
+                                              MetadataKey: FieldValue
+                                              Properties:
+                                                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                                BorderThickness: =1
+                                                Default: =Parent.Default
+                                                DelayOutput: =true
+                                                DisplayMode: =Parent.DisplayMode
+                                                EnableSpellCheck: =true
+                                                FocusedBorderThickness: =1
+                                                Height: =35
+                                                HoverBorderColor: =
+                                                HoverColor: =
+                                                HoverFill: =RGBA(240, 243, 226, 1)
+                                                MaxLength: =Parent.MaxLength
+                                                PaddingLeft: =5
+                                                RadiusBottomLeft: =0
+                                                RadiusBottomRight: =0
+                                                RadiusTopLeft: =0
+                                                RadiusTopRight: =0
+                                                Size: =10
+                                                Tooltip: =Parent.DisplayName
+                                                Width: =312
+                                                X: =30
+                                                Y: =43
+                                          - ErrorMessage1:
+                                              Control: Label@2.5.1
+                                              MetadataKey: ErrorMessage
+                                              Properties:
+                                                BorderColor: =RGBA(0, 0, 0, 1)
+                                                Color: =RGBA(168, 0, 0, 1)
+                                                FontWeight: =FontWeight.Semibold
+                                                Height: =27
+                                                Live: =Live.Assertive
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingRight: =0
+                                                PaddingTop: =0
+                                                Size: =11
+                                                Text: =Parent.Error
+                                                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                                Width: =370
+                                                X: =30
+                                                Y: =78
+                                    - Category_DataCard1:
+                                        Control: TypedDataCard@1.0.7
+                                        Variant: ClassicComboBoxOptionSetSingleEdit
+                                        Properties:
+                                          DataField: ="cr96e_articlecategory"
+                                          Default: =ThisItem.Category
+                                          DisplayName: =DataSourceInfo([@'Knowledge Article'],DataSourceInfo.DisplayName,'cr96e_articlecategory')
+                                          Height: =93
+                                          Required: =true
+                                          Update: =DataCardValue2.Selected.Value
+                                          Width: =400
+                                          X: =1
+                                          Y: =0
+                                        Children:
+                                          - DataCardKey2:
+                                              Control: Label@2.5.1
+                                              MetadataKey: FieldName
+                                              Properties:
+                                                AutoHeight: =true
+                                                BorderColor: =RGBA(0, 0, 0, 1)
+                                                Color: =App.Theme.Colors.Darker30
+                                                FontWeight: =FontWeight.Bold
+                                                Height: =34
+                                                Size: =10
+                                                Text: =Parent.DisplayName
+                                                Width: =Parent.Width - 60
+                                                Wrap: =false
+                                                X: =30
+                                                Y: =10
+                                          - DataCardValue2:
+                                              Control: Classic/ComboBox@2.4.0
+                                              MetadataKey: FieldValue
+                                              Properties:
+                                                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                                BorderThickness: =1
+                                                ChevronDisabledBackground: =RGBA(214, 221, 224, 1)
+                                                ChevronHoverBackground: =RGBA(83, 90, 92, 1)
+                                                Color: =RGBA(255, 255, 255, 1)
+                                                DefaultSelectedItems: =[Parent.Default]
+                                                DisabledColor: =RGBA(214, 221, 224, 1)
+                                                DisplayFields: =["Value"]
+                                                DisplayMode: =Parent.DisplayMode
+                                                Fill: =RGBA(52, 152, 47, 1)
+                                                FocusedBorderColor: =
+                                                FocusedBorderThickness: =1
+                                                FontWeight: =FontWeight.Bold
+                                                Height: =35
+                                                HoverBorderColor: =RGBA(13, 50, 61, 1)
+                                                HoverColor: =RGBA (255, 255, 255, 1)
+                                                HoverFill: =RGBA(122, 138, 143, 1)
+                                                IsSearchable: =false
+                                                Items: =Choices('Category (Knowledge Article)')
+                                                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                                                PressedColor: =RGBA (255, 255, 255, 1)
+                                                SearchFields: =["Value"]
+                                                SelectMultiple: =false
+                                                SelectionColor: =RGBA (255, 255, 255, 1)
+                                                SelectionFill: =
+                                                SelectionTagColor: =RGBA (255, 255, 255, 1)
+                                                SelectionTagFill: =
+                                                Size: '=10  '
+                                                Tooltip: =Parent.DisplayName
+                                                Width: =340
+                                                X: =20
+                                                Y: =45
+                                          - ErrorMessage2:
+                                              Control: Label@2.5.1
+                                              MetadataKey: ErrorMessage
+                                              Properties:
+                                                BorderColor: =RGBA(0, 0, 0, 1)
+                                                Color: =RGBA(168, 0, 0, 1)
+                                                FontWeight: =FontWeight.Semibold
+                                                Height: =28
+                                                Live: =Live.Assertive
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingRight: =0
+                                                PaddingTop: =0
+                                                Size: =11
+                                                Text: =Parent.Error
+                                                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                                Width: =Parent.Width - 60
+                                                X: =30
+                                                Y: =DataCardValue2.Y + DataCardValue2.Height
+                                    - Description_DataCard1:
+                                        Control: TypedDataCard@1.0.7
+                                        Variant: ClassicTextualEdit
+                                        Properties:
+                                          DataField: ="cr96e_articledescription"
+                                          Default: =ThisItem.Description
+                                          DisplayName: =DataSourceInfo([@'Knowledge Article'],DataSourceInfo.DisplayName,'cr96e_articledescription')
+                                          Height: =144
+                                          MaxLength: =DataSourceInfo([@'Knowledge Article'], DataSourceInfo.MaxLength, 'cr96e_articledescription')
+                                          Required: =true
+                                          Update: =DataCardValue4.Text
+                                          X: =0
+                                          Y: =1
+                                        Children:
+                                          - DataCardKey4:
+                                              Control: Label@2.5.1
+                                              MetadataKey: FieldName
+                                              Properties:
+                                                AutoHeight: =true
+                                                BorderColor: =RGBA(0, 0, 0, 1)
+                                                Color: =App.Theme.Colors.Darker30
+                                                FontWeight: =FontWeight.Bold
+                                                Height: =28
+                                                Size: =10
+                                                Text: =Parent.DisplayName
+                                                Width: =358
+                                                Wrap: =false
+                                                X: =30
+                                                Y: =10
+                                          - DataCardValue4:
+                                              Control: Classic/TextInput@2.3.2
+                                              MetadataKey: FieldValue
+                                              Properties:
+                                                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                                BorderThickness: =1
+                                                Default: =Parent.Default
+                                                DelayOutput: =true
+                                                DisplayMode: =Parent.DisplayMode
+                                                FocusedBorderThickness: =1
+                                                Height: =78
+                                                HoverBorderColor: =
+                                                HoverColor: =
+                                                HoverFill: =RGBA(240, 243, 226, 1)
+                                                MaxLength: =Parent.MaxLength
+                                                Mode: =TextMode.MultiLine
+                                                PaddingLeft: =5
+                                                RadiusBottomLeft: =0
+                                                RadiusBottomRight: =0
+                                                RadiusTopLeft: =0
+                                                RadiusTopRight: =0
+                                                Size: '=10  '
+                                                Tooltip: =Parent.DisplayName
+                                                Width: =740
+                                                X: =30
+                                                Y: =43
+                                          - ErrorMessage4:
+                                              Control: Label@2.5.1
+                                              MetadataKey: ErrorMessage
+                                              Properties:
+                                                BorderColor: =RGBA(0, 0, 0, 1)
+                                                Color: =RGBA(168, 0, 0, 1)
+                                                FontWeight: =FontWeight.Semibold
+                                                Height: =23
+                                                Live: =Live.Assertive
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingRight: =0
+                                                PaddingTop: =0
+                                                Size: =11
+                                                Text: =Parent.Error
+                                                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                                Width: =Parent.Width - 60
+                                                X: =30
+                                                Y: =DataCardValue4.Y + DataCardValue4.Height
+                                    - ContentHtml_DataCard1:
+                                        Control: TypedDataCard@1.0.7
+                                        Variant: ClassicTextualEdit
+                                        Properties:
+                                          BorderColor: =
+                                          DataField: ="cr96e_articlecontenthtml"
+                                          Default: |
+                                            =ThisItem.cr96e_articlecontenthtml
+                                          DisplayName: =DataSourceInfo([@'Knowledge Article'],DataSourceInfo.DisplayName,'cr96e_articlecontenthtml')
+                                          Height: =263
+                                          MaxLength: =DataSourceInfo([@'Knowledge Article'], DataSourceInfo.MaxLength, 'cr96e_articlecontenthtml')
+                                          Required: =true
+                                          Update: |
+                                            =rteContent.HtmlText
+                                          Width: =779
+                                          X: =0
+                                          Y: =2
+                                        Children:
+                                          - rteContent:
+                                              Control: RichTextEditor@2.7.0
+                                              Properties:
+                                                BorderColor: =RGBA(214, 221, 224, 1)
+                                                Default: |
+                                                  =Parent.Default
+                                                Height: =228
+                                                Width: =740
+                                                X: =32
+                                                Y: =20
+                              - cntEditButtons:
+                                  Control: GroupContainer@1.3.0
+                                  Variant: AutoLayout
+                                  Properties:
+                                    AlignInContainer: =AlignInContainer.SetByContainer
+                                    DropShadow: =DropShadow.None
+                                    FillPortions: =0
+                                    Height: =50
+                                    LayoutAlignItems: =LayoutAlignItems.Center
+                                    LayoutDirection: =LayoutDirection.Horizontal
+                                    LayoutGap: =40
+                                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                                    LayoutMinHeight: =50
+                                  Children:
+                                    - btnCancelEdit:
+                                        Control: Button@0.0.45
+                                        Properties:
+                                          BasePaletteColor: =RGBA(141, 229, 250, 1)
+                                          FontSize: =14
+                                          Icon: ="DismissCircle"
+                                          Layout: ='ButtonCanvas.Layout'.IconAfter
+                                          OnSelect: |
+                                            =ResetForm(frmKB);
+                                            Set(varKBOpen, false);
+                                            Set(varFadeIn, false);
+                                            Set(varFading, false);  // force edge
+                                            Set(varFading, true);   // start fade-out
+                                            Set(varKBMode, Blank());
+
+                                            // Close modal
+                                            Set(varKBOpen, false);
+                                            Set(varFadeIn, false);
+                                            Set(varFading, false);
+                                            Set(varFading, true);
+                                            Set(varKBMode, Blank());
+
+                                            // Remove the most recent breadcrumb (or all, if you prefer)
+                                            If(
+                                                CountRows(colBreadcrumbs) > 0,
+                                                RemoveIf(colBreadcrumbs, ID = Max(colBreadcrumbs, ID))
+                                            )
+                                          Text: ="Cancel"
+                                    - btnSaveEdit:
+                                        Control: Button@0.0.45
+                                        Properties:
+                                          DisplayMode: |
+                                            =If(
+                                                IsBlank(Trim(DataCardValue1.Text)) ||                      // Title
+                                                IsBlank(DataCardValue2.Selected) ||                        // Category (Combo)
+                                                IsBlank(Trim(DataCardValue4.Text)) ||                      // Description
+                                                Len(Trim(PlainText(rteContent.HtmlText))) = 0,             // Content (RTE)
+                                                DisplayMode.Disabled,
+                                                DisplayMode.Edit
+                                            )
+                                          FontSize: =14
+                                          Icon: ="Save"
+                                          Layout: ='ButtonCanvas.Layout'.IconAfter
+                                          OnSelect: |
+                                            =SubmitForm(frmKB);
+                                            Set(varKBOpen, false);
+                                            Set(varFadeIn, false);
+                                            Set(varFading, false);  // force edge
+                                            Set(varFading, true);   // start fade-out
+                                            Set(varKBMode, Blank());
+
+                                            // Close modal
+                                            Set(varKBOpen, false);
+                                            Set(varFadeIn, false);
+                                            Set(varFading, false);
+                                            Set(varFading, true);
+                                            Set(varKBMode, Blank());
+
+                                            // Remove the most recent breadcrumb (or all, if you prefer)
+                                            If(
+                                                CountRows(colBreadcrumbs) > 0,
+                                                RemoveIf(colBreadcrumbs, ID = Max(colBreadcrumbs, ID))
+                                            )
+                                          Text: ="Save"
+      - Header1:
+          Control: Header@0.0.44
+          Properties:
+            Height: =65
+            Width: =332

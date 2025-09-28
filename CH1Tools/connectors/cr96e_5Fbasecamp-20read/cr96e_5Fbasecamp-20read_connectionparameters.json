@@ -1,0 +1,25 @@
+{
+  "token": {
+    "type": "oauthSetting",
+    "oAuthSettings": {
+      "identityProvider": "basecamp",
+      "clientId": "5d623a0215871fccd945934cf0c36390e7601737",
+      "scopes": [],
+      "redirectMode": "GlobalPerConnector",
+      "redirectUrl": "https://global.consent.azure-apim.net/redirect/cr96e-5fbasecamp-20read-5f795d19f449d881b0",
+      "properties": {
+        "IsFirstParty": "False",
+        "IsOnbehalfofLoginSupported": false
+      },
+      "customParameters": {}
+    },
+    "uiDefinition": {
+      "displayName": "OAuth Connection",
+      "description": "OAuth Connection",
+      "constraints": {
+        "required": "true",
+        "hidden": "false"
+      }
+    }
+  }
+}

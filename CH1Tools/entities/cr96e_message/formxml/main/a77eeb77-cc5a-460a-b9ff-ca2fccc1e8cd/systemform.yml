@@ -1,0 +1,130 @@
+systemform:
+  formid: '{a77eeb77-cc5a-460a-b9ff-ca2fccc1e8cd}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{4c6fb75e-b300-4c50-be81-3f88d93df281}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': General
+            '@languagecode': 1033
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{ee8cea0b-ff24-4f2d-aa9f-1677c6b6e57d}'
+                labels:
+                  label:
+                    '@description': General
+                    '@languagecode': 1033
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{0abfb4ad-4a14-440d-9584-53ca8fddaff0}'
+                      labels:
+                        label:
+                          '@description': MessageId
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_messageidentifier
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': cr96e_messageidentifier
+                  - cell:
+                      '@id': '{759f8cbf-844a-42e3-944a-6cef11097919}'
+                      labels:
+                        label:
+                          '@description': Owner
+                          '@languagecode': 1033
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+                  - cell:
+                      '@id': '{46219738-8492-4d33-b8c3-48c7a64ea675}'
+                      labels:
+                        label:
+                          '@description': ProjectId
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_projectidentifier
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_projectidentifier
+                  - cell:
+                      '@id': '{77b34165-2315-4793-902d-f6b82cfab86c}'
+                      labels:
+                        label:
+                          '@description': Title
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_messagetitle
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_messagetitle
+                  - cell:
+                      '@id': '{bf2d0a07-82b4-4e65-aaf7-0fb2c3fa8d14}'
+                      labels:
+                        label:
+                          '@description': BodyHtml
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_messagebodyhtml
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_messagebodyhtml
+                  - cell:
+                      '@id': '{525cbd6c-2028-415a-a4d2-bcd09d906353}'
+                      labels:
+                        label:
+                          '@description': CreatedAt
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_creationdate
+                        '@classid': '{5b773807-9fb2-42db-97c3-7a91eff8adff}'
+                        '@datafieldname': cr96e_creationdate
+                  - cell:
+                      '@id': '{a7bde847-ff7f-4565-93c0-22dd132a8e79}'
+                      labels:
+                        label:
+                          '@description': UpdatedAt
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_lastupdatedate
+                        '@classid': '{5b773807-9fb2-42db-97c3-7a91eff8adff}'
+                        '@datafieldname': cr96e_lastupdatedate
+                  - cell:
+                      '@id': '{2aaa99d3-4f19-421a-8d54-bae0310be51c}'
+                      labels:
+                        label:
+                          '@description': AuthorName
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_authorname
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_authorname
+                  - cell:
+                      '@id': '{617fbee4-5560-4779-af4d-5fadbe753ad2}'
+                      labels:
+                        label:
+                          '@description': https://MessageUrl
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_messageurl
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_messageurl
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Information
+      '@languagecode': 1033
+  Descriptions:
+    Description:
+      '@description': A form for this entity.
+      '@languagecode': 1033

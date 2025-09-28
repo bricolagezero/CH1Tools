@@ -1,0 +1,66 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{7da88581-81bc-4e72-aa24-08516d031d29}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr96e_uploadidentifier
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr96e_fileuploadid
+        cell:
+        - '@name': cr96e_uploadidentifier
+          '@width': 300
+        - '@name': cr96e_projectidentifier
+          '@width': 150
+        - '@name': cr96e_filename
+          '@width': 150
+        - '@name': cr96e_mimetype
+          '@width': 150
+        - '@name': cr96e_filesize
+          '@width': 150
+        - '@name': cr96e_downloadurl
+          '@width': 150
+        - '@name': cr96e_uploadtimestamp
+          '@width': 150
+        - '@name': cr96e_uploadername
+          '@width': 150
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_fileupload
+        attribute:
+        - '@name': cr96e_fileuploadid
+        - '@name': cr96e_uploadidentifier
+        - '@name': createdon
+        - '@name': cr96e_projectidentifier
+        - '@name': cr96e_filename
+        - '@name': cr96e_mimetype
+        - '@name': cr96e_filesize
+        - '@name': cr96e_downloadurl
+        - '@name': cr96e_uploadtimestamp
+        - '@name': cr96e_uploadername
+        order:
+          '@attribute': cr96e_uploadidentifier
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Active File Uploads
+      '@languagecode': 1033

@@ -1,0 +1,41 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{73654788-2585-4c51-86bb-d754b4af8e30}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr96e_fullname
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr96e_employeeid
+        cell:
+        - '@name': cr96e_fullname
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 1
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_employee
+        attribute:
+        - '@name': cr96e_employeeid
+        - '@name': cr96e_fullname
+        - '@name': createdon
+        order:
+          '@attribute': cr96e_fullname
+          '@descending': false
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': CH1 Team Advanced Find View
+      '@languagecode': 1033

@@ -1,0 +1,70 @@
+systemform:
+  formid: '{0ca7d40b-08cb-472b-b43c-ef23fedb326b}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{c1bde744-7eae-4022-a5d9-192ff62745f7}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': General
+            '@languagecode': 1033
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{d52537d0-4957-4d42-b1c3-5aadcea57123}'
+                labels:
+                  label:
+                    '@description': General
+                    '@languagecode': 1033
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{c9a1e7c5-c1e9-46d4-b751-c0c26cff91fe}'
+                      labels:
+                        label:
+                          '@description': ProjectId
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_projectid
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': cr96e_projectid
+                  - cell:
+                      '@id': '{ccb17458-9901-4199-b75a-2b3b9def4723}'
+                      labels:
+                        label:
+                          '@description': Owner
+                          '@languagecode': 1033
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+                  - cell:
+                      '@id': '{5e7e56b0-2690-43be-ba2c-cf4d6af06936}'
+                      labels:
+                        label:
+                          '@description': ProjectName
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_projectname
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_projectname
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Information
+      '@languagecode': 1033
+  Descriptions:
+    Description:
+      '@description': A form for this entity.
+      '@languagecode': 1033

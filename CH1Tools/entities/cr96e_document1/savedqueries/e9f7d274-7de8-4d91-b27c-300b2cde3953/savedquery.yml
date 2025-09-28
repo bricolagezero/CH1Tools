@@ -1,0 +1,41 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{e9f7d274-7de8-4d91-b27c-300b2cde3953}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr96e_documenttitle
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr96e_document1id
+        cell:
+        - '@name': cr96e_documenttitle
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 1
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_document1
+        attribute:
+        - '@name': cr96e_document1id
+        - '@name': cr96e_documenttitle
+        - '@name': createdon
+        order:
+          '@attribute': cr96e_documenttitle
+          '@descending': false
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Document Advanced Find View
+      '@languagecode': 1033

@@ -1,0 +1,53 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 1
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{0e817845-8563-490d-a342-2f14be6bd717}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr96e_articletitle
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr96e_knowledgearticleid
+        cell:
+        - '@name': cr96e_articletitle
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 4
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_knowledgearticle
+        attribute:
+        - '@name': cr96e_knowledgearticleid
+        - '@name': cr96e_articletitle
+        - '@name': createdon
+        order:
+          '@attribute': cr96e_articletitle
+          '@descending': false
+        filter:
+        - '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+        - '@type': or
+          '@isquickfindfields': 1
+          condition:
+            '@attribute': cr96e_articletitle
+            '@operator': like
+            '@value': '{0}'
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Quick Find Active Knowledge Article
+      '@languagecode': 1033

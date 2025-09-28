@@ -1,0 +1,551 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Basecamp API",
+    "description": "Basecamp API for project management",
+    "version": "1.0"
+  },
+  "host": "3.basecampapi.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/{accountId}/buckets/{projectId}/message_boards/{boardId}/messages.json": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "List of messages",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "summary": "ListMessages",
+        "operationId": "ListMessagesFromBoard",
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The account ID"
+          },
+          {
+            "name": "projectId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The project ID"
+          },
+          {
+            "name": "boardId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The message board ID"
+          }
+        ]
+      }
+    },
+    "/{accountId}/buckets/{projectId}/vaults/{vaultId}/documents.json": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "id"
+                  },
+                  "status": {
+                    "type": "string",
+                    "description": "status"
+                  },
+                  "visible_to_clients": {
+                    "type": "boolean",
+                    "description": "visible_to_clients"
+                  },
+                  "created_at": {
+                    "type": "string",
+                    "description": "created_at"
+                  },
+                  "updated_at": {
+                    "type": "string",
+                    "description": "updated_at"
+                  },
+                  "title": {
+                    "type": "string",
+                    "description": "title"
+                  },
+                  "inherits_status": {
+                    "type": "boolean",
+                    "description": "inherits_status"
+                  },
+                  "type": {
+                    "type": "string",
+                    "description": "type"
+                  },
+                  "url": {
+                    "type": "string",
+                    "description": "url"
+                  },
+                  "app_url": {
+                    "type": "string",
+                    "description": "app_url"
+                  },
+                  "bookmark_url": {
+                    "type": "string",
+                    "description": "bookmark_url"
+                  },
+                  "subscription_url": {
+                    "type": "string",
+                    "description": "subscription_url"
+                  },
+                  "comments_count": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "comments_count"
+                  },
+                  "comments_url": {
+                    "type": "string",
+                    "description": "comments_url"
+                  },
+                  "position": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "position"
+                  },
+                  "parent": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "id"
+                      },
+                      "title": {
+                        "type": "string",
+                        "description": "title"
+                      },
+                      "type": {
+                        "type": "string",
+                        "description": "type"
+                      },
+                      "url": {
+                        "type": "string",
+                        "description": "url"
+                      },
+                      "app_url": {
+                        "type": "string",
+                        "description": "app_url"
+                      }
+                    },
+                    "description": "parent"
+                  },
+                  "bucket": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "id"
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "name"
+                      },
+                      "type": {
+                        "type": "string",
+                        "description": "type"
+                      }
+                    },
+                    "description": "bucket"
+                  },
+                  "creator": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "id"
+                      },
+                      "attachable_sgid": {
+                        "type": "string",
+                        "description": "attachable_sgid"
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "name"
+                      },
+                      "email_address": {
+                        "type": "string",
+                        "description": "email_address"
+                      },
+                      "personable_type": {
+                        "type": "string",
+                        "description": "personable_type"
+                      },
+                      "title": {
+                        "type": "string",
+                        "description": "title"
+                      },
+                      "bio": {
+                        "type": "string",
+                        "description": "bio"
+                      },
+                      "location": {
+                        "type": "string",
+                        "description": "location"
+                      },
+                      "created_at": {
+                        "type": "string",
+                        "description": "created_at"
+                      },
+                      "updated_at": {
+                        "type": "string",
+                        "description": "updated_at"
+                      },
+                      "admin": {
+                        "type": "boolean",
+                        "description": "admin"
+                      },
+                      "owner": {
+                        "type": "boolean",
+                        "description": "owner"
+                      },
+                      "client": {
+                        "type": "boolean",
+                        "description": "client"
+                      },
+                      "employee": {
+                        "type": "boolean",
+                        "description": "employee"
+                      },
+                      "time_zone": {
+                        "type": "string",
+                        "description": "time_zone"
+                      },
+                      "avatar_url": {
+                        "type": "string",
+                        "description": "avatar_url"
+                      },
+                      "company": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "integer",
+                            "format": "int32",
+                            "description": "id"
+                          },
+                          "name": {
+                            "type": "string",
+                            "description": "name"
+                          }
+                        },
+                        "description": "company"
+                      },
+                      "can_ping": {
+                        "type": "boolean",
+                        "description": "can_ping"
+                      },
+                      "can_manage_projects": {
+                        "type": "boolean",
+                        "description": "can_manage_projects"
+                      },
+                      "can_manage_people": {
+                        "type": "boolean",
+                        "description": "can_manage_people"
+                      },
+                      "can_access_timesheet": {
+                        "type": "boolean",
+                        "description": "can_access_timesheet"
+                      },
+                      "can_access_hill_charts": {
+                        "type": "boolean",
+                        "description": "can_access_hill_charts"
+                      }
+                    },
+                    "description": "creator"
+                  },
+                  "content": {
+                    "type": "string",
+                    "description": "content"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "summary": "ListDocuments",
+        "operationId": "ListDocuments",
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "projectId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "vaultId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/{accountId}/buckets/{projectId}/messages/{messageId}.json": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Get a single message",
+            "schema": {
+              "type": "object"
+            }
+          }
+        },
+        "summary": "GetMessage",
+        "operationId": "GetMessage",
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The account ID"
+          },
+          {
+            "name": "projectId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The project ID"
+          },
+          {
+            "name": "messageId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The message ID"
+          }
+        ]
+      }
+    },
+    "/{accountId}/projects.json": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "List of projects",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Project ID"
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "Project name"
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": "Project description"
+                      },
+                      "purpose": {
+                        "type": "string",
+                        "description": "Project purpose"
+                      },
+                      "clients_enabled": {
+                        "type": "boolean",
+                        "description": "Whether clients are enabled"
+                      },
+                      "bookmark_url": {
+                        "type": "string",
+                        "description": "Bookmark URL"
+                      },
+                      "url": {
+                        "type": "string",
+                        "description": "API URL"
+                      },
+                      "app_url": {
+                        "type": "string",
+                        "description": "Web app URL"
+                      },
+                      "dock": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "integer"
+                            },
+                            "title": {
+                              "type": "string"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "enabled": {
+                              "type": "boolean"
+                            },
+                            "position": {
+                              "type": "integer"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "app_url": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "bookmarked": {
+                        "type": "boolean"
+                      },
+                      "created_at": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "updated_at": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "status": {
+                        "type": "string",
+                        "enum": [
+                          "active",
+                          "archived",
+                          "trashed"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "pagination": {
+                  "type": "object",
+                  "properties": {
+                    "current_page": {
+                      "type": "integer"
+                    },
+                    "per_page": {
+                      "type": "integer"
+                    },
+                    "total_entries": {
+                      "type": "integer"
+                    },
+                    "total_pages": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "error": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "ListProjects",
+        "description": "List all projects for the account",
+        "operationId": "ListProjects",
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/{accountId}/buckets/{projectId}.json": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Get project details",
+            "schema": {
+              "type": "object"
+            }
+          }
+        },
+        "summary": "GetProject",
+        "operationId": "GetProject",
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The account ID"
+          },
+          {
+            "name": "projectId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The project ID"
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {
+    "oauth2-auth": {
+      "type": "oauth2",
+      "flow": "accessCode",
+      "authorizationUrl": "https://launchpad.37signals.com/authorization/new",
+      "tokenUrl": "https://launchpad.37signals.com/authorization/token",
+      "scopes": {}
+    }
+  },
+  "security": [
+    {
+      "oauth2-auth": []
+    }
+  ],
+  "tags": []
+}

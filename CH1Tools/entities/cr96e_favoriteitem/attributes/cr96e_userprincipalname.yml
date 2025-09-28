@@ -1,0 +1,41 @@
+attribute:
+  '@PhysicalName': cr96e_userprincipalname
+  Type: nvarchar
+  Name: cr96e_userprincipalname
+  LogicalName: cr96e_userprincipalname
+  RequiredLevel: none
+  DisplayMask: ValidForForm|ValidForGrid
+  ImeMode: auto
+  ValidForUpdateApi: 1
+  ValidForReadApi: 1
+  ValidForCreateApi: 1
+  IsCustomField: 1
+  IsAuditEnabled: 1
+  IsSecured: 0
+  IntroducedVersion: 1.0
+  IsCustomizable: 1
+  IsRenameable: 1
+  CanModifySearchSettings: 1
+  CanModifyRequirementLevelSettings: 1
+  CanModifyAdditionalSettings: 1
+  SourceType: 0
+  IsGlobalFilterEnabled: 0
+  IsSortableEnabled: 0
+  CanModifyGlobalFilterSettings: 1
+  CanModifyIsSortableSettings: 1
+  IsDataSourceSecret: 0
+  IsSearchable: 0
+  IsFilterable: 0
+  IsRetrievable: 0
+  IsLocalizable: 0
+  Format: email
+  MaxLength: 100
+  Length: 200
+  displaynames:
+    displayname:
+      '@description': UserPrincipalName
+      '@languagecode': 1033
+  Descriptions:
+    Description:
+      '@description': Email address of the user who favorited the item
+      '@languagecode': 1033

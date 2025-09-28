@@ -1,0 +1,44 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{ffa961bb-3539-48a3-87aa-1ba6a5a83fa8}'
+  layoutxml:
+    grid:
+      '@name': cr96e_employees
+      '@jump': cr96e_fullname
+      '@select': 1
+      '@icon': 1
+      '@preview': 0
+      row:
+        '@name': cr96e_employee
+        '@id': cr96e_employeeid
+        cell:
+        - '@name': cr96e_fullname
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 64
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_employee
+        attribute:
+        - '@name': cr96e_employeeid
+        - '@name': cr96e_fullname
+        - '@name': createdon
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': CH1 Team Lookup View
+      '@languagecode': 1033

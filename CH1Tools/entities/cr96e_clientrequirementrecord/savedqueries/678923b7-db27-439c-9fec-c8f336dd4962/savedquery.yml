@@ -1,0 +1,66 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{678923b7-db27-439c-9fec-c8f336dd4962}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr96e_clientname
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr96e_clientrequirementrecordid
+        cell:
+        - '@name': cr96e_clientname
+          '@width': 300
+        - '@name': cr96e_recordidentifier
+          '@width': 150
+        - '@name': cr96e_informationtype
+          '@width': 150
+        - '@name': cr96e_requirementdescription
+          '@width': 150
+        - '@name': cr96e_additionaldetails
+          '@width': 150
+        - '@name': cr96e_sheetname
+          '@width': 150
+        - '@name': cr96e_sourcefile
+          '@width': 150
+        - '@name': cr96e_isactive
+          '@width': 150
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_clientrequirementrecord
+        attribute:
+        - '@name': cr96e_clientrequirementrecordid
+        - '@name': cr96e_clientname
+        - '@name': createdon
+        - '@name': cr96e_recordidentifier
+        - '@name': cr96e_informationtype
+        - '@name': cr96e_requirementdescription
+        - '@name': cr96e_additionaldetails
+        - '@name': cr96e_sheetname
+        - '@name': cr96e_sourcefile
+        - '@name': cr96e_isactive
+        order:
+          '@attribute': cr96e_clientname
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Active Client Requirement Record
+      '@languagecode': 1033

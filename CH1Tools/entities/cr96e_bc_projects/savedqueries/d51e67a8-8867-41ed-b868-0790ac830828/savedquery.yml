@@ -1,0 +1,41 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{d51e67a8-8867-41ed-b868-0790ac830828}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr96e_projectid
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr96e_bc_projectsid
+        cell:
+        - '@name': cr96e_projectid
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 1
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_bc_projects
+        attribute:
+        - '@name': cr96e_bc_projectsid
+        - '@name': cr96e_projectid
+        - '@name': createdon
+        order:
+          '@attribute': cr96e_projectid
+          '@descending': false
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': BC_Projects Advanced Find View
+      '@languagecode': 1033

@@ -1,0 +1,47 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 0
+  savedqueryid: '{a4ab70c1-966a-4f2d-bc01-ea069d59f211}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr96e_clientname
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr96e_clientrequirementrecordid
+        cell:
+        - '@name': cr96e_clientname
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_clientrequirementrecord
+        attribute:
+        - '@name': cr96e_clientrequirementrecordid
+        - '@name': cr96e_clientname
+        - '@name': createdon
+        order:
+          '@attribute': cr96e_clientname
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 1
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Inactive Client Requirement Record
+      '@languagecode': 1033

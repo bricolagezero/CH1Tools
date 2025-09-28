@@ -1,0 +1,34 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{5d6a3a0d-ec8f-f011-b4cc-000d3a3be908}'
+  querytype: 8192
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      '@output-format': xml-platform
+      entity:
+        '@name': cr96e_fileupload
+        attribute:
+          '@name': cr96e_fileuploadid
+        filter:
+          '@type': and
+          condition:
+          - '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+          - '@attribute': ownerid
+            '@operator': eq-userid
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': My File Uploads
+      '@languagecode': 1033
+  Descriptions:
+    Description:
+      '@description': Active File Uploads owned by me
+      '@languagecode': 1033

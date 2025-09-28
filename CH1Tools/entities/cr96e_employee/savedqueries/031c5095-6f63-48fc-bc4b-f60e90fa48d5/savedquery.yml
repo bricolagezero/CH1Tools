@@ -1,0 +1,87 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{031c5095-6f63-48fc-bc4b-f60e90fa48d5}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr96e_fullname
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr96e_employeeid
+        cell:
+        - '@name': cr96e_fullname
+          '@width': 300
+        - '@name': cr96e_employeeid1
+          '@width': 150
+        - '@name': cr96e_firstname
+          '@width': 150
+        - '@name': cr96e_lastname
+          '@width': 150
+        - '@name': cr96e_jobtitle
+          '@width': 150
+        - '@name': cr96e_department
+          '@width': 150
+        - '@name': cr96e_emailaddress
+          '@width': 150
+        - '@name': cr96e_phonenumber
+          '@width': 150
+        - '@name': cr96e_streetaddress
+          '@width': 150
+        - '@name': cr96e_city
+          '@width': 150
+        - '@name': cr96e_state
+          '@width': 150
+        - '@name': cr96e_postalcode
+          '@width': 150
+        - '@name': cr96e_country
+          '@width': 150
+        - '@name': cr96e_headshotfilename
+          '@width': 150
+        - '@name': cr96e_headshotdownloadlink
+          '@width': 150
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_employee
+        attribute:
+        - '@name': cr96e_employeeid
+        - '@name': cr96e_fullname
+        - '@name': createdon
+        - '@name': cr96e_employeeid1
+        - '@name': cr96e_firstname
+        - '@name': cr96e_lastname
+        - '@name': cr96e_jobtitle
+        - '@name': cr96e_department
+        - '@name': cr96e_emailaddress
+        - '@name': cr96e_phonenumber
+        - '@name': cr96e_streetaddress
+        - '@name': cr96e_city
+        - '@name': cr96e_state
+        - '@name': cr96e_postalcode
+        - '@name': cr96e_country
+        - '@name': cr96e_headshotfilename
+        - '@name': cr96e_headshotdownloadlink
+        order:
+          '@attribute': cr96e_fullname
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Active CH1 Team
+      '@languagecode': 1033

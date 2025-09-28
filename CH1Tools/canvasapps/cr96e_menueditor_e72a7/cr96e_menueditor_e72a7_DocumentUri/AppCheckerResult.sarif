@@ -1,0 +1,496 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.4.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0,
+          "message": {
+            "id": "issue"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.SidebarContainer1.SearchContainer1.SearchInput1.AccessibleLabel"
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.SidebarContainer1.SearchContainer1.SearchInput1.AccessibleLabel"
+                }
+              ],
+              "properties": {
+                "module": "MenuItemses screen",
+                "type": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.SidebarContainer1.SearchContainer1.SearchInput1",
+                "member": "AccessibleLabel"
+              }
+            }
+          ],
+          "properties": {
+            "level": "Medium"
+          }
+        },
+        {
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0,
+          "message": {
+            "id": "issue"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.SidebarContainer1.NewRecordButtonBarContainer1.NewRecordAddIcon1.AccessibleLabel"
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.SidebarContainer1.NewRecordButtonBarContainer1.NewRecordAddIcon1.AccessibleLabel"
+                }
+              ],
+              "properties": {
+                "module": "MenuItemses screen",
+                "type": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.SidebarContainer1.NewRecordButtonBarContainer1.NewRecordAddIcon1",
+                "member": "AccessibleLabel"
+              }
+            }
+          ],
+          "properties": {
+            "level": "Medium"
+          }
+        },
+        {
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1,
+          "message": {
+            "id": "issue"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.SidebarContainer1.NewRecordButtonBarContainer1.NewRecordAddIcon1.TabIndex"
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.SidebarContainer1.NewRecordButtonBarContainer1.NewRecordAddIcon1.TabIndex"
+                }
+              ],
+              "properties": {
+                "module": "MenuItemses screen",
+                "type": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.SidebarContainer1.NewRecordButtonBarContainer1.NewRecordAddIcon1",
+                "member": "TabIndex"
+              }
+            }
+          ],
+          "properties": {
+            "level": "Medium"
+          }
+        },
+        {
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0,
+          "message": {
+            "id": "issue"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.AccessibleLabel"
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.AccessibleLabel"
+                }
+              ],
+              "properties": {
+                "module": "MenuItemses screen",
+                "type": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1",
+                "member": "AccessibleLabel"
+              }
+            }
+          ],
+          "properties": {
+            "level": "Medium"
+          }
+        },
+        {
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1,
+          "message": {
+            "id": "issue"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.TabIndex"
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1.TabIndex"
+                }
+              ],
+              "properties": {
+                "module": "MenuItemses screen",
+                "type": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.SidebarContainer1.RecordsGallery1",
+                "member": "TabIndex"
+              }
+            }
+          ],
+          "properties": {
+            "level": "Medium"
+          }
+        },
+        {
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0,
+          "message": {
+            "id": "issue"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.BackIconButton1.AccessibleLabel"
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.BackIconButton1.AccessibleLabel"
+                }
+              ],
+              "properties": {
+                "module": "MenuItemses screen",
+                "type": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.BackIconButton1",
+                "member": "AccessibleLabel"
+              }
+            }
+          ],
+          "properties": {
+            "level": "Medium"
+          }
+        },
+        {
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0,
+          "message": {
+            "id": "issue"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.SubmitFormButton1.AccessibleLabel"
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.SubmitFormButton1.AccessibleLabel"
+                }
+              ],
+              "properties": {
+                "module": "MenuItemses screen",
+                "type": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.SubmitFormButton1",
+                "member": "AccessibleLabel"
+              }
+            }
+          ],
+          "properties": {
+            "level": "Medium"
+          }
+        },
+        {
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0,
+          "message": {
+            "id": "issue"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.ResetFormButton1.AccessibleLabel"
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.ResetFormButton1.AccessibleLabel"
+                }
+              ],
+              "properties": {
+                "module": "MenuItemses screen",
+                "type": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.ResetFormButton1",
+                "member": "AccessibleLabel"
+              }
+            }
+          ],
+          "properties": {
+            "level": "Medium"
+          }
+        },
+        {
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0,
+          "message": {
+            "id": "issue"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.EditIconButton1.AccessibleLabel"
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.EditIconButton1.AccessibleLabel"
+                }
+              ],
+              "properties": {
+                "module": "MenuItemses screen",
+                "type": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.SelectedRecordHeaderContainer1.EditIconButton1",
+                "member": "AccessibleLabel"
+              }
+            }
+          ],
+          "properties": {
+            "level": "Medium"
+          }
+        },
+        {
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0,
+          "message": {
+            "id": "issue"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.Title_DataCard1.DataCardValue1.AccessibleLabel"
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.Title_DataCard1.DataCardValue1.AccessibleLabel"
+                }
+              ],
+              "properties": {
+                "module": "MenuItemses screen",
+                "type": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.Title_DataCard1.DataCardValue1",
+                "member": "AccessibleLabel"
+              }
+            }
+          ],
+          "properties": {
+            "level": "Medium"
+          }
+        },
+        {
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0,
+          "message": {
+            "id": "issue"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.ScreenName_DataCard1.DataCardValue2.AccessibleLabel"
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.ScreenName_DataCard1.DataCardValue2.AccessibleLabel"
+                }
+              ],
+              "properties": {
+                "module": "MenuItemses screen",
+                "type": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.ScreenName_DataCard1.DataCardValue2",
+                "member": "AccessibleLabel"
+              }
+            }
+          ],
+          "properties": {
+            "level": "Medium"
+          }
+        },
+        {
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0,
+          "message": {
+            "id": "issue"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.Description_DataCard1.DataCardValue3.AccessibleLabel"
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.Description_DataCard1.DataCardValue3.AccessibleLabel"
+                }
+              ],
+              "properties": {
+                "module": "MenuItemses screen",
+                "type": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.Description_DataCard1.DataCardValue3",
+                "member": "AccessibleLabel"
+              }
+            }
+          ],
+          "properties": {
+            "level": "Medium"
+          }
+        },
+        {
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0,
+          "message": {
+            "id": "issue"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.Image_DataCard1.AddPicture1.AccessibleLabel"
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.Image_DataCard1.AddPicture1.AccessibleLabel"
+                }
+              ],
+              "properties": {
+                "module": "MenuItemses screen",
+                "type": "'MenuItemses screen'.ScreenContainer1.BodyContainer1.RightContainer1.MainContainer1.Form1.Image_DataCard1.AddPicture1",
+                "member": "AccessibleLabel"
+              }
+            }
+          ],
+          "properties": {
+            "level": "Medium"
+          }
+        },
+        {
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 2,
+          "message": {
+            "id": "issue"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "'MenuItemses screen'.deleteCancelled"
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MenuItemses screen'.deleteCancelled"
+                }
+              ],
+              "properties": {
+                "module": "MenuItemses screen",
+                "type": "'MenuItemses screen'",
+                "member": "deleteCancelled"
+              }
+            }
+          ],
+          "properties": {
+            "level": "Medium"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PowerApps app checker",
+          "fullName": "PowerApps app checker",
+          "version": "1.346",
+          "rules": [
+            {
+              "id": "acc-AccessibleLabelNeeded",
+              "messageStrings": {
+                "issue": {
+                  "text": "Missing accessible label"
+                }
+              },
+              "properties": {
+                "howToFix": [
+                  "Edit the accessible label property to describe the item."
+                ],
+                "whyFix": "If there's no accessible text, people who can’t see the screen won't understand what’s in images and controls.",
+                "level": "Medium",
+                "componentType": "app",
+                "primaryCategory": "accessibility"
+              }
+            },
+            {
+              "id": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+              "messageStrings": {
+                "issue": {
+                  "text": "Missing tab stop"
+                }
+              },
+              "properties": {
+                "howToFix": [
+                  "Set TabIndex to 0 or greater to ensure that interactive elements have a tab stop."
+                ],
+                "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop.",
+                "level": "Medium",
+                "componentType": "app",
+                "primaryCategory": "accessibility"
+              }
+            },
+            {
+              "id": "app-UnusedVariables",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unused variable"
+                }
+              },
+              "properties": {
+                "howToFix": [
+                  "Remove the unused variable."
+                ],
+                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed.",
+                "componentType": "app",
+                "primaryCategory": "performance",
+                "level": "Medium"
+              }
+            }
+          ]
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "columnKind": "utf16CodeUnits"
+    }
+  ]
+}

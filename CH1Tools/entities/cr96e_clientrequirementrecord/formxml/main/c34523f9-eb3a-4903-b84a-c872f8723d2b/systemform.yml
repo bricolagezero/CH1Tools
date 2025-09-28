@@ -1,0 +1,130 @@
+systemform:
+  formid: '{c34523f9-eb3a-4903-b84a-c872f8723d2b}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{b23c1fd5-ee52-4806-becd-cf16300007bb}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': General
+            '@languagecode': 1033
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{514b74ce-6816-4069-bc38-78c8548b29aa}'
+                labels:
+                  label:
+                    '@description': General
+                    '@languagecode': 1033
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{a80a2c8b-600d-4db6-a077-605a94593a81}'
+                      labels:
+                        label:
+                          '@description': Client
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_clientname
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': cr96e_clientname
+                  - cell:
+                      '@id': '{2cfdf11d-bdd8-42c6-9310-bc215369daa3}'
+                      labels:
+                        label:
+                          '@description': Owner
+                          '@languagecode': 1033
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+                  - cell:
+                      '@id': '{ed2cf582-092e-470a-81c3-a27226cd2773}'
+                      labels:
+                        label:
+                          '@description': RecordId
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_recordidentifier
+                        '@classid': '{c6d124ca-7eda-4a60-aea9-7fb8d318b68f}'
+                        '@datafieldname': cr96e_recordidentifier
+                  - cell:
+                      '@id': '{1162cae6-d4da-4404-ac5a-38b00ced8c69}'
+                      labels:
+                        label:
+                          '@description': InformationType
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_informationtype
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_informationtype
+                  - cell:
+                      '@id': '{0312925c-f3d8-4484-b541-d584100cc849}'
+                      labels:
+                        label:
+                          '@description': Requirement
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_requirementdescription
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_requirementdescription
+                  - cell:
+                      '@id': '{ce1a63d6-7e7c-46fe-bedb-1c9a9f766570}'
+                      labels:
+                        label:
+                          '@description': Details
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_additionaldetails
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_additionaldetails
+                  - cell:
+                      '@id': '{ced764de-d6ca-429a-902d-d711c52565eb}'
+                      labels:
+                        label:
+                          '@description': Sheet
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_sheetname
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_sheetname
+                  - cell:
+                      '@id': '{9cf3b66f-2bb7-4405-a3e5-aaf2a6a4fae9}'
+                      labels:
+                        label:
+                          '@description': SourceFile
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_sourcefile
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_sourcefile
+                  - cell:
+                      '@id': '{550e8a12-a5b8-4c3b-9881-15765bad7951}'
+                      labels:
+                        label:
+                          '@description': Active
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_isactive
+                        '@classid': '{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}'
+                        '@datafieldname': cr96e_isactive
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Information
+      '@languagecode': 1033
+  Descriptions:
+    Description:
+      '@description': A form for this entity.
+      '@languagecode': 1033

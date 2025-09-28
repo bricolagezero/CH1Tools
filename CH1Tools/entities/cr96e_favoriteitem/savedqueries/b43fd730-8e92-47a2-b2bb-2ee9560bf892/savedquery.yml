@@ -1,0 +1,53 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 1
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{b43fd730-8e92-47a2-b2bb-2ee9560bf892}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr96e_favoriteidentifier
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr96e_favoriteitemid
+        cell:
+        - '@name': cr96e_favoriteidentifier
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 4
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_favoriteitem
+        attribute:
+        - '@name': cr96e_favoriteitemid
+        - '@name': cr96e_favoriteidentifier
+        - '@name': createdon
+        order:
+          '@attribute': cr96e_favoriteidentifier
+          '@descending': false
+        filter:
+        - '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+        - '@type': or
+          '@isquickfindfields': 1
+          condition:
+            '@attribute': cr96e_favoriteidentifier
+            '@operator': like
+            '@value': '{0}'
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Quick Find Active Favorite Item
+      '@languagecode': 1033

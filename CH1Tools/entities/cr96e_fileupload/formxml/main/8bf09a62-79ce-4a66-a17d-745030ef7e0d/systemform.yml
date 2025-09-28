@@ -1,0 +1,130 @@
+systemform:
+  formid: '{8bf09a62-79ce-4a66-a17d-745030ef7e0d}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{8c7790bc-7e7f-49f9-bf25-c4e35c101c9e}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': General
+            '@languagecode': 1033
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{a3945fd3-3456-47db-ac57-69ae45102473}'
+                labels:
+                  label:
+                    '@description': General
+                    '@languagecode': 1033
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{476c8e85-04db-4036-b3aa-e9c135c07740}'
+                      labels:
+                        label:
+                          '@description': UploadId
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_uploadidentifier
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': cr96e_uploadidentifier
+                  - cell:
+                      '@id': '{50db4b83-77c4-4b8a-b803-ab6669867e05}'
+                      labels:
+                        label:
+                          '@description': Owner
+                          '@languagecode': 1033
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+                  - cell:
+                      '@id': '{16830fad-b0c0-48d1-afb1-52be7f4411ec}'
+                      labels:
+                        label:
+                          '@description': ProjectId
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_projectidentifier
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_projectidentifier
+                  - cell:
+                      '@id': '{19016688-109d-4f24-bd3c-011a00b6edea}'
+                      labels:
+                        label:
+                          '@description': FileName
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_filename
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_filename
+                  - cell:
+                      '@id': '{6a2769a7-f38f-47dc-ada9-fd53fc276ca2}'
+                      labels:
+                        label:
+                          '@description': MimeType
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_mimetype
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_mimetype
+                  - cell:
+                      '@id': '{85f6a7d3-44a2-493f-82b7-ae2d925cc0dd}'
+                      labels:
+                        label:
+                          '@description': Size
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_filesize
+                        '@classid': '{c6d124ca-7eda-4a60-aea9-7fb8d318b68f}'
+                        '@datafieldname': cr96e_filesize
+                  - cell:
+                      '@id': '{1c59dae5-bd2c-4e12-b214-ba8e69424c40}'
+                      labels:
+                        label:
+                          '@description': https://DownloadUrl
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_downloadurl
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_downloadurl
+                  - cell:
+                      '@id': '{97def6e8-90e7-4025-b2af-021610ff80b9}'
+                      labels:
+                        label:
+                          '@description': UploadedAt
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_uploadtimestamp
+                        '@classid': '{5b773807-9fb2-42db-97c3-7a91eff8adff}'
+                        '@datafieldname': cr96e_uploadtimestamp
+                  - cell:
+                      '@id': '{afe72a39-29a4-49d2-a39b-0d7dc7dc39ad}'
+                      labels:
+                        label:
+                          '@description': UploaderName
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_uploadername
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_uploadername
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Information
+      '@languagecode': 1033
+  Descriptions:
+    Description:
+      '@description': A form for this entity.
+      '@languagecode': 1033

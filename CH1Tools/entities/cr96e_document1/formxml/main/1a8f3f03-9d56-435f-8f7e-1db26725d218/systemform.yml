@@ -1,0 +1,130 @@
+systemform:
+  formid: '{1a8f3f03-9d56-435f-8f7e-1db26725d218}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{f2aa0a19-c370-49a7-8757-bc3f6fb61c70}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': General
+            '@languagecode': 1033
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{29b5f0b7-2954-4a60-8761-d86c738a0f2e}'
+                labels:
+                  label:
+                    '@description': General
+                    '@languagecode': 1033
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{8a7fe423-1404-49ed-9e1d-e51092463ca3}'
+                      labels:
+                        label:
+                          '@description': Title
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_documenttitle
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': cr96e_documenttitle
+                  - cell:
+                      '@id': '{7d41c8ca-70c9-44d2-a38d-8851ff73669d}'
+                      labels:
+                        label:
+                          '@description': Owner
+                          '@languagecode': 1033
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+                  - cell:
+                      '@id': '{071e12bd-08c5-487a-a42a-fecb8e52298f}'
+                      labels:
+                        label:
+                          '@description': DocumentId
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_documentidentifier
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_documentidentifier
+                  - cell:
+                      '@id': '{11000657-bc34-4205-87e3-190f0fba6850}'
+                      labels:
+                        label:
+                          '@description': ProjectId
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_projectidentifier
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_projectidentifier
+                  - cell:
+                      '@id': '{e002e340-95ea-4dd4-8e75-8ef9b3e15f44}'
+                      labels:
+                        label:
+                          '@description': ContentHtml
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_htmlcontent
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_htmlcontent
+                  - cell:
+                      '@id': '{0749f9bc-d142-468c-b26c-215e14fd5433}'
+                      labels:
+                        label:
+                          '@description': CreatedAt
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_creationdate
+                        '@classid': '{5b773807-9fb2-42db-97c3-7a91eff8adff}'
+                        '@datafieldname': cr96e_creationdate
+                  - cell:
+                      '@id': '{8579da79-0463-4d12-8264-a0829fbe4d04}'
+                      labels:
+                        label:
+                          '@description': UpdatedAt
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_lastupdateddate
+                        '@classid': '{5b773807-9fb2-42db-97c3-7a91eff8adff}'
+                        '@datafieldname': cr96e_lastupdateddate
+                  - cell:
+                      '@id': '{9e270a80-7240-4e19-8677-4a0f6cd405df}'
+                      labels:
+                        label:
+                          '@description': AuthorName
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_authorname
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_authorname
+                  - cell:
+                      '@id': '{d22a2422-49ab-488c-a96a-df26b93be96e}'
+                      labels:
+                        label:
+                          '@description': https://DocumentUrl
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_documenturl
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_documenturl
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Information
+      '@languagecode': 1033
+  Descriptions:
+    Description:
+      '@description': A form for this entity.
+      '@languagecode': 1033

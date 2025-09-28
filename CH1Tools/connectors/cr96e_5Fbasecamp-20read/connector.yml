@@ -1,0 +1,13 @@
+Connector:
+  connectorid: c2aefb4d-5de7-4e3e-a6bd-edf402b21a8a
+  description: Basecamp API for project management
+  displayname: Basecamp Read
+  iconbrandcolor: '#007ee5'
+  name: cr96e_5Fbasecamp-20read
+  connectortype: 1
+  scriptoperations: '["ListDocuments","ListProjects"]'
+  openapidefinition: /connectors/cr96e_5Fbasecamp-20read/cr96e_5Fbasecamp-20read_openapidefinition.json
+  connectionparameters: /connectors/cr96e_5Fbasecamp-20read/cr96e_5Fbasecamp-20read_connectionparameters.json
+  policytemplateinstances: /connectors/cr96e_5Fbasecamp-20read/cr96e_5Fbasecamp-20read_policytemplateinstances.json
+  customcodeblobcontent: /connectors/cr96e_5Fbasecamp-20read/cr96e_5Fbasecamp-20read_customcodeblobcontent.csx
+  iconblob: /connectors/cr96e_5Fbasecamp-20read/cr96e_5Fbasecamp-20read_iconblob.Png

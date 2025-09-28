@@ -1,0 +1,64 @@
+{
+  "QualifiedValues": [
+    {
+      "Namespace": "Favorite Item (Forms)",
+      "Kind": "default.cds_cr96e_favoriteitem_forms",
+      "Values": {
+        "Information": "a78f4761-9c48-4e7d-bfa6-ed2122b13703"
+      }
+    },
+    {
+      "Namespace": "Knowledge Article (Forms)",
+      "Kind": "default.cds_cr96e_knowledgearticle_forms",
+      "Values": {
+        "Information": "20efadee-785e-4918-a038-a423bb07cd88"
+      }
+    },
+    {
+      "Namespace": "Employee (Forms)",
+      "Kind": "default.cds_cr96e_employee_forms",
+      "Values": {
+        "Information": "a5d178ed-9ae4-4184-a856-f27ab39b58b3"
+      }
+    },
+    {
+      "Namespace": "MenuItemses (Forms)",
+      "Kind": "default.cds_cr96e_menuitems_forms",
+      "Values": {
+        "Information": "246d8b66-e1e5-48a6-9a6f-f5f9da087612"
+      }
+    },
+    {
+      "Namespace": "Document (Forms)",
+      "Kind": "default.cds_cr96e_document_forms",
+      "Values": {
+        "Information": "ebcd84ce-5d3f-4a9f-be2b-bf23d5e9c767"
+      }
+    },
+    {
+      "Namespace": "Content Section (Forms)",
+      "Kind": "default.cds_cr96e_contentsection_forms",
+      "Values": {
+        "Information": "3745e2ea-8cf9-4734-b4e6-b651e47ffd2a"
+      }
+    },
+    {
+      "Namespace": "Users (Forms)",
+      "Kind": "default.cds_systemuser_forms",
+      "Values": {
+        "User": "c2cd9e55-d4b4-4b55-9951-16ead79643e5",
+        "Information": "094fb08a-77bb-49e0-b7ea-8dbddfd01294",
+        "User Hierarchy Tile Form": "c68d6c09-d7a7-4959-8d0f-44b8cff9b452",
+        "User form – Business": "c2413504-7eb2-4c59-a087-95d819866114",
+        "Application User": "d26924ef-4d80-46f7-ab1d-e6ae80a54ce8"
+      }
+    },
+    {
+      "Namespace": "Note (Forms)",
+      "Kind": "default.cds_cr96e_note_forms",
+      "Values": {
+        "Information": "0cc46ee1-ce16-4087-81a2-a9c17d10f187"
+      }
+    }
+  ]
+}

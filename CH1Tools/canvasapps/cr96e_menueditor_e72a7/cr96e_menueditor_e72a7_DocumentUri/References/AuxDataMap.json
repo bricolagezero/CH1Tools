@@ -1,0 +1,3 @@
+{
+  "AppFromDataMetaDataIdsToEntityNameMappings": "{\"%DataSourceName.AFD%\":\"MenuItemses\",\"%DataSourceValue.AFD%\":\"[@MenuItemses]\",\"%SortFieldName.AFD%\":\"\\\"cr96e_description\\\"\",\"%FilterFieldName.AFD%\":\"cr96e_description\",\"%PrimaryNameField.AFD%\":\"cr96e_title\",\"%PrimaryNameFieldDisplayName.AFD%\":\"'Title'\",\"%SearchFieldName.AFD%\":\"cr96e_description,cr96e_screenname,cr96e_title\",\"%StartsWithFieldName.AFD%\":\"cr96e_description\",\"%DeleteConfirmFieldName.AFD%\":\"cr96e_description\",\"%SortDescending.AFD%\":\"SortDescending1\",\"%CopilotSinglePageScreen.ID%\":\"'MenuItemses screen'\",\"%BrowseContainer.ID%\":\"BrowseGallery1\",\"%DetailEditContainer.ID%\":\"EditForm1\"}"
+}

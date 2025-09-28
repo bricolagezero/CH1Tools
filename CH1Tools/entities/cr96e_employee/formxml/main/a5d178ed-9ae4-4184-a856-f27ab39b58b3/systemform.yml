@@ -1,0 +1,200 @@
+systemform:
+  formid: '{a5d178ed-9ae4-4184-a856-f27ab39b58b3}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{549950a9-deb6-4cd9-aae9-6a0e04e9ca5f}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': General
+            '@languagecode': 1033
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{23cd8cb5-218d-4943-8f75-67abae78aeb3}'
+                labels:
+                  label:
+                    '@description': General
+                    '@languagecode': 1033
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{bf417f5f-6839-4d54-97c6-d09ffc8bb88a}'
+                      labels:
+                        label:
+                          '@description': FullName
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_fullname
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': cr96e_fullname
+                  - cell:
+                      '@id': '{34546afe-41b0-429f-aa36-5ae35ca88365}'
+                      labels:
+                        label:
+                          '@description': Owner
+                          '@languagecode': 1033
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+                  - cell:
+                      '@id': '{2ae2dea4-d491-4aa6-96d8-90696b5c8d41}'
+                      labels:
+                        label:
+                          '@description': EmployeeID
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_employeeid1
+                        '@classid': '{c6d124ca-7eda-4a60-aea9-7fb8d318b68f}'
+                        '@datafieldname': cr96e_employeeid1
+                  - cell:
+                      '@id': '{5c78bbd1-1fac-495d-aea0-e167fc97387e}'
+                      labels:
+                        label:
+                          '@description': FirstName
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_firstname
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_firstname
+                  - cell:
+                      '@id': '{cbefb48b-1b2b-4bf9-a39e-0acd2148259e}'
+                      labels:
+                        label:
+                          '@description': LastName
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_lastname
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_lastname
+                  - cell:
+                      '@id': '{6519bc47-dc68-4f04-aefa-b72bd8d37869}'
+                      labels:
+                        label:
+                          '@description': Title
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_jobtitle
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_jobtitle
+                  - cell:
+                      '@id': '{261db236-a8ac-43bc-9b96-805b462b9960}'
+                      labels:
+                        label:
+                          '@description': Department
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_department
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_department
+                  - cell:
+                      '@id': '{90b98a38-f3c8-41ee-bd12-bf7eb730e03f}'
+                      labels:
+                        label:
+                          '@description': Email
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_emailaddress
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_emailaddress
+                  - cell:
+                      '@id': '{2bf85b3f-5a84-483a-96bf-2a47f3a72ab2}'
+                      labels:
+                        label:
+                          '@description': Phone
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_phonenumber
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_phonenumber
+                  - cell:
+                      '@id': '{209b7622-0853-4528-aae8-e291d8744c69}'
+                      labels:
+                        label:
+                          '@description': Address
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_streetaddress
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_streetaddress
+                  - cell:
+                      '@id': '{549b3857-8c54-4373-9ab1-d72e533d9f3c}'
+                      labels:
+                        label:
+                          '@description': City
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_city
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_city
+                  - cell:
+                      '@id': '{968fb2b6-0b65-454b-bacf-d5d816c33fb4}'
+                      labels:
+                        label:
+                          '@description': State
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_state
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_state
+                  - cell:
+                      '@id': '{f4c919ed-79fd-43fe-8356-4374ccacebf4}'
+                      labels:
+                        label:
+                          '@description': PostalCode
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_postalcode
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_postalcode
+                  - cell:
+                      '@id': '{58f9283d-bc63-43e5-95a1-5081425db03b}'
+                      labels:
+                        label:
+                          '@description': Country
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_country
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_country
+                  - cell:
+                      '@id': '{a8f8ba40-ac55-482c-880c-96150b0efb3a}'
+                      labels:
+                        label:
+                          '@description': HeadshotFile
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_headshotfilename
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_headshotfilename
+                  - cell:
+                      '@id': '{636ba842-5618-4977-9523-124829697dd1}'
+                      labels:
+                        label:
+                          '@description': DownloadLink
+                          '@languagecode': 1033
+                      control:
+                        '@id': cr96e_headshotdownloadlink
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr96e_headshotdownloadlink
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Information
+      '@languagecode': 1033
+  Descriptions:
+    Description:
+      '@description': A form for this entity.
+      '@languagecode': 1033

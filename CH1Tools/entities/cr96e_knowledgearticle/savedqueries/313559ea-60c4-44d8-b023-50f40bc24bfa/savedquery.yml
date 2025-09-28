@@ -1,0 +1,44 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{313559ea-60c4-44d8-b023-50f40bc24bfa}'
+  layoutxml:
+    grid:
+      '@name': cr96e_knowledgearticles
+      '@jump': cr96e_articletitle
+      '@select': 1
+      '@icon': 1
+      '@preview': 0
+      row:
+        '@name': cr96e_knowledgearticle
+        '@id': cr96e_knowledgearticleid
+        cell:
+        - '@name': cr96e_articletitle
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 64
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_knowledgearticle
+        attribute:
+        - '@name': cr96e_knowledgearticleid
+        - '@name': cr96e_articletitle
+        - '@name': createdon
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Knowledge Article Lookup View
+      '@languagecode': 1033

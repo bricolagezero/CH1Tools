@@ -1,0 +1,11 @@
+EntityKey:
+  Name: cr96e_DocumentId
+  LogicalName: cr96e_documentid
+  IntroducedVersion: 1.0.0.0
+  IsCustomizable: 0
+  EntityKeyAttributes:
+    AttributeName: cr96e_documentidentifier
+  displaynames:
+    displayname:
+      '@description': DocumentId
+      '@languagecode': 1033

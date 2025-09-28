@@ -1,0 +1,11 @@
+EntityKey:
+  Name: cr96e_ProjectId
+  LogicalName: cr96e_projectid
+  IntroducedVersion: 1.0.0.0
+  IsCustomizable: 0
+  EntityKeyAttributes:
+    AttributeName: cr96e_projectid
+  displaynames:
+    displayname:
+      '@description': ProjectId
+      '@languagecode': 1033

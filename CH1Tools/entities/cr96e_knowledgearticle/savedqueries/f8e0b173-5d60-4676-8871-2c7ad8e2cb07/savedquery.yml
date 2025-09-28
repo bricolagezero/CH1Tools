@@ -1,0 +1,72 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{f8e0b173-5d60-4676-8871-2c7ad8e2cb07}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr96e_articletitle
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr96e_knowledgearticleid
+        cell:
+        - '@name': cr96e_articletitle
+          '@width': 300
+        - '@name': cr96e_articleidentifier
+          '@width': 150
+        - '@name': cr96e_articlecategory
+          '@width': 150
+        - '@name': cr96e_articledescription
+          '@width': 150
+        - '@name': cr96e_articlecontenthtml
+          '@width': 150
+        - '@name': cr96e_authorname
+          '@width': 150
+        - '@name': cr96e_creationdate
+          '@width': 150
+        - '@name': cr96e_lasteditor
+          '@width': 150
+        - '@name': cr96e_lastediteddate
+          '@width': 150
+        - '@name': cr96e_publishedstatus
+          '@width': 150
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_knowledgearticle
+        attribute:
+        - '@name': cr96e_knowledgearticleid
+        - '@name': cr96e_articletitle
+        - '@name': createdon
+        - '@name': cr96e_articleidentifier
+        - '@name': cr96e_articlecategory
+        - '@name': cr96e_articledescription
+        - '@name': cr96e_articlecontenthtml
+        - '@name': cr96e_authorname
+        - '@name': cr96e_creationdate
+        - '@name': cr96e_lasteditor
+        - '@name': cr96e_lastediteddate
+        - '@name': cr96e_publishedstatus
+        order:
+          '@attribute': cr96e_articletitle
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Active Knowledge Article
+      '@languagecode': 1033

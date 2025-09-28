@@ -1,0 +1,54 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{57fe0bbb-b308-422a-9944-58711812cb11}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr96e_title
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr96e_menuitemsid
+        cell:
+        - '@name': cr96e_title
+          '@width': 300
+        - '@name': cr96e_screenname
+          '@width': 150
+        - '@name': cr96e_description
+          '@width': 150
+        - '@name': cr96e_icon
+          '@width': 150
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr96e_menuitems
+        attribute:
+        - '@name': cr96e_menuitemsid
+        - '@name': cr96e_title
+        - '@name': createdon
+        - '@name': cr96e_screenname
+        - '@name': cr96e_description
+        - '@name': cr96e_icon
+        order:
+          '@attribute': cr96e_title
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Active MenuItemses
+      '@languagecode': 1033
