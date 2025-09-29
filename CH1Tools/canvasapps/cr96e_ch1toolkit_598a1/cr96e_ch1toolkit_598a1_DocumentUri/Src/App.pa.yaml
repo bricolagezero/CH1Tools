@@ -9,19 +9,17 @@
 App:
   Properties:
     OnStart: |+
-      =// ✳️ 0) Set default folder path
-      Set(varRootPath, "Content Templates/Business Development/Capabilities/");
+      =Set(varRootPath, "Content Templates/");
+      Set(varActiveFolder, varRootPath);
 
-      // ✳️ 1) Load SharePoint doc library into ContentLibrary
       ClearCollect(
           ContentLibrary,
           Filter(
               'Content Templates',
-              'Folder path' = varRootPath
+              StartsWith('Folder path', varRootPath)
           )
       );
 
-      // ✳️ 2) Seed colDocPanelCrumbs with correct schema
       ClearCollect(
           colDocPanelCrumbs,
           Table(
@@ -31,9 +29,7 @@ App:
               }
           )
       );
-      Clear(colDocPanelCrumbs); // wipe dummy row
-
-      // ✳️ 3) Add first breadcrumb from varRootPath
+      Clear(colDocPanelCrumbs);
       With(
           {
               folderParts: Split(Left(varRootPath, Len(varRootPath) - 1), "/")
@@ -41,37 +37,38 @@ App:
           Collect(
               colDocPanelCrumbs,
               {
-                  Title: Text(Last(folderParts).Value), // <-- Text() ensures type safety
+                  Title: Text(Last(folderParts).Value),
                   Path: varRootPath
               }
           )
       );
 
-      // ✳️ 4) Seed pill collections (clean start)
       ClearCollect(colKBCatPick, { Cat: "" });
       Clear(colKBCatPick);
 
       ClearCollect(colCatPick, { Value: "" });
-      Clear(colCatPick);  // Clean up empty record
+      Clear(colCatPick);
 
-      // ✳️ 5) Independent setup (parallel)
       Concurrent(
           Set(varKBOpen, false),
           Set(varKBMode, "View"),
           Set(varKBCurrent, Blank()),
           ClearCollect(
               colMenu,
-               { ID: 1, Title: "Launch Pad", ScreenName: LaunchPad },
-               { ID: 2, Title: "Brain Stash", ScreenName: BrainStash },
-               { ID: 3, Title: "The Pantry",  ScreenName: ThePantry }
+              { ID: 1, Title: "Launch Pad", ScreenName: LaunchPad },
+              { ID: 2, Title: "Brain Stash", ScreenName: BrainStash },
+              { ID: 3, Title: "The Pantry", ScreenName: ThePantry }
           )
       );
 
-      // ✳️ 6) Build unique category list from actual document metadata
       ClearCollect(
           colCategoryStrings,
           ForAll(
-              Filter(ContentLibrary, !IsBlank(Category.Value)),
+              Filter(
+                  ContentLibrary,
+                  'Folder path' = varActiveFolder,
+                  !IsBlank(Category.Value)
+              ),
               { CategoryText: Category.Value }
           )
       );

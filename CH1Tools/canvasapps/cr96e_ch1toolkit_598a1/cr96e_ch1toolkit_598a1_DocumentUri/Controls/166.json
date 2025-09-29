@@ -947,7 +947,7 @@
                 "Template": {
                   "Id": "http://microsoft.com/appmagic/Component",
                   "Version": "1.0",
-                  "LastModifiedTimestamp": "638946749456719423",
+                  "LastModifiedTimestamp": "638947143629403689",
                   "Name": "0ca280d68792401ab63e42bec22b9619",
                   "FirstParty": true,
                   "IsPremiumPcfControl": false,
@@ -1001,7 +1001,7 @@
                   "ComponentType": "CanvasComponent",
                   "ComponentDefinitionInfo": {
                     "Name": "cmpNav",
-                    "LastModifiedTimestamp": "638946749456719423",
+                    "LastModifiedTimestamp": "638947143629403689",
                     "AllowAccessToGlobals": true,
                     "Rules": [
                       {
@@ -4392,7 +4392,7 @@
                 "Template": {
                   "Id": "http://microsoft.com/appmagic/Component",
                   "Version": "1.0",
-                  "LastModifiedTimestamp": "638946749456872755",
+                  "LastModifiedTimestamp": "638947147173682529",
                   "Name": "2f5d109d71d545aa9d93906dad0f3019",
                   "FirstParty": true,
                   "IsPremiumPcfControl": false,
@@ -4506,7 +4506,7 @@
                   "ComponentType": "CanvasComponent",
                   "ComponentDefinitionInfo": {
                     "Name": "cmpDocLibraryPanel",
-                    "LastModifiedTimestamp": "638946749456872755",
+                    "LastModifiedTimestamp": "638947147173682529",
                     "AllowAccessToGlobals": true,
                     "Rules": [
                       {
@@ -6147,7 +6147,7 @@
                                   {
                                     "Property": "Items",
                                     "Category": "Data",
-                                    "InvariantScript": "SortByColumns(\n    Distinct(colCategoryStrings, CategoryText),\n    \"Result\"\n)",
+                                    "InvariantScript": "Sort(\n    Distinct(colCategoryStrings, CategoryText),\n    Result,\n    SortOrder.Ascending\n)",
                                     "RuleProviderType": "Unknown"
                                   },
                                   {
@@ -6565,8 +6565,8 @@
                                       {
                                         "Property": "Text",
                                         "Category": "Data",
-                                        "InvariantScript": "ThisItem.Value",
-                                        "RuleProviderType": "Unknown"
+                                        "InvariantScript": "ThisItem.Result",
+                                        "RuleProviderType": "User"
                                       },
                                       {
                                         "Property": "Tooltip",
@@ -6667,8 +6667,8 @@
                                       {
                                         "Property": "Color",
                                         "Category": "Design",
-                                        "InvariantScript": "If( CountIf(colKBCatPick, Cat = Text(ThisItem.Value)) > 0, RGBA(44, 47, 37, 1 ), RGBA(44, 47, 37,1 ))",
-                                        "RuleProviderType": "Unknown"
+                                        "InvariantScript": "RGBA(44, 47, 37, 1)\r\n",
+                                        "RuleProviderType": "User"
                                       },
                                       {
                                         "Property": "DisabledColor",
@@ -6697,7 +6697,7 @@
                                       {
                                         "Property": "Fill",
                                         "Category": "Design",
-                                        "InvariantScript": "If(\n    CountIf(colCatPick, Value = Text(ThisItem.Value)) > 0,\n    RGBA(240, 243, 226, 1),\n    RGBA(44, 47, 37, 0.2)\n)\n",
+                                        "InvariantScript": "If(\n    CountIf(colCatPick, Value = ThisItem.Result) > 0,\n    RGBA(240, 243, 226, 1),\n    RGBA(44, 47, 37, 0.2)\n)\n\n",
                                         "RuleProviderType": "User"
                                       },
                                       {
@@ -6853,7 +6853,7 @@
                                       {
                                         "Property": "OnSelect",
                                         "Category": "Behavior",
-                                        "InvariantScript": "With(\n    { val: Text(ThisItem.Value) },\n    If(\n        CountIf(colCatPick, Value = val) > 0,\n        RemoveIf(colCatPick, Value = val),\n        Collect(colCatPick, { Value: val })\n    )\n)\n\n",
+                                        "InvariantScript": "With(\n    { val: ThisItem.Result },\n    If(\n        CountIf(colCatPick, Value = val) > 0,\n        RemoveIf(colCatPick, Value = val),\n        Collect(colCatPick, { Value: val })\n    )\n)\n\n",
                                         "RuleProviderType": "User"
                                       }
                                     ],
@@ -6868,7 +6868,14 @@
                                         "AFDDataSourceName": ""
                                       },
                                       "AutoDisableOnSelect",
-                                      "Text",
+                                      {
+                                        "InvariantPropertyName": "Text",
+                                        "AutoRuleBindingEnabled": false,
+                                        "AutoRuleBindingString": "ThisItem.Value",
+                                        "NameMapSourceSchema": "?",
+                                        "IsLockable": false,
+                                        "AFDDataSourceName": ""
+                                      },
                                       "Tooltip",
                                       "ContentLanguage",
                                       "BorderColor",
@@ -6883,7 +6890,14 @@
                                       "BorderThickness",
                                       "FocusedBorderColor",
                                       "FocusedBorderThickness",
-                                      "Color",
+                                      {
+                                        "InvariantPropertyName": "Color",
+                                        "AutoRuleBindingEnabled": false,
+                                        "AutoRuleBindingString": "If( CountIf(colKBCatPick, Cat = Text(ThisItem.Value)) > 0, RGBA(44, 47, 37, 1 ), RGBA(44, 47, 37,1 ))",
+                                        "NameMapSourceSchema": "?",
+                                        "IsLockable": false,
+                                        "AFDDataSourceName": ""
+                                      },
                                       "DisabledColor",
                                       "PressedColor",
                                       "HoverColor",
@@ -7856,7 +7870,7 @@
                               {
                                 "Property": "Items",
                                 "Category": "Data",
-                                "InvariantScript": "Filter(\r\n    ContentLibrary,\r\n    !IsFolder,\r\n    'Folder path' = Last(colDocPanelCrumbs).Path\r\n)",
+                                "InvariantScript": "With(\r\n    {\r\n        picks: colCatPick,\r\n        q: Lower(Trim(txtKBSearch_1.Text)),\r\n        currentFolder: Last(colDocPanelCrumbs).Path\r\n    },\r\n    Filter(\r\n        cmpDocLibraryPanel.FolderSource,\r\n        !IsFolder,\r\n        'Folder path' = currentFolder,\r\n        IsEmpty(picks) || CountIf(picks, Value = Coalesce(Category.Value, \"\")) > 0,\r\n        Len(q) = 0\r\n            || StartsWith(Lower(Coalesce('Title', Title, \"\")), q)\r\n            || StartsWith(Lower(Coalesce(Description, \"\")), q)\r\n    )\r\n)\r\n",
                                 "RuleProviderType": "Unknown"
                               },
                               {
@@ -8366,7 +8380,7 @@
                                       {
                                         "Property": "Text",
                                         "Category": "Data",
-                                        "InvariantScript": "ThisItem.'Title'",
+                                        "InvariantScript": "Coalesce(ThisItem.Category.Value, \"\")\r\n",
                                         "RuleProviderType": "User"
                                       },
                                       {
@@ -8831,324 +8845,6 @@
                                   },
                                   {
                                     "Type": "ControlInfo",
-                                    "Name": "Label2",
-                                    "HasDynamicProperties": false,
-                                    "Template": {
-                                      "Id": "http://microsoft.com/appmagic/label",
-                                      "Version": "2.5.1",
-                                      "LastModifiedTimestamp": "0",
-                                      "Name": "label",
-                                      "FirstParty": true,
-                                      "IsPremiumPcfControl": false,
-                                      "IsCustomGroupControlTemplate": false,
-                                      "CustomGroupControlTemplateName": "",
-                                      "IsComponentDefinition": false,
-                                      "OverridableProperties": {}
-                                    },
-                                    "Index": 0,
-                                    "PublishOrderIndex": 148,
-                                    "VariantName": "",
-                                    "LayoutName": "",
-                                    "MetaDataIDKey": "",
-                                    "PersistMetaDataIDKey": false,
-                                    "IsFromScreenLayout": false,
-                                    "StyleName": "defaultLabelStyle",
-                                    "Parent": "Container10",
-                                    "IsDataControl": false,
-                                    "AllowAccessToGlobals": true,
-                                    "OptimizeForDevices": "Off",
-                                    "IsGroupControl": false,
-                                    "IsAutoGenerated": false,
-                                    "Rules": [
-                                      {
-                                        "Property": "Live",
-                                        "Category": "Data",
-                                        "InvariantScript": "Live.Off",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "Text",
-                                        "Category": "Data",
-                                        "InvariantScript": "First(Distinct(colCategoryStrings, CategoryText)).Result",
-                                        "RuleProviderType": "User"
-                                      },
-                                      {
-                                        "Property": "Role",
-                                        "Category": "Data",
-                                        "InvariantScript": "TextRole.Default",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "Overflow",
-                                        "Category": "Design",
-                                        "InvariantScript": "Overflow.Hidden",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "Color",
-                                        "Category": "Design",
-                                        "InvariantScript": "RGBA(0, 0, 0, 1)",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "DisabledColor",
-                                        "Category": "Design",
-                                        "InvariantScript": "RGBA(166, 166, 166, 1)",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "PressedColor",
-                                        "Category": "Design",
-                                        "InvariantScript": "Self.Color",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "HoverColor",
-                                        "Category": "Design",
-                                        "InvariantScript": "Self.Color",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "BorderColor",
-                                        "Category": "Design",
-                                        "InvariantScript": "App.Theme.Colors.Darker40",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "DisabledBorderColor",
-                                        "Category": "Design",
-                                        "InvariantScript": "RGBA(56, 56, 56, 1)",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "PressedBorderColor",
-                                        "Category": "Design",
-                                        "InvariantScript": "Self.BorderColor",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "HoverBorderColor",
-                                        "Category": "Design",
-                                        "InvariantScript": "Self.BorderColor",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "BorderStyle",
-                                        "Category": "Design",
-                                        "InvariantScript": "BorderStyle.Solid",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "FocusedBorderColor",
-                                        "Category": "Design",
-                                        "InvariantScript": "Self.BorderColor",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "Fill",
-                                        "Category": "Design",
-                                        "InvariantScript": "RGBA(0, 0, 0, 0)",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "DisabledFill",
-                                        "Category": "Design",
-                                        "InvariantScript": "RGBA(0, 0, 0, 0)",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "PressedFill",
-                                        "Category": "Design",
-                                        "InvariantScript": "Self.Fill",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "HoverFill",
-                                        "Category": "Design",
-                                        "InvariantScript": "Self.Fill",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "Font",
-                                        "Category": "Design",
-                                        "InvariantScript": "App.Theme.Font",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "FontWeight",
-                                        "Category": "Design",
-                                        "InvariantScript": "FontWeight.Normal",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "Align",
-                                        "Category": "Design",
-                                        "InvariantScript": "Align.Left",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "VerticalAlign",
-                                        "Category": "Design",
-                                        "InvariantScript": "VerticalAlign.Middle",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "X",
-                                        "Category": "Design",
-                                        "InvariantScript": "40",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "Y",
-                                        "Category": "Design",
-                                        "InvariantScript": "40",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "Width",
-                                        "Category": "Design",
-                                        "InvariantScript": "140",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "Height",
-                                        "Category": "Design",
-                                        "InvariantScript": "41",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "DisplayMode",
-                                        "Category": "Design",
-                                        "InvariantScript": "DisplayMode.Edit",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "ZIndex",
-                                        "Category": "Design",
-                                        "InvariantScript": "5",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "LineHeight",
-                                        "Category": "Design",
-                                        "InvariantScript": "1.2",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "BorderThickness",
-                                        "Category": "Design",
-                                        "InvariantScript": "0",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "FocusedBorderThickness",
-                                        "Category": "Design",
-                                        "InvariantScript": "0",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "Size",
-                                        "Category": "Design",
-                                        "InvariantScript": "13",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "Italic",
-                                        "Category": "Design",
-                                        "InvariantScript": "false",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "Underline",
-                                        "Category": "Design",
-                                        "InvariantScript": "false",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "Strikethrough",
-                                        "Category": "Design",
-                                        "InvariantScript": "false",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "PaddingTop",
-                                        "Category": "Design",
-                                        "InvariantScript": "5",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "PaddingRight",
-                                        "Category": "Design",
-                                        "InvariantScript": "5",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "PaddingBottom",
-                                        "Category": "Design",
-                                        "InvariantScript": "5",
-                                        "RuleProviderType": "Unknown"
-                                      },
-                                      {
-                                        "Property": "PaddingLeft",
-                                        "Category": "Design",
-                                        "InvariantScript": "5",
-                                        "RuleProviderType": "Unknown"
-                                      }
-                                    ],
-                                    "ControlPropertyState": [
-                                      "Live",
-                                      "Overflow",
-                                      {
-                                        "InvariantPropertyName": "Text",
-                                        "AutoRuleBindingEnabled": false,
-                                        "AutoRuleBindingString": "\"Text\"",
-                                        "NameMapSourceSchema": "?",
-                                        "IsLockable": false,
-                                        "AFDDataSourceName": ""
-                                      },
-                                      "Role",
-                                      "Color",
-                                      "DisabledColor",
-                                      "PressedColor",
-                                      "HoverColor",
-                                      "BorderColor",
-                                      "DisabledBorderColor",
-                                      "PressedBorderColor",
-                                      "HoverBorderColor",
-                                      "BorderStyle",
-                                      "FocusedBorderColor",
-                                      "Fill",
-                                      "DisabledFill",
-                                      "PressedFill",
-                                      "HoverFill",
-                                      "Font",
-                                      "FontWeight",
-                                      "Align",
-                                      "VerticalAlign",
-                                      "X",
-                                      "Y",
-                                      "Width",
-                                      "Height",
-                                      "DisplayMode",
-                                      "ZIndex",
-                                      "LineHeight",
-                                      "BorderThickness",
-                                      "FocusedBorderThickness",
-                                      "Size",
-                                      "Italic",
-                                      "Underline",
-                                      "Strikethrough",
-                                      "PaddingTop",
-                                      "PaddingRight",
-                                      "PaddingBottom",
-                                      "PaddingLeft"
-                                    ],
-                                    "IsLocked": false,
-                                    "ControlUniqueId": "35",
-                                    "Children": []
-                                  },
-                                  {
-                                    "Type": "ControlInfo",
                                     "Name": "Image2",
                                     "HasDynamicProperties": false,
                                     "Template": {
@@ -9164,7 +8860,7 @@
                                       "OverridableProperties": {}
                                     },
                                     "Index": 0,
-                                    "PublishOrderIndex": 149,
+                                    "PublishOrderIndex": 148,
                                     "VariantName": "",
                                     "LayoutName": "",
                                     "MetaDataIDKey": "",
@@ -9442,7 +9138,7 @@
                                       "OverridableProperties": {}
                                     },
                                     "Index": 0,
-                                    "PublishOrderIndex": 150,
+                                    "PublishOrderIndex": 149,
                                     "VariantName": "",
                                     "LayoutName": "",
                                     "MetaDataIDKey": "",
@@ -9554,7 +9250,7 @@
                               "OverridableProperties": {}
                             },
                             "Index": 0,
-                            "PublishOrderIndex": 151,
+                            "PublishOrderIndex": 150,
                             "VariantName": "BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0",
                             "LayoutName": "",
                             "MetaDataIDKey": "",
@@ -9571,7 +9267,7 @@
                               {
                                 "Property": "Items",
                                 "Category": "Data",
-                                "InvariantScript": "Filter(\r\n    ContentLibrary,\r\n    IsFolder,\r\n    'Folder path' = Last(colDocPanelCrumbs).Path\r\n)",
+                                "InvariantScript": "Filter(\r\n    cmpDocLibraryPanel.FolderSource,\r\n    IsFolder\r\n)\r\n",
                                 "RuleProviderType": "Unknown"
                               },
                               {
@@ -9801,7 +9497,7 @@
                                   "OverridableProperties": {}
                                 },
                                 "Index": 0,
-                                "PublishOrderIndex": 152,
+                                "PublishOrderIndex": 151,
                                 "VariantName": "",
                                 "LayoutName": "",
                                 "MetaDataIDKey": "",
@@ -9860,7 +9556,7 @@
                                   "OverridableProperties": {}
                                 },
                                 "Index": 0,
-                                "PublishOrderIndex": 153,
+                                "PublishOrderIndex": 152,
                                 "VariantName": "manualLayoutContainer",
                                 "LayoutName": "",
                                 "MetaDataIDKey": "",
@@ -10107,7 +9803,7 @@
                                       "OverridableProperties": {}
                                     },
                                     "Index": 0,
-                                    "PublishOrderIndex": 154,
+                                    "PublishOrderIndex": 153,
                                     "VariantName": "",
                                     "LayoutName": "",
                                     "MetaDataIDKey": "",
@@ -10304,8 +10000,8 @@
                                       {
                                         "Property": "OnSelect",
                                         "Category": "Behavior",
-                                        "InvariantScript": "Collect(\r\n    colDocPanelCrumbs,\r\n    {\r\n        Title: ThisItem.Name,\r\n        Path: ThisItem.'Folder path' & ThisItem.Name & \"/\"\r\n    }\r\n)\r\n",
-                                        "RuleProviderType": "Unknown"
+                                        "InvariantScript": "Set(\r\n    varActiveFolder,\r\n    ThisItem.'Folder path' & ThisItem.Name & \"/\"\r\n);\r\nCollect(\r\n    colDocPanelCrumbs,\r\n    {\r\n        Title: ThisItem.Name,\r\n        Path: varActiveFolder\r\n    }\r\n);\r\nClearCollect(\r\n    colCategoryStrings,\r\n    ForAll(\r\n        Filter(\r\n            ContentLibrary,\r\n            'Folder path' = varActiveFolder,\r\n            !IsBlank(Category.Value)\r\n        ),\r\n        { CategoryText: Category.Value }\r\n    )\r\n);\r\nReset(txtKBSearch_1);\r\nClearCollect(colCatPick, { Value: \"\" });\r\nClear(colCatPick);\r\n",
+                                        "RuleProviderType": "User"
                                       }
                                     ],
                                     "ControlPropertyState": [
@@ -10390,7 +10086,7 @@
                                       "OverridableProperties": {}
                                     },
                                     "Index": 0,
-                                    "PublishOrderIndex": 155,
+                                    "PublishOrderIndex": 154,
                                     "VariantName": "",
                                     "LayoutName": "",
                                     "MetaDataIDKey": "",
@@ -10611,8 +10307,8 @@
                                       {
                                         "Property": "OnSelect",
                                         "Category": "Behavior",
-                                        "InvariantScript": "Collect(\r\n    colDocPanelCrumbs,\r\n    {\r\n        Title: ThisItem.Name,\r\n        Path: ThisItem.'Folder path' & ThisItem.Name & \"/\"\r\n    }\r\n)\r\n",
-                                        "RuleProviderType": "Unknown"
+                                        "InvariantScript": "Set(\r\n    varActiveFolder,\r\n    ThisItem.'Folder path' & ThisItem.Name & \"/\"\r\n);\r\nCollect(\r\n    colDocPanelCrumbs,\r\n    {\r\n        Title: ThisItem.Name,\r\n        Path: varActiveFolder\r\n    }\r\n);\r\nClearCollect(\r\n    colCategoryStrings,\r\n    ForAll(\r\n        Filter(\r\n            ContentLibrary,\r\n            'Folder path' = varActiveFolder,\r\n            !IsBlank(Category.Value)\r\n        ),\r\n        { CategoryText: Category.Value }\r\n    )\r\n);\r\nReset(txtKBSearch_1);\r\nClearCollect(colCatPick, { Value: \"\" });\r\nClear(colCatPick);\r\n",
+                                        "RuleProviderType": "User"
                                       }
                                     ],
                                     "ControlPropertyState": [
@@ -10694,7 +10390,7 @@
                                       "OverridableProperties": {}
                                     },
                                     "Index": 0,
-                                    "PublishOrderIndex": 156,
+                                    "PublishOrderIndex": 155,
                                     "VariantName": "ChevronRight",
                                     "LayoutName": "",
                                     "MetaDataIDKey": "",
@@ -10891,8 +10587,8 @@
                                       {
                                         "Property": "OnSelect",
                                         "Category": "Behavior",
-                                        "InvariantScript": "Collect(\r\n    colDocPanelCrumbs,\r\n    {\r\n        Title: ThisItem.Name,\r\n        Path: ThisItem.'Folder path' & ThisItem.Name & \"/\"\r\n    }\r\n)\r\n",
-                                        "RuleProviderType": "Unknown"
+                                        "InvariantScript": "Set(\r\n    varActiveFolder,\r\n    ThisItem.'Folder path' & ThisItem.Name & \"/\"\r\n);\r\nCollect(\r\n    colDocPanelCrumbs,\r\n    {\r\n        Title: ThisItem.Name,\r\n        Path: varActiveFolder\r\n    }\r\n);\r\nClearCollect(\r\n    colCategoryStrings,\r\n    ForAll(\r\n        Filter(\r\n            ContentLibrary,\r\n            'Folder path' = varActiveFolder,\r\n            !IsBlank(Category.Value)\r\n        ),\r\n        { CategoryText: Category.Value }\r\n    )\r\n);\r\nReset(txtKBSearch_1);\r\nClearCollect(colCatPick, { Value: \"\" });\r\nClear(colCatPick);\r\n",
+                                        "RuleProviderType": "User"
                                       }
                                     ],
                                     "ControlPropertyState": [
@@ -10956,7 +10652,7 @@
                                       "OverridableProperties": {}
                                     },
                                     "Index": 0,
-                                    "PublishOrderIndex": 157,
+                                    "PublishOrderIndex": 156,
                                     "VariantName": "",
                                     "LayoutName": "",
                                     "MetaDataIDKey": "",
@@ -11177,8 +10873,8 @@
                                       {
                                         "Property": "OnSelect",
                                         "Category": "Behavior",
-                                        "InvariantScript": "Collect(\r\n    colDocPanelCrumbs,\r\n    {\r\n        Title: ThisItem.Name,\r\n        Path: ThisItem.'Folder path' & ThisItem.Name & \"/\"\r\n    }\r\n)\r\n",
-                                        "RuleProviderType": "Unknown"
+                                        "InvariantScript": "Set(\r\n    varActiveFolder,\r\n    ThisItem.'Folder path' & ThisItem.Name & \"/\"\r\n);\r\nCollect(\r\n    colDocPanelCrumbs,\r\n    {\r\n        Title: ThisItem.Name,\r\n        Path: varActiveFolder\r\n    }\r\n);\r\nClearCollect(\r\n    colCategoryStrings,\r\n    ForAll(\r\n        Filter(\r\n            ContentLibrary,\r\n            'Folder path' = varActiveFolder,\r\n            !IsBlank(Category.Value)\r\n        ),\r\n        { CategoryText: Category.Value }\r\n    )\r\n);\r\nReset(txtKBSearch_1);\r\nClearCollect(colCatPick, { Value: \"\" });\r\nClear(colCatPick);\r\n",
+                                        "RuleProviderType": "User"
                                       }
                                     ],
                                     "ControlPropertyState": [
@@ -11315,14 +11011,14 @@
                   {
                     "Property": "StartFolderPath",
                     "Category": "Data",
-                    "InvariantScript": "\"Text\"",
-                    "RuleProviderType": "System"
+                    "InvariantScript": "varActiveFolder",
+                    "RuleProviderType": "User"
                   },
                   {
                     "Property": "FolderSource",
                     "Category": "Data",
-                    "InvariantScript": "Table(\r\n    {\r\n        Name: \"Sample.docx\",\r\n        Title: \"Sample Title\",\r\n        'Folder path': \"Content Templates/Business Development/\",\r\n        IsFolder: false,\r\n        'Link to item': \"https://sharepoint.com/sites/example\",\r\n        Thumbnail: { Medium: \"\" },\r\n        OData__ExtendedDescription: \"Some description\",\r\n        Category: { Value: \"Example Category\" }\r\n    }\r\n)\r\n",
-                    "RuleProviderType": "System"
+                    "InvariantScript": "Filter(\r\n    ContentLibrary,\r\n    'Folder path' = Last(colDocPanelCrumbs).Path\r\n)\r\n",
+                    "RuleProviderType": "User"
                   },
                   {
                     "Property": "Fill",
@@ -11415,7 +11111,14 @@
                   "OnAddRequested",
                   "OnFileOpened",
                   "OnReset",
-                  "StartFolderPath",
+                  {
+                    "InvariantPropertyName": "StartFolderPath",
+                    "AutoRuleBindingEnabled": false,
+                    "AutoRuleBindingString": "\"Text\"",
+                    "NameMapSourceSchema": "?",
+                    "IsLockable": false,
+                    "AFDDataSourceName": ""
+                  },
                   {
                     "InvariantPropertyName": "FolderSource",
                     "AutoRuleBindingEnabled": false,

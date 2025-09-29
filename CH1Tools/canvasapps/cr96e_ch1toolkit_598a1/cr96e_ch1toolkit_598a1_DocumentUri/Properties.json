@@ -111,7 +111,7 @@
   "DefaultConnectedDataSourceMaxGetRowsCount": 500,
   "ContainsThirdPartyPcfControls": false,
   "ParserErrorCount": 0,
-  "BindingErrorCount": 10,
+  "BindingErrorCount": 16,
   "ConnectionString": "",
   "EnableInstrumentation": false,
   "ControlCount": {
@@ -143,6 +143,6 @@
     "combobox": 1,
     "richTextEditor": 1
   },
-  "DeserializationLoadTime": 1.6949547,
-  "AnalysisLoadTime": 3.554499
+  "DeserializationLoadTime": 2.3915244,
+  "AnalysisLoadTime": 3.0153677
 }

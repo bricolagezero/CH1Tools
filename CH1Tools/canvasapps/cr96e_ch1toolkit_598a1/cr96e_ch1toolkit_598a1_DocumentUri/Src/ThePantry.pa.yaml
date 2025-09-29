@@ -68,24 +68,16 @@ Screens:
                       ComponentName: cmpDocLibraryPanel
                       Properties:
                         FolderSource: |+
-                          =Table(
-                              {
-                                  Name: "Sample.docx",
-                                  Title: "Sample Title",
-                                  'Folder path': "Content Templates/Business Development/",
-                                  IsFolder: false,
-                                  'Link to item': "https://sharepoint.com/sites/example",
-                                  Thumbnail: { Medium: "" },
-                                  OData__ExtendedDescription: "Some description",
-                                  Category: { Value: "Example Category" }
-                              }
+                          =Filter(
+                              ContentLibrary,
+                              'Folder path' = Last(colDocPanelCrumbs).Path
                           )
                         Height: =715
                         OnAddRequested: =
                         OnClose: =
                         OnFileOpened: =
                         ShowAddButton: =true
-                        StartFolderPath: ="Text"
+                        StartFolderPath: =varActiveFolder
                         Width: =850
       - Header1_1:
           Control: Header@0.0.44

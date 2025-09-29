@@ -105,11 +105,10 @@ ComponentDefinitions:
                 Variant: BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0
                 Properties:
                   Height: =543
-                  Items: |-
+                  Items: |+
                     =Filter(
-                        ContentLibrary,
-                        IsFolder,
-                        'Folder path' = Last(colDocPanelCrumbs).Path
+                        cmpDocLibraryPanel.FolderSource,
+                        IsFolder
                     )
                   OnSelect: |+
                     =Collect(
@@ -147,13 +146,31 @@ ComponentDefinitions:
                               Height: =50
                               Icon: =Icon.ChevronRight
                               OnSelect: |+
-                                =Collect(
+                                =Set(
+                                    varActiveFolder,
+                                    ThisItem.'Folder path' & ThisItem.Name & "/"
+                                );
+                                Collect(
                                     colDocPanelCrumbs,
                                     {
                                         Title: ThisItem.Name,
-                                        Path: ThisItem.'Folder path' & ThisItem.Name & "/"
+                                        Path: varActiveFolder
                                     }
-                                )
+                                );
+                                ClearCollect(
+                                    colCategoryStrings,
+                                    ForAll(
+                                        Filter(
+                                            ContentLibrary,
+                                            'Folder path' = varActiveFolder,
+                                            !IsBlank(Category.Value)
+                                        ),
+                                        { CategoryText: Category.Value }
+                                    )
+                                );
+                                Reset(txtKBSearch_1);
+                                ClearCollect(colCatPick, { Value: "" });
+                                Clear(colCatPick);
                               PaddingBottom: =16
                               PaddingLeft: =16
                               PaddingRight: =16
@@ -170,13 +187,31 @@ ComponentDefinitions:
                               FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                               Height: =36
                               OnSelect: |+
-                                =Collect(
+                                =Set(
+                                    varActiveFolder,
+                                    ThisItem.'Folder path' & ThisItem.Name & "/"
+                                );
+                                Collect(
                                     colDocPanelCrumbs,
                                     {
                                         Title: ThisItem.Name,
-                                        Path: ThisItem.'Folder path' & ThisItem.Name & "/"
+                                        Path: varActiveFolder
                                     }
-                                )
+                                );
+                                ClearCollect(
+                                    colCategoryStrings,
+                                    ForAll(
+                                        Filter(
+                                            ContentLibrary,
+                                            'Folder path' = varActiveFolder,
+                                            !IsBlank(Category.Value)
+                                        ),
+                                        { CategoryText: Category.Value }
+                                    )
+                                );
+                                Reset(txtKBSearch_1);
+                                ClearCollect(colCatPick, { Value: "" });
+                                Clear(colCatPick);
                               PaddingBottom: =0
                               PaddingLeft: =0
                               PaddingRight: =0
@@ -195,13 +230,31 @@ ComponentDefinitions:
                               FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                               Height: =37
                               OnSelect: |+
-                                =Collect(
+                                =Set(
+                                    varActiveFolder,
+                                    ThisItem.'Folder path' & ThisItem.Name & "/"
+                                );
+                                Collect(
                                     colDocPanelCrumbs,
                                     {
                                         Title: ThisItem.Name,
-                                        Path: ThisItem.'Folder path' & ThisItem.Name & "/"
+                                        Path: varActiveFolder
                                     }
-                                )
+                                );
+                                ClearCollect(
+                                    colCategoryStrings,
+                                    ForAll(
+                                        Filter(
+                                            ContentLibrary,
+                                            'Folder path' = varActiveFolder,
+                                            !IsBlank(Category.Value)
+                                        ),
+                                        { CategoryText: Category.Value }
+                                    )
+                                );
+                                Reset(txtKBSearch_1);
+                                ClearCollect(colCatPick, { Value: "" });
+                                Clear(colCatPick);
                               PaddingBottom: =0
                               PaddingLeft: =0
                               PaddingRight: =0
@@ -219,13 +272,31 @@ ComponentDefinitions:
                               Height: =88
                               Image: =ThisItem.Thumbnail.Medium
                               OnSelect: |+
-                                =Collect(
+                                =Set(
+                                    varActiveFolder,
+                                    ThisItem.'Folder path' & ThisItem.Name & "/"
+                                );
+                                Collect(
                                     colDocPanelCrumbs,
                                     {
                                         Title: ThisItem.Name,
-                                        Path: ThisItem.'Folder path' & ThisItem.Name & "/"
+                                        Path: varActiveFolder
                                     }
-                                )
+                                );
+                                ClearCollect(
+                                    colCategoryStrings,
+                                    ForAll(
+                                        Filter(
+                                            ContentLibrary,
+                                            'Folder path' = varActiveFolder,
+                                            !IsBlank(Category.Value)
+                                        ),
+                                        { CategoryText: Category.Value }
+                                    )
+                                );
+                                Reset(txtKBSearch_1);
+                                ClearCollect(colCatPick, { Value: "" });
+                                Clear(colCatPick);
                               RadiusBottomLeft: =8
                               RadiusBottomRight: =8
                               RadiusTopLeft: =8
@@ -238,11 +309,22 @@ ComponentDefinitions:
                 Variant: BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0
                 Properties:
                   Height: =543
-                  Items: |-
-                    =Filter(
-                        ContentLibrary,
-                        !IsFolder,
-                        'Folder path' = Last(colDocPanelCrumbs).Path
+                  Items: |+
+                    =With(
+                        {
+                            picks: colCatPick,
+                            q: Lower(Trim(txtKBSearch_1.Text)),
+                            currentFolder: Last(colDocPanelCrumbs).Path
+                        },
+                        Filter(
+                            cmpDocLibraryPanel.FolderSource,
+                            !IsFolder,
+                            'Folder path' = currentFolder,
+                            IsEmpty(picks) || CountIf(picks, Value = Coalesce(Category.Value, "")) > 0,
+                            Len(q) = 0
+                                || StartsWith(Lower(Coalesce('Title', Title, "")), q)
+                                || StartsWith(Lower(Coalesce(Description, "")), q)
+                        )
                     )
                   ShowNavigation: =true
                   TemplateSize: =300
@@ -272,7 +354,8 @@ ComponentDefinitions:
                               PaddingRight: =0
                               PaddingTop: =0
                               Size: =10
-                              Text: =ThisItem.'Title'
+                              Text: |+
+                                =Coalesce(ThisItem.Category.Value, "")
                               VerticalAlign: =VerticalAlign.Top
                               Width: =182
                               X: =18
@@ -318,14 +401,6 @@ ComponentDefinitions:
                               Width: =197
                               X: =3
                               Y: =33
-                        - Label2:
-                            Control: Label@2.5.1
-                            Properties:
-                              Height: =41
-                              Text: =First(Distinct(colCategoryStrings, CategoryText)).Result
-                              Width: =140
-                              X: =40
-                              Y: =40
             - BreadcrumbsLabel:
                 Control: Label@2.5.1
                 Properties:
@@ -412,9 +487,10 @@ ComponentDefinitions:
                       Properties:
                         Height: =40
                         Items: |-
-                          =SortByColumns(
+                          =Sort(
                               Distinct(colCategoryStrings, CategoryText),
-                              "Result"
+                              Result,
+                              SortOrder.Ascending
                           )
                         LayoutMinHeight: =50
                         OnSelect: =
@@ -431,23 +507,25 @@ ComponentDefinitions:
                               BorderColor: =RGBA(214, 221, 224, 1)
                               BorderStyle: =BorderStyle.None
                               BorderThickness: =0
-                              Color: =If( CountIf(colKBCatPick, Cat = Text(ThisItem.Value)) > 0, RGBA(44, 47, 37, 1 ), RGBA(44, 47, 37,1 ))
+                              Color: |+
+                                =RGBA(44, 47, 37, 1)
                               DisabledBorderColor: =
                               DisabledColor: =
                               DisabledFill: =
-                              Fill: |
+                              Fill: |+
                                 =If(
-                                    CountIf(colCatPick, Value = Text(ThisItem.Value)) > 0,
+                                    CountIf(colCatPick, Value = ThisItem.Result) > 0,
                                     RGBA(240, 243, 226, 1),
                                     RGBA(44, 47, 37, 0.2)
                                 )
+
                               Height: =25
                               HoverBorderColor: =
                               HoverColor: =
                               HoverFill: =
                               OnSelect: |+
                                 =With(
-                                    { val: Text(ThisItem.Value) },
+                                    { val: ThisItem.Result },
                                     If(
                                         CountIf(colCatPick, Value = val) > 0,
                                         RemoveIf(colCatPick, Value = val),
@@ -459,7 +537,7 @@ ComponentDefinitions:
                               PressedColor: =
                               PressedFill: =
                               Size: =10
-                              Text: =ThisItem.Value
+                              Text: =ThisItem.Result
                               Width: =92
                               Y: =30
             - Add Knowledge_1:
