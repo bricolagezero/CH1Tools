@@ -5,7 +5,7 @@
     "Template": {
       "Id": "http://microsoft.com/appmagic/Component",
       "Version": "638288588242886857",
-      "LastModifiedTimestamp": "638947152309554451",
+      "LastModifiedTimestamp": "638947175710228454",
       "Name": "1ddea17d5a9f4289b177bfd0e40b3239",
       "FirstParty": true,
       "IsPremiumPcfControl": false,
@@ -414,7 +414,7 @@
           "OverridableProperties": {}
         },
         "Index": 0,
-        "PublishOrderIndex": 104,
+        "PublishOrderIndex": 103,
         "VariantName": "",
         "LayoutName": "",
         "MetaDataIDKey": "",

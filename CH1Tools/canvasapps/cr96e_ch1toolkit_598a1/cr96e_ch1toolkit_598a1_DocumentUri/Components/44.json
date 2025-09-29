@@ -5,7 +5,7 @@
     "Template": {
       "Id": "http://microsoft.com/appmagic/Component",
       "Version": "637722065298845880",
-      "LastModifiedTimestamp": "638947152309509692",
+      "LastModifiedTimestamp": "638947175710170803",
       "Name": "6f7e77867f214727a8f185a4811b503f",
       "FirstParty": true,
       "IsPremiumPcfControl": false,
@@ -333,7 +333,7 @@
           "OverridableProperties": {}
         },
         "Index": 0,
-        "PublishOrderIndex": 72,
+        "PublishOrderIndex": 71,
         "VariantName": "",
         "LayoutName": "",
         "MetaDataIDKey": "",
@@ -700,7 +700,7 @@
           "OverridableProperties": {}
         },
         "Index": 0,
-        "PublishOrderIndex": 73,
+        "PublishOrderIndex": 72,
         "VariantName": "galleryVertical",
         "LayoutName": "",
         "MetaDataIDKey": "",
@@ -1024,7 +1024,7 @@
               "OverridableProperties": {}
             },
             "Index": 0,
-            "PublishOrderIndex": 74,
+            "PublishOrderIndex": 73,
             "VariantName": "",
             "LayoutName": "",
             "MetaDataIDKey": "",
@@ -1090,7 +1090,7 @@
               "OverridableProperties": {}
             },
             "Index": 0,
-            "PublishOrderIndex": 75,
+            "PublishOrderIndex": 74,
             "VariantName": "",
             "LayoutName": "",
             "MetaDataIDKey": "",
@@ -1520,7 +1520,7 @@
               "OverridableProperties": {}
             },
             "Index": 0,
-            "PublishOrderIndex": 76,
+            "PublishOrderIndex": 75,
             "VariantName": "",
             "LayoutName": "",
             "MetaDataIDKey": "",
@@ -1859,7 +1859,7 @@
               "OverridableProperties": {}
             },
             "Index": 0,
-            "PublishOrderIndex": 77,
+            "PublishOrderIndex": 76,
             "VariantName": "",
             "LayoutName": "",
             "MetaDataIDKey": "",
@@ -2072,7 +2072,7 @@
               "OverridableProperties": {}
             },
             "Index": 0,
-            "PublishOrderIndex": 78,
+            "PublishOrderIndex": 77,
             "VariantName": "",
             "LayoutName": "",
             "MetaDataIDKey": "",

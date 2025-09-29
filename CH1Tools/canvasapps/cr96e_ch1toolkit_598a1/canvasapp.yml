@@ -1,10 +1,10 @@
 CanvasApp:
   Name: cr96e_ch1toolkit_598a1
-  AppVersion: 2025-09-29T04:02:37.0000000Z
+  AppVersion: 2025-09-29T04:51:50.0000000Z
   Status: Ready
   CreatedByClientVersion: 3.25092.9.0
   MinClientVersion: 3.25092.9.0
-  Tags: '{"primaryDeviceWidth":"1200","primaryDeviceHeight":"860","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.25092.9","minimumRequiredApiVersion":"2.2.0","hasComponent":"true","hasUnlockedComponent":"true","isUnifiedRootApp":"false","sienaVersion":"20250929T035303Z-3.25092.9.0"}'
+  Tags: '{"primaryDeviceWidth":"250","primaryDeviceHeight":"750","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.25092.9","minimumRequiredApiVersion":"2.2.0","hasComponent":"true","hasUnlockedComponent":"true","isUnifiedRootApp":"false","sienaVersion":"20250929T035303Z-3.25092.9.0"}'
   IsCdsUpgraded: 0
   GalleryItemId:
     '@xsi:nil': true

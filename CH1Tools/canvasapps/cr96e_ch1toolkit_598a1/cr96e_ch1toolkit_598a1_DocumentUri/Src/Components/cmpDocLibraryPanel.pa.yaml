@@ -217,7 +217,7 @@ ComponentDefinitions:
                               PaddingRight: =0
                               PaddingTop: =0
                               Size: =12
-                              Text: =Coalesce(ThisItem.'OData__ExtendedDescription', "")
+                              Text: =Coalesce(ThisItem.Description, "")
                               VerticalAlign: =VerticalAlign.Top
                               Width: =540
                               X: =186
@@ -354,7 +354,8 @@ ComponentDefinitions:
                               PaddingRight: =0
                               PaddingTop: =0
                               Size: =10
-                              Text: =Coalesce(ThisItem.''Title'', "")
+                              Text: |+
+                                =Coalesce(ThisItem.Category.Value, "")
                               VerticalAlign: =VerticalAlign.Top
                               Width: =182
                               X: =18
@@ -486,10 +487,18 @@ ComponentDefinitions:
                       Properties:
                         Height: =40
                         Items: |
-                          =SortByColumns(
-                              Distinct(colCategoryStrings, CategoryText),
-                              "Result",
-                              SortOrder.Ascending
+                          =With(
+                              {
+                                  rawCats: Distinct(
+                                      Filter(colCategoryStrings, !IsBlank(CategoryText)),
+                                      CategoryText
+                                  )
+                              },
+                              SortByColumns(
+                                  AddColumns(rawCats, "CategoryValue", Result),
+                                  "CategoryValue",
+                                  SortOrder.Ascending
+                              )
                           )
                         LayoutMinHeight: =50
                         OnSelect: =
@@ -513,7 +522,7 @@ ComponentDefinitions:
                               DisabledFill: =
                               Fill: |-
                                 =If(
-                                    CountIf(colCatPick, Value = ThisItem.Result) > 0,
+                                    CountIf(colCatPick, Value = ThisItem.CategoryValue) > 0,
                                     RGBA(240, 243, 226, 1),
                                     RGBA(44, 47, 37, 0.2)
                                 )
@@ -523,7 +532,7 @@ ComponentDefinitions:
                               HoverFill: =
                               OnSelect: |
                                 =With(
-                                    { val: ThisItem.Result },
+                                    { val: Text(ThisItem.CategoryValue) },
                                     If(
                                         CountIf(colCatPick, Value = val) > 0,
                                         RemoveIf(colCatPick, Value = val),
@@ -534,7 +543,7 @@ ComponentDefinitions:
                               PressedColor: =
                               PressedFill: =
                               Size: =10
-                              Text: =ThisItem.Result
+                              Text: =ThisItem.CategoryValue
                               Width: =92
                               Y: =30
             - Add Knowledge_1:
@@ -552,8 +561,3 @@ ComponentDefinitions:
                   Width: =150
                   X: =40
                   Y: =40
-
-
-
-
-

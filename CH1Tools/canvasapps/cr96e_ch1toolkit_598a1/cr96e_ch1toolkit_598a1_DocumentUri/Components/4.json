@@ -5,7 +5,7 @@
     "Template": {
       "Id": "http://microsoft.com/appmagic/Component",
       "Version": "1.0",
-      "LastModifiedTimestamp": "638947152309354546",
+      "LastModifiedTimestamp": "638947175710017376",
       "Name": "0ca280d68792401ab63e42bec22b9619",
       "FirstParty": true,
       "IsPremiumPcfControl": false,
@@ -202,7 +202,7 @@
           "OverridableProperties": {}
         },
         "Index": 0,
-        "PublishOrderIndex": 120,
+        "PublishOrderIndex": 119,
         "VariantName": "horizontalAutoLayoutContainer",
         "LayoutName": "",
         "MetaDataIDKey": "",
@@ -526,7 +526,7 @@
               "OverridableProperties": {}
             },
             "Index": 0,
-            "PublishOrderIndex": 121,
+            "PublishOrderIndex": 120,
             "VariantName": "manualLayoutContainer",
             "LayoutName": "",
             "MetaDataIDKey": "",
@@ -808,7 +808,7 @@
                   "OverridableProperties": {}
                 },
                 "Index": 0,
-                "PublishOrderIndex": 122,
+                "PublishOrderIndex": 121,
                 "VariantName": "",
                 "LayoutName": "",
                 "MetaDataIDKey": "",
@@ -1205,7 +1205,7 @@
               "OverridableProperties": {}
             },
             "Index": 0,
-            "PublishOrderIndex": 123,
+            "PublishOrderIndex": 122,
             "VariantName": "manualLayoutContainer",
             "LayoutName": "",
             "MetaDataIDKey": "",
@@ -1487,7 +1487,7 @@
                   "OverridableProperties": {}
                 },
                 "Index": 0,
-                "PublishOrderIndex": 124,
+                "PublishOrderIndex": 123,
                 "VariantName": "",
                 "LayoutName": "",
                 "MetaDataIDKey": "",
@@ -1886,7 +1886,7 @@
           "OverridableProperties": {}
         },
         "Index": 0,
-        "PublishOrderIndex": 125,
+        "PublishOrderIndex": 124,
         "VariantName": "BrowseLayout_Vertical_OneTextVariant_ver5.0",
         "LayoutName": "",
         "MetaDataIDKey": "",
@@ -2245,7 +2245,7 @@
               "OverridableProperties": {}
             },
             "Index": 0,
-            "PublishOrderIndex": 126,
+            "PublishOrderIndex": 125,
             "VariantName": "",
             "LayoutName": "",
             "MetaDataIDKey": "",
@@ -2304,7 +2304,7 @@
               "OverridableProperties": {}
             },
             "Index": 0,
-            "PublishOrderIndex": 127,
+            "PublishOrderIndex": 126,
             "VariantName": "",
             "LayoutName": "",
             "MetaDataIDKey": "",
@@ -2622,7 +2622,7 @@
               "OverridableProperties": {}
             },
             "Index": 0,
-            "PublishOrderIndex": 128,
+            "PublishOrderIndex": 127,
             "VariantName": "",
             "LayoutName": "",
             "MetaDataIDKey": "",

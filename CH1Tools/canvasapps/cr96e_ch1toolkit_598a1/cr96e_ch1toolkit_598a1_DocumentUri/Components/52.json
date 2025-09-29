@@ -5,7 +5,7 @@
     "Template": {
       "Id": "http://microsoft.com/appmagic/Component",
       "Version": "637722065298918032",
-      "LastModifiedTimestamp": "638947152309545697",
+      "LastModifiedTimestamp": "638947175710217416",
       "Name": "bac64161a7ca4bad9844a65ab49a7477",
       "FirstParty": true,
       "IsPremiumPcfControl": false,
@@ -489,7 +489,7 @@
           "OverridableProperties": {}
         },
         "Index": 0,
-        "PublishOrderIndex": 79,
+        "PublishOrderIndex": 78,
         "VariantName": "",
         "LayoutName": "",
         "MetaDataIDKey": "",
@@ -681,7 +681,7 @@
           "OverridableProperties": {}
         },
         "Index": 0,
-        "PublishOrderIndex": 80,
+        "PublishOrderIndex": 79,
         "VariantName": "verticalAutoLayoutContainer",
         "LayoutName": "",
         "MetaDataIDKey": "",
@@ -984,7 +984,7 @@
               "OverridableProperties": {}
             },
             "Index": 0,
-            "PublishOrderIndex": 81,
+            "PublishOrderIndex": 80,
             "VariantName": "manualLayoutContainer",
             "LayoutName": "",
             "MetaDataIDKey": "",
@@ -1253,7 +1253,7 @@
               "OverridableProperties": {}
             },
             "Index": 0,
-            "PublishOrderIndex": 82,
+            "PublishOrderIndex": 81,
             "VariantName": "horizontalAutoLayoutContainer",
             "LayoutName": "",
             "MetaDataIDKey": "",
@@ -1521,7 +1521,7 @@
                   "OverridableProperties": {}
                 },
                 "Index": 0,
-                "PublishOrderIndex": 83,
+                "PublishOrderIndex": 82,
                 "VariantName": "manualLayoutContainer",
                 "LayoutName": "",
                 "MetaDataIDKey": "",
@@ -1776,7 +1776,7 @@
                   "OverridableProperties": {}
                 },
                 "Index": 0,
-                "PublishOrderIndex": 84,
+                "PublishOrderIndex": 83,
                 "VariantName": "verticalAutoLayoutContainer",
                 "LayoutName": "",
                 "MetaDataIDKey": "",
@@ -2121,7 +2121,7 @@
                       "OverridableProperties": {}
                     },
                     "Index": 0,
-                    "PublishOrderIndex": 85,
+                    "PublishOrderIndex": 84,
                     "VariantName": "horizontalAutoLayoutContainer",
                     "LayoutName": "",
                     "MetaDataIDKey": "",
@@ -2424,7 +2424,7 @@
                           "OverridableProperties": {}
                         },
                         "Index": 0,
-                        "PublishOrderIndex": 86,
+                        "PublishOrderIndex": 85,
                         "VariantName": "",
                         "LayoutName": "",
                         "MetaDataIDKey": "",
@@ -2889,7 +2889,7 @@
                           "OverridableProperties": {}
                         },
                         "Index": 0,
-                        "PublishOrderIndex": 87,
+                        "PublishOrderIndex": 86,
                         "VariantName": "Cancel",
                         "LayoutName": "",
                         "MetaDataIDKey": "",
@@ -3272,7 +3272,7 @@
                       "OverridableProperties": {}
                     },
                     "Index": 0,
-                    "PublishOrderIndex": 88,
+                    "PublishOrderIndex": 87,
                     "VariantName": "",
                     "LayoutName": "",
                     "MetaDataIDKey": "",
@@ -3758,7 +3758,7 @@
                       "OverridableProperties": {}
                     },
                     "Index": 0,
-                    "PublishOrderIndex": 89,
+                    "PublishOrderIndex": 88,
                     "VariantName": "manualLayoutContainer",
                     "LayoutName": "",
                     "MetaDataIDKey": "",
@@ -4090,7 +4090,7 @@
                       "OverridableProperties": {}
                     },
                     "Index": 0,
-                    "PublishOrderIndex": 90,
+                    "PublishOrderIndex": 89,
                     "VariantName": "galleryHorizontal",
                     "LayoutName": "",
                     "MetaDataIDKey": "",
@@ -4421,7 +4421,7 @@
                           "OverridableProperties": {}
                         },
                         "Index": 0,
-                        "PublishOrderIndex": 91,
+                        "PublishOrderIndex": 90,
                         "VariantName": "",
                         "LayoutName": "",
                         "MetaDataIDKey": "",
@@ -4475,7 +4475,7 @@
                           "OverridableProperties": {}
                         },
                         "Index": 0,
-                        "PublishOrderIndex": 92,
+                        "PublishOrderIndex": 91,
                         "VariantName": "",
                         "LayoutName": "",
                         "MetaDataIDKey": "",
@@ -4897,7 +4897,7 @@
                   "OverridableProperties": {}
                 },
                 "Index": 0,
-                "PublishOrderIndex": 93,
+                "PublishOrderIndex": 92,
                 "VariantName": "manualLayoutContainer",
                 "LayoutName": "",
                 "MetaDataIDKey": "",
@@ -5147,7 +5147,7 @@
               "OverridableProperties": {}
             },
             "Index": 0,
-            "PublishOrderIndex": 94,
+            "PublishOrderIndex": 93,
             "VariantName": "manualLayoutContainer",
             "LayoutName": "",
             "MetaDataIDKey": "",

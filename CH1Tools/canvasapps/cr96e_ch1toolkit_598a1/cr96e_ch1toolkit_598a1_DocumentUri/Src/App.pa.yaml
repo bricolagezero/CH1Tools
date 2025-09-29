@@ -72,4 +72,5 @@ App:
               { CategoryText: Category.Value }
           )
       );
+
     Theme: ='CH1 Theme'

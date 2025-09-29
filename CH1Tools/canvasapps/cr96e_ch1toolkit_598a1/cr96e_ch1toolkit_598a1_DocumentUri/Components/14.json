@@ -5,7 +5,7 @@
     "Template": {
       "Id": "http://microsoft.com/appmagic/Component",
       "Version": "1.0",
-      "LastModifiedTimestamp": "638947152309500893",
+      "LastModifiedTimestamp": "638947175710161901",
       "Name": "c75ed02b647e4e898eee7e59f51c7ef2",
       "FirstParty": true,
       "IsPremiumPcfControl": false,
@@ -184,7 +184,7 @@
           "OverridableProperties": {}
         },
         "Index": 0,
-        "PublishOrderIndex": 129,
+        "PublishOrderIndex": 128,
         "VariantName": "BrowseLayout_Horizontal_TwoTextOneImageOverlayVariant_ver5.0",
         "LayoutName": "",
         "MetaDataIDKey": "",
@@ -557,7 +557,7 @@
               "OverridableProperties": {}
             },
             "Index": 0,
-            "PublishOrderIndex": 130,
+            "PublishOrderIndex": 129,
             "VariantName": "",
             "LayoutName": "",
             "MetaDataIDKey": "",
@@ -616,7 +616,7 @@
               "OverridableProperties": {}
             },
             "Index": 0,
-            "PublishOrderIndex": 131,
+            "PublishOrderIndex": 130,
             "VariantName": "horizontalAutoLayoutContainer",
             "LayoutName": "",
             "MetaDataIDKey": "",
@@ -949,7 +949,7 @@
                   "OverridableProperties": {}
                 },
                 "Index": 0,
-                "PublishOrderIndex": 132,
+                "PublishOrderIndex": 131,
                 "VariantName": "",
                 "LayoutName": "",
                 "MetaDataIDKey": "",

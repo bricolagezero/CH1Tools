@@ -85,12 +85,12 @@
           }
         },
         {
-          "ruleId": "app-ErrExpectedIdentifierArg-Name",
+          "ruleId": "app-ErrInvalidName",
           "ruleIndex": 2,
           "message": {
             "id": "issue",
             "arguments": [
-              "\"Result\""
+              "Result"
             ]
           },
           "locations": [
@@ -101,10 +101,10 @@
                   "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.Items"
                 },
                 "region": {
-                  "charOffset": 115,
-                  "charLength": 8,
+                  "charOffset": 209,
+                  "charLength": 6,
                   "snippet": {
-                    "text": "\"Result\""
+                    "text": "Result"
                   }
                 }
               },
@@ -125,12 +125,12 @@
           }
         },
         {
-          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleId": "app-ErrExpectedIdentifierArg-Name",
           "ruleIndex": 3,
           "message": {
             "id": "issue",
             "arguments": [
-              "RenameColumns"
+              "\"CategoryValue\""
             ]
           },
           "locations": [
@@ -141,47 +141,7 @@
                   "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.Items"
                 },
                 "region": {
-                  "charOffset": 32,
-                  "charLength": 13,
-                  "snippet": {
-                    "text": "RenameColumns"
-                  }
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.Items"
-                }
-              ],
-              "properties": {
-                "module": "cmpDocLibraryPanel",
-                "type": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1",
-                "member": "Items"
-              }
-            }
-          ],
-          "properties": {
-            "level": "High"
-          }
-        },
-        {
-          "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 4,
-          "message": {
-            "id": "issue",
-            "arguments": [
-              "CategoryValue"
-            ]
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "address": {
-                  "relativeAddress": 0,
-                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.Items"
-                },
-                "region": {
-                  "charOffset": 200,
+                  "charOffset": 192,
                   "charLength": 15,
                   "snippet": {
                     "text": "\"CategoryValue\""
@@ -206,7 +166,87 @@
         },
         {
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3,
+          "ruleIndex": 4,
+          "message": {
+            "id": "issue",
+            "arguments": [
+              "AddColumns"
+            ]
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.Items"
+                },
+                "region": {
+                  "charOffset": 172,
+                  "charLength": 10,
+                  "snippet": {
+                    "text": "AddColumns"
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.Items"
+                }
+              ],
+              "properties": {
+                "module": "cmpDocLibraryPanel",
+                "type": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1",
+                "member": "Items"
+              }
+            }
+          ],
+          "properties": {
+            "level": "High"
+          }
+        },
+        {
+          "ruleId": "app-ErrColDNE-Name",
+          "ruleIndex": 5,
+          "message": {
+            "id": "issue",
+            "arguments": [
+              "CategoryValue"
+            ]
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.Items"
+                },
+                "region": {
+                  "charOffset": 226,
+                  "charLength": 15,
+                  "snippet": {
+                    "text": "\"CategoryValue\""
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.Items"
+                }
+              ],
+              "properties": {
+                "module": "cmpDocLibraryPanel",
+                "type": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1",
+                "member": "Items"
+              }
+            }
+          ],
+          "properties": {
+            "level": "High"
+          }
+        },
+        {
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4,
           "message": {
             "id": "issue",
             "arguments": [
@@ -221,7 +261,7 @@
                   "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.Items"
                 },
                 "region": {
-                  "charOffset": 174,
+                  "charOffset": 149,
                   "charLength": 13,
                   "snippet": {
                     "text": "SortByColumns"
@@ -246,7 +286,7 @@
         },
         {
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 5,
+          "ruleIndex": 2,
           "message": {
             "id": "issue",
             "arguments": [
@@ -286,7 +326,7 @@
         },
         {
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 5,
+          "ruleIndex": 2,
           "message": {
             "id": "issue",
             "arguments": [
@@ -367,7 +407,7 @@
         },
         {
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 5,
+          "ruleIndex": 2,
           "message": {
             "id": "issue",
             "arguments": [
@@ -407,7 +447,7 @@
         },
         {
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3,
+          "ruleIndex": 4,
           "message": {
             "id": "issue",
             "arguments": [
@@ -447,7 +487,7 @@
         },
         {
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 5,
+          "ruleIndex": 2,
           "message": {
             "id": "issue",
             "arguments": [
@@ -487,7 +527,7 @@
         },
         {
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3,
+          "ruleIndex": 4,
           "message": {
             "id": "issue",
             "arguments": [
@@ -3701,6 +3741,23 @@
               }
             },
             {
+              "id": "app-ErrInvalidName",
+              "messageStrings": {
+                "issue": {
+                  "text": "Name isn't valid. '{0}' isn't recognized."
+                }
+              },
+              "properties": {
+                "howToFix": [
+                  "Remove or correct the reference to the name that isn't valid."
+                ],
+                "whyFix": "",
+                "level": "High",
+                "componentType": "app",
+                "primaryCategory": "formula"
+              }
+            },
+            {
               "id": "app-ErrExpectedIdentifierArg-Name",
               "messageStrings": {
                 "issue": {
@@ -3736,23 +3793,6 @@
                 }
               },
               "properties": {
-                "whyFix": "",
-                "level": "High",
-                "componentType": "app",
-                "primaryCategory": "formula"
-              }
-            },
-            {
-              "id": "app-ErrInvalidName",
-              "messageStrings": {
-                "issue": {
-                  "text": "Name isn't valid. '{0}' isn't recognized."
-                }
-              },
-              "properties": {
-                "howToFix": [
-                  "Remove or correct the reference to the name that isn't valid."
-                ],
                 "whyFix": "",
                 "level": "High",
                 "componentType": "app",
