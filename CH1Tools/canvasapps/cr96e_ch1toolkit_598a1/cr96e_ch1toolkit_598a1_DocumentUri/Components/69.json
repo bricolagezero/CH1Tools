@@ -5,7 +5,7 @@
     "Template": {
       "Id": "http://microsoft.com/appmagic/Component",
       "Version": "637722065298885918",
-      "LastModifiedTimestamp": "638947143629602471",
+      "LastModifiedTimestamp": "638947152309550420",
       "Name": "8b957b1b652845dbaba273b21c3f35b1",
       "FirstParty": true,
       "IsPremiumPcfControl": false,
@@ -66,7 +66,7 @@
           "PropertyDataTypeKey": "Void",
           "Hidden": false,
           "PropertyScopeKey": {
-            "PropertyScopeRuleNamespaceKey": "70",
+            "PropertyScopeRuleNamespaceKey": "69",
             "PropertyScopeRulesKey": []
           },
           "DisplayName": "OnLeftButtonSelect",
@@ -97,7 +97,7 @@
           "PropertyDataTypeKey": "Void",
           "Hidden": false,
           "PropertyScopeKey": {
-            "PropertyScopeRuleNamespaceKey": "70",
+            "PropertyScopeRuleNamespaceKey": "69",
             "PropertyScopeRulesKey": []
           },
           "DisplayName": "OnRightButtonSelect",
@@ -110,7 +110,7 @@
           "PropertyDataTypeKey": "Void",
           "Hidden": false,
           "PropertyScopeKey": {
-            "PropertyScopeRuleNamespaceKey": "70",
+            "PropertyScopeRuleNamespaceKey": "69",
             "PropertyScopeRulesKey": []
           },
           "DisplayName": "OnBackSelect",
@@ -378,7 +378,7 @@
       }
     ],
     "IsLocked": false,
-    "ControlUniqueId": "70",
+    "ControlUniqueId": "69",
     "Children": [
       {
         "Type": "ControlInfo",
@@ -569,7 +569,7 @@
           "Size"
         ],
         "IsLocked": false,
-        "ControlUniqueId": "71",
+        "ControlUniqueId": "70",
         "Children": []
       },
       {
@@ -810,7 +810,7 @@
           "DropShadow"
         ],
         "IsLocked": false,
-        "ControlUniqueId": "72",
+        "ControlUniqueId": "71",
         "Children": [
           {
             "Type": "ControlInfo",
@@ -1113,7 +1113,7 @@
               "DropShadow"
             ],
             "IsLocked": false,
-            "ControlUniqueId": "73",
+            "ControlUniqueId": "72",
             "Children": [
               {
                 "Type": "ControlInfo",
@@ -1465,7 +1465,7 @@
                   }
                 ],
                 "IsLocked": false,
-                "ControlUniqueId": "74",
+                "ControlUniqueId": "73",
                 "Children": []
               },
               {
@@ -1703,7 +1703,7 @@
                   "AcceptsFocus"
                 ],
                 "IsLocked": false,
-                "ControlUniqueId": "75",
+                "ControlUniqueId": "74",
                 "Children": []
               },
               {
@@ -2126,7 +2126,7 @@
                   "ContentLanguage"
                 ],
                 "IsLocked": false,
-                "ControlUniqueId": "76",
+                "ControlUniqueId": "75",
                 "Children": []
               }
             ]
@@ -2565,7 +2565,7 @@
               "ContentLanguage"
             ],
             "IsLocked": false,
-            "ControlUniqueId": "77",
+            "ControlUniqueId": "76",
             "Children": []
           },
           {
@@ -2848,7 +2848,7 @@
               "DropShadow"
             ],
             "IsLocked": false,
-            "ControlUniqueId": "78",
+            "ControlUniqueId": "77",
             "Children": [
               {
                 "Type": "ControlInfo",
@@ -3256,7 +3256,7 @@
                   "ContentLanguage"
                 ],
                 "IsLocked": false,
-                "ControlUniqueId": "79",
+                "ControlUniqueId": "78",
                 "Children": []
               }
             ]

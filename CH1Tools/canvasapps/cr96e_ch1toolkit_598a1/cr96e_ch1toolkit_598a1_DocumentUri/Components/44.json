@@ -5,7 +5,7 @@
     "Template": {
       "Id": "http://microsoft.com/appmagic/Component",
       "Version": "637722065298845880",
-      "LastModifiedTimestamp": "638947143629559108",
+      "LastModifiedTimestamp": "638947152309509692",
       "Name": "6f7e77867f214727a8f185a4811b503f",
       "FirstParty": true,
       "IsPremiumPcfControl": false,
@@ -39,7 +39,7 @@
           "PropertyDataTypeKey": "Void",
           "Hidden": false,
           "PropertyScopeKey": {
-            "PropertyScopeRuleNamespaceKey": "45",
+            "PropertyScopeRuleNamespaceKey": "44",
             "PropertyScopeRulesKey": []
           },
           "DisplayName": "OnExpandSelect",
@@ -52,7 +52,7 @@
           "PropertyDataTypeKey": "Void",
           "Hidden": false,
           "PropertyScopeKey": {
-            "PropertyScopeRuleNamespaceKey": "45",
+            "PropertyScopeRuleNamespaceKey": "44",
             "PropertyScopeRulesKey": []
           },
           "DisplayName": "OnButtonSelect",
@@ -92,7 +92,7 @@
           "PropertyDataTypeKey": "String",
           "Hidden": true,
           "PropertyScopeKey": {
-            "PropertyScopeRuleNamespaceKey": "45",
+            "PropertyScopeRuleNamespaceKey": "44",
             "PropertyScopeRulesKey": [
               {
                 "Name": "GetMenuIconPath_IconName",
@@ -314,7 +314,7 @@
       "DefaultExpandValue"
     ],
     "IsLocked": false,
-    "ControlUniqueId": "45",
+    "ControlUniqueId": "44",
     "Children": [
       {
         "Type": "ControlInfo",
@@ -680,7 +680,7 @@
           "ContentLanguage"
         ],
         "IsLocked": false,
-        "ControlUniqueId": "46",
+        "ControlUniqueId": "45",
         "Children": []
       },
       {
@@ -1005,7 +1005,7 @@
           "#CopilotOverlayVisible"
         ],
         "IsLocked": false,
-        "ControlUniqueId": "47",
+        "ControlUniqueId": "46",
         "Children": [
           {
             "Type": "ControlInfo",
@@ -1070,7 +1070,7 @@
               }
             ],
             "IsLocked": false,
-            "ControlUniqueId": "48",
+            "ControlUniqueId": "47",
             "Children": []
           },
           {
@@ -1500,7 +1500,7 @@
               }
             ],
             "IsLocked": false,
-            "ControlUniqueId": "49",
+            "ControlUniqueId": "48",
             "Children": []
           },
           {
@@ -1839,7 +1839,7 @@
               }
             ],
             "IsLocked": false,
-            "ControlUniqueId": "50",
+            "ControlUniqueId": "49",
             "Children": []
           },
           {
@@ -2052,7 +2052,7 @@
               "ContentLanguage"
             ],
             "IsLocked": false,
-            "ControlUniqueId": "51",
+            "ControlUniqueId": "50",
             "Children": []
           },
           {
@@ -2384,7 +2384,7 @@
               "ContentLanguage"
             ],
             "IsLocked": false,
-            "ControlUniqueId": "52",
+            "ControlUniqueId": "51",
             "Children": []
           }
         ]

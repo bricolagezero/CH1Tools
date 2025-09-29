@@ -59,8 +59,8 @@
       "RelatedEntityName": "Favorite Item",
       "RelatedColumnInvariantName": "statuscode",
       "OptionSetInfoNameMapping": {
-        "2": "Inactive",
-        "1": "Active"
+        "1": "Active",
+        "2": "Inactive"
       },
       "OptionSetIsGlobal": false,
       "OptionSetIsBooleanValued": false,
@@ -102,8 +102,8 @@
       "RelatedColumnInvariantName": "cr96e_articlecategory",
       "OptionSetInfoNameMapping": {
         "0": "AI",
-        "2": "Copilot",
-        "1": "SharePoint"
+        "1": "SharePoint",
+        "2": "Copilot"
       },
       "OptionSetIsGlobal": false,
       "OptionSetIsBooleanValued": false,
@@ -144,8 +144,8 @@
       "RelatedEntityName": "Knowledge Article",
       "RelatedColumnInvariantName": "statuscode",
       "OptionSetInfoNameMapping": {
-        "2": "Inactive",
-        "1": "Active"
+        "1": "Active",
+        "2": "Inactive"
       },
       "OptionSetIsGlobal": false,
       "OptionSetIsBooleanValued": false,
@@ -186,8 +186,8 @@
       "RelatedEntityName": "Employee",
       "RelatedColumnInvariantName": "statuscode",
       "OptionSetInfoNameMapping": {
-        "2": "Inactive",
-        "1": "Active"
+        "1": "Active",
+        "2": "Inactive"
       },
       "OptionSetIsGlobal": false,
       "OptionSetIsBooleanValued": false,
@@ -228,8 +228,8 @@
       "RelatedEntityName": "MenuItemses",
       "RelatedColumnInvariantName": "statuscode",
       "OptionSetInfoNameMapping": {
-        "2": "Inactive",
-        "1": "Active"
+        "1": "Active",
+        "2": "Inactive"
       },
       "OptionSetIsGlobal": false,
       "OptionSetIsBooleanValued": false,
@@ -247,11 +247,11 @@
       "DisplayName": "Favorite Item (Views)",
       "RelatedEntityName": "Favorite Item",
       "ViewInfoNameMapping": {
-        "c820dfd3-1f11-41ad-acaa-be7d569942ed": "Inactive Favorite Item",
-        "7243ed33-da7f-4f2f-911a-4019ce712a10": "Favorite Item Associated View",
+        "65373334-d278-498b-aea7-50a6c5884b15": "Active Favorite Item",
         "09b68d4d-5f51-41b6-ba23-636b5d04c7dd": "Favorite Item Lookup View",
         "09e56dc7-50a2-4057-9a5c-49f18a1132f3": "Favorite Item Advanced Find View",
-        "65373334-d278-498b-aea7-50a6c5884b15": "Active Favorite Item"
+        "c820dfd3-1f11-41ad-acaa-be7d569942ed": "Inactive Favorite Item",
+        "7243ed33-da7f-4f2f-911a-4019ce712a10": "Favorite Item Associated View"
       }
     },
     {
@@ -260,11 +260,11 @@
       "DisplayName": "Knowledge Article (Views)",
       "RelatedEntityName": "Knowledge Article",
       "ViewInfoNameMapping": {
-        "89bc8176-10ba-43ac-8078-427eefa5c7d6": "Knowledge Article Associated View",
         "313559ea-60c4-44d8-b023-50f40bc24bfa": "Knowledge Article Lookup View",
-        "8629dc8b-6cf0-4f0b-9454-2cc246f00eb5": "Inactive Knowledge Article",
+        "89bc8176-10ba-43ac-8078-427eefa5c7d6": "Knowledge Article Associated View",
         "c2571f1c-7247-4436-b98d-a843ae486e09": "Knowledge Article Advanced Find View",
-        "f8e0b173-5d60-4676-8871-2c7ad8e2cb07": "Active Knowledge Article"
+        "f8e0b173-5d60-4676-8871-2c7ad8e2cb07": "Active Knowledge Article",
+        "8629dc8b-6cf0-4f0b-9454-2cc246f00eb5": "Inactive Knowledge Article"
       }
     },
     {
@@ -274,10 +274,10 @@
       "RelatedEntityName": "Employee",
       "ViewInfoNameMapping": {
         "ffa961bb-3539-48a3-87aa-1ba6a5a83fa8": "CH1 Team Lookup View",
-        "031c5095-6f63-48fc-bc4b-f60e90fa48d5": "Active CH1 Team",
-        "eaa0df31-341d-454e-a397-c0334440c217": "Inactive CH1 Team",
         "96520588-98db-4940-9179-a419837f2c54": "CH1 Team Associated View",
-        "73654788-2585-4c51-86bb-d754b4af8e30": "CH1 Team Advanced Find View"
+        "031c5095-6f63-48fc-bc4b-f60e90fa48d5": "Active CH1 Team",
+        "73654788-2585-4c51-86bb-d754b4af8e30": "CH1 Team Advanced Find View",
+        "eaa0df31-341d-454e-a397-c0334440c217": "Inactive CH1 Team"
       }
     },
     {
@@ -286,11 +286,11 @@
       "DisplayName": "MenuItemses (Views)",
       "RelatedEntityName": "MenuItemses",
       "ViewInfoNameMapping": {
-        "acb26eb1-0c9d-4f51-825b-0a85e585da86": "MenuItems Lookup View",
         "bb480f73-dba2-4dcd-8d37-b64d3e8f27a9": "MenuItems Advanced Find View",
         "57fe0bbb-b308-422a-9944-58711812cb11": "Active MenuItemses",
         "ea61d635-78af-440c-ab8d-a344b88f2ffd": "MenuItems Associated View",
-        "867c5752-a961-4c39-8a52-d1fb08c26552": "Inactive MenuItemses"
+        "867c5752-a961-4c39-8a52-d1fb08c26552": "Inactive MenuItemses",
+        "acb26eb1-0c9d-4f51-825b-0a85e585da86": "MenuItems Lookup View"
       }
     },
     {

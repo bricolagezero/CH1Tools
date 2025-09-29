@@ -117,7 +117,7 @@
       }
     ],
     "IsLocked": false,
-    "ControlUniqueId": "98",
+    "ControlUniqueId": "97",
     "Children": [
       {
         "Type": "ControlInfo",
@@ -345,7 +345,7 @@
           "ContentLanguage"
         ],
         "IsLocked": false,
-        "ControlUniqueId": "99",
+        "ControlUniqueId": "98",
         "Children": []
       },
       {
@@ -628,7 +628,7 @@
           "DropShadow"
         ],
         "IsLocked": false,
-        "ControlUniqueId": "100",
+        "ControlUniqueId": "99",
         "Children": [
           {
             "Type": "ControlInfo",
@@ -952,7 +952,7 @@
               "DropShadow"
             ],
             "IsLocked": false,
-            "ControlUniqueId": "101",
+            "ControlUniqueId": "100",
             "Children": [
               {
                 "Type": "ControlInfo",
@@ -961,7 +961,7 @@
                 "Template": {
                   "Id": "http://microsoft.com/appmagic/Component",
                   "Version": "637722065298845880",
-                  "LastModifiedTimestamp": "638947143629559108",
+                  "LastModifiedTimestamp": "638947152309509692",
                   "Name": "6f7e77867f214727a8f185a4811b503f",
                   "FirstParty": true,
                   "IsPremiumPcfControl": false,
@@ -995,7 +995,7 @@
                       "PropertyDataTypeKey": "Void",
                       "Hidden": false,
                       "PropertyScopeKey": {
-                        "PropertyScopeRuleNamespaceKey": "45",
+                        "PropertyScopeRuleNamespaceKey": "44",
                         "PropertyScopeRulesKey": []
                       },
                       "DisplayName": "OnExpandSelect",
@@ -1008,7 +1008,7 @@
                       "PropertyDataTypeKey": "Void",
                       "Hidden": false,
                       "PropertyScopeKey": {
-                        "PropertyScopeRuleNamespaceKey": "45",
+                        "PropertyScopeRuleNamespaceKey": "44",
                         "PropertyScopeRulesKey": []
                       },
                       "DisplayName": "OnButtonSelect",
@@ -1048,7 +1048,7 @@
                       "PropertyDataTypeKey": "String",
                       "Hidden": true,
                       "PropertyScopeKey": {
-                        "PropertyScopeRuleNamespaceKey": "45",
+                        "PropertyScopeRuleNamespaceKey": "44",
                         "PropertyScopeRulesKey": [
                           {
                             "Name": "GetMenuIconPath_IconName",
@@ -1088,7 +1088,7 @@
                   "ComponentType": "CanvasComponent",
                   "ComponentDefinitionInfo": {
                     "Name": "ExpandMenu",
-                    "LastModifiedTimestamp": "638947143629559108",
+                    "LastModifiedTimestamp": "638947152309509692",
                     "AllowAccessToGlobals": false,
                     "Rules": [
                       {
@@ -1620,7 +1620,7 @@
                           "ContentLanguage"
                         ],
                         "IsLocked": false,
-                        "ControlUniqueId": "46",
+                        "ControlUniqueId": "45",
                         "Children": []
                       },
                       {
@@ -1945,7 +1945,7 @@
                           "#CopilotOverlayVisible"
                         ],
                         "IsLocked": false,
-                        "ControlUniqueId": "47",
+                        "ControlUniqueId": "46",
                         "Children": [
                           {
                             "Type": "ControlInfo",
@@ -2010,7 +2010,7 @@
                               }
                             ],
                             "IsLocked": false,
-                            "ControlUniqueId": "48",
+                            "ControlUniqueId": "47",
                             "Children": []
                           },
                           {
@@ -2440,7 +2440,7 @@
                               }
                             ],
                             "IsLocked": false,
-                            "ControlUniqueId": "49",
+                            "ControlUniqueId": "48",
                             "Children": []
                           },
                           {
@@ -2779,7 +2779,7 @@
                               }
                             ],
                             "IsLocked": false,
-                            "ControlUniqueId": "50",
+                            "ControlUniqueId": "49",
                             "Children": []
                           },
                           {
@@ -2992,7 +2992,7 @@
                               "ContentLanguage"
                             ],
                             "IsLocked": false,
-                            "ControlUniqueId": "51",
+                            "ControlUniqueId": "50",
                             "Children": []
                           },
                           {
@@ -3324,7 +3324,7 @@
                               "ContentLanguage"
                             ],
                             "IsLocked": false,
-                            "ControlUniqueId": "52",
+                            "ControlUniqueId": "51",
                             "Children": []
                           }
                         ]
@@ -3529,7 +3529,7 @@
                   }
                 ],
                 "IsLocked": false,
-                "ControlUniqueId": "102",
+                "ControlUniqueId": "101",
                 "Metadata": {
                   "Description": "",
                   "AllowCustomization": true,
@@ -3861,7 +3861,7 @@
               "DropShadow"
             ],
             "IsLocked": false,
-            "ControlUniqueId": "103",
+            "ControlUniqueId": "102",
             "Children": [
               {
                 "Type": "ControlInfo",
@@ -4143,7 +4143,7 @@
                   "DropShadow"
                 ],
                 "IsLocked": false,
-                "ControlUniqueId": "104",
+                "ControlUniqueId": "103",
                 "Children": [
                   {
                     "Type": "ControlInfo",
@@ -4537,7 +4537,7 @@
                       "maximumHeight"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "105",
+                    "ControlUniqueId": "104",
                     "Children": []
                   }
                 ]
@@ -4899,7 +4899,7 @@
                   "#CopilotOverlayVisible"
                 ],
                 "IsLocked": false,
-                "ControlUniqueId": "106",
+                "ControlUniqueId": "105",
                 "Children": [
                   {
                     "Type": "ControlInfo",
@@ -4943,7 +4943,7 @@
                       "TemplateFill"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "107",
+                    "ControlUniqueId": "106",
                     "Children": []
                   },
                   {
@@ -5226,7 +5226,7 @@
                       "DropShadow"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "108",
+                    "ControlUniqueId": "107",
                     "Children": [
                       {
                         "Type": "ControlInfo",
@@ -5578,7 +5578,7 @@
                           "maximumHeight"
                         ],
                         "IsLocked": false,
-                        "ControlUniqueId": "109",
+                        "ControlUniqueId": "108",
                         "Children": []
                       },
                       {
@@ -5980,7 +5980,7 @@
                           "maximumHeight"
                         ],
                         "IsLocked": false,
-                        "ControlUniqueId": "110",
+                        "ControlUniqueId": "109",
                         "Children": []
                       },
                       {
@@ -6375,7 +6375,7 @@
                           "maximumHeight"
                         ],
                         "IsLocked": false,
-                        "ControlUniqueId": "111",
+                        "ControlUniqueId": "110",
                         "Children": []
                       },
                       {
@@ -6457,7 +6457,7 @@
                           "ZIndex"
                         ],
                         "IsLocked": false,
-                        "ControlUniqueId": "112",
+                        "ControlUniqueId": "111",
                         "Children": []
                       }
                     ]

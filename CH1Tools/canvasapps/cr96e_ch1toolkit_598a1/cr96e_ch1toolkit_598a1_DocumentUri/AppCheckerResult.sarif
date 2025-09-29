@@ -85,12 +85,12 @@
           }
         },
         {
-          "ruleId": "app-ErrInvalidName",
+          "ruleId": "app-ErrExpectedIdentifierArg-Name",
           "ruleIndex": 2,
           "message": {
             "id": "issue",
             "arguments": [
-              "Result"
+              "\"Result\""
             ]
           },
           "locations": [
@@ -101,10 +101,10 @@
                   "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.Items"
                 },
                 "region": {
-                  "charOffset": 58,
-                  "charLength": 6,
+                  "charOffset": 115,
+                  "charLength": 8,
                   "snippet": {
-                    "text": "Result"
+                    "text": "\"Result\""
                   }
                 }
               },
@@ -130,7 +130,7 @@
           "message": {
             "id": "issue",
             "arguments": [
-              "Sort"
+              "RenameColumns"
             ]
           },
           "locations": [
@@ -141,10 +141,90 @@
                   "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.Items"
                 },
                 "region": {
-                  "charOffset": 0,
-                  "charLength": 4,
+                  "charOffset": 32,
+                  "charLength": 13,
                   "snippet": {
-                    "text": "Sort"
+                    "text": "RenameColumns"
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.Items"
+                }
+              ],
+              "properties": {
+                "module": "cmpDocLibraryPanel",
+                "type": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1",
+                "member": "Items"
+              }
+            }
+          ],
+          "properties": {
+            "level": "High"
+          }
+        },
+        {
+          "ruleId": "app-ErrColDNE-Name",
+          "ruleIndex": 4,
+          "message": {
+            "id": "issue",
+            "arguments": [
+              "CategoryValue"
+            ]
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.Items"
+                },
+                "region": {
+                  "charOffset": 200,
+                  "charLength": 15,
+                  "snippet": {
+                    "text": "\"CategoryValue\""
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.Items"
+                }
+              ],
+              "properties": {
+                "module": "cmpDocLibraryPanel",
+                "type": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1",
+                "member": "Items"
+              }
+            }
+          ],
+          "properties": {
+            "level": "High"
+          }
+        },
+        {
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 3,
+          "message": {
+            "id": "issue",
+            "arguments": [
+              "SortByColumns"
+            ]
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.Items"
+                },
+                "region": {
+                  "charOffset": 174,
+                  "charLength": 13,
+                  "snippet": {
+                    "text": "SortByColumns"
                   }
                 }
               },
@@ -166,11 +246,11 @@
         },
         {
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 2,
+          "ruleIndex": 5,
           "message": {
             "id": "issue",
             "arguments": [
-              "Result"
+              "CategoryValue"
             ]
           },
           "locations": [
@@ -182,9 +262,9 @@
                 },
                 "region": {
                   "charOffset": 8,
-                  "charLength": 7,
+                  "charLength": 14,
                   "snippet": {
-                    "text": ".Result"
+                    "text": ".CategoryValue"
                   }
                 }
               },
@@ -206,11 +286,11 @@
         },
         {
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 2,
+          "ruleIndex": 5,
           "message": {
             "id": "issue",
             "arguments": [
-              "Result"
+              "CategoryValue"
             ]
           },
           "locations": [
@@ -222,9 +302,9 @@
                 },
                 "region": {
                   "charOffset": 44,
-                  "charLength": 7,
+                  "charLength": 14,
                   "snippet": {
-                    "text": ".Result"
+                    "text": ".CategoryValue"
                   }
                 }
               },
@@ -246,7 +326,7 @@
         },
         {
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4,
+          "ruleIndex": 6,
           "message": {
             "id": "issue",
             "arguments": [
@@ -287,175 +367,11 @@
         },
         {
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 2,
-          "message": {
-            "id": "issue",
-            "arguments": [
-              "Result"
-            ]
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "address": {
-                  "relativeAddress": 0,
-                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.btnCat_1.OnSelect"
-                },
-                "region": {
-                  "charOffset": 25,
-                  "charLength": 7,
-                  "snippet": {
-                    "text": ".Result"
-                  }
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.btnCat_1.OnSelect"
-                }
-              ],
-              "properties": {
-                "module": "cmpDocLibraryPanel",
-                "type": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.btnCat_1",
-                "member": "OnSelect"
-              }
-            }
-          ],
-          "properties": {
-            "level": "High"
-          }
-        },
-        {
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4,
-          "message": {
-            "id": "issue",
-            "arguments": [
-              "Text",
-              "Error"
-            ]
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "address": {
-                  "relativeAddress": 0,
-                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.btnCat_1.OnSelect"
-                },
-                "region": {
-                  "charOffset": 78,
-                  "charLength": 1,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.btnCat_1.OnSelect"
-                }
-              ],
-              "properties": {
-                "module": "cmpDocLibraryPanel",
-                "type": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.btnCat_1",
-                "member": "OnSelect"
-              }
-            }
-          ],
-          "properties": {
-            "level": "High"
-          }
-        },
-        {
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4,
-          "message": {
-            "id": "issue",
-            "arguments": [
-              "Text",
-              "Error"
-            ]
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "address": {
-                  "relativeAddress": 0,
-                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.btnCat_1.OnSelect"
-                },
-                "region": {
-                  "charOffset": 125,
-                  "charLength": 1,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.btnCat_1.OnSelect"
-                }
-              ],
-              "properties": {
-                "module": "cmpDocLibraryPanel",
-                "type": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.btnCat_1",
-                "member": "OnSelect"
-              }
-            }
-          ],
-          "properties": {
-            "level": "High"
-          }
-        },
-        {
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3,
-          "message": {
-            "id": "issue",
-            "arguments": [
-              "Collect"
-            ]
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "address": {
-                  "relativeAddress": 0,
-                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.btnCat_1.OnSelect"
-                },
-                "region": {
-                  "charOffset": 141,
-                  "charLength": 7,
-                  "snippet": {
-                    "text": "Collect"
-                  }
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.btnCat_1.OnSelect"
-                }
-              ],
-              "properties": {
-                "module": "cmpDocLibraryPanel",
-                "type": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.btnCat_1",
-                "member": "OnSelect"
-              }
-            }
-          ],
-          "properties": {
-            "level": "High"
-          }
-        },
-        {
-          "ruleId": "app-ErrColumnTypeMismatch-ColName-ExpectedType-ActualType",
           "ruleIndex": 5,
           "message": {
             "id": "issue",
             "arguments": [
-              "Value",
-              "Text",
-              "Error"
+              "CategoryValue"
             ]
           },
           "locations": [
@@ -466,10 +382,50 @@
                   "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.btnCat_1.OnSelect"
                 },
                 "region": {
-                  "charOffset": 161,
+                  "charOffset": 30,
                   "charLength": 14,
                   "snippet": {
-                    "text": "{ Value: val }"
+                    "text": ".CategoryValue"
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.btnCat_1.OnSelect"
+                }
+              ],
+              "properties": {
+                "module": "cmpDocLibraryPanel",
+                "type": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.btnCat_1",
+                "member": "OnSelect"
+              }
+            }
+          ],
+          "properties": {
+            "level": "High"
+          }
+        },
+        {
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 3,
+          "message": {
+            "id": "issue",
+            "arguments": [
+              "Text"
+            ]
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "address": {
+                  "relativeAddress": 0,
+                  "fullyQualifiedName": "cmpDocLibraryPanel.cntToolbar_1.Pills_1.galKBCatPills_1.btnCat_1.OnSelect"
+                },
+                "region": {
+                  "charOffset": 17,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "Text"
                   }
                 }
               },
@@ -491,167 +447,7 @@
         },
         {
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 2,
-          "message": {
-            "id": "issue",
-            "arguments": [
-              "Description"
-            ]
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "address": {
-                  "relativeAddress": 0,
-                  "fullyQualifiedName": "cmpDocLibraryPanel.Right_Container.FileGallery.Items"
-                },
-                "region": {
-                  "charOffset": 476,
-                  "charLength": 11,
-                  "snippet": {
-                    "text": "Description"
-                  }
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "cmpDocLibraryPanel.Right_Container.FileGallery.Items"
-                }
-              ],
-              "properties": {
-                "module": "cmpDocLibraryPanel",
-                "type": "cmpDocLibraryPanel.Right_Container.FileGallery",
-                "member": "Items"
-              }
-            }
-          ],
-          "properties": {
-            "level": "High"
-          }
-        },
-        {
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3,
-          "message": {
-            "id": "issue",
-            "arguments": [
-              "Coalesce"
-            ]
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "address": {
-                  "relativeAddress": 0,
-                  "fullyQualifiedName": "cmpDocLibraryPanel.Right_Container.FileGallery.Items"
-                },
-                "region": {
-                  "charOffset": 467,
-                  "charLength": 8,
-                  "snippet": {
-                    "text": "Coalesce"
-                  }
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "cmpDocLibraryPanel.Right_Container.FileGallery.Items"
-                }
-              ],
-              "properties": {
-                "module": "cmpDocLibraryPanel",
-                "type": "cmpDocLibraryPanel.Right_Container.FileGallery",
-                "member": "Items"
-              }
-            }
-          ],
-          "properties": {
-            "level": "High"
-          }
-        },
-        {
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 2,
-          "message": {
-            "id": "issue",
-            "arguments": [
-              "Description"
-            ]
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "address": {
-                  "relativeAddress": 0,
-                  "fullyQualifiedName": "cmpDocLibraryPanel.Right_Container.FileGallery.Container10.HtmlText1.HtmlText"
-                },
-                "region": {
-                  "charOffset": 17,
-                  "charLength": 12,
-                  "snippet": {
-                    "text": ".Description"
-                  }
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "cmpDocLibraryPanel.Right_Container.FileGallery.Container10.HtmlText1.HtmlText"
-                }
-              ],
-              "properties": {
-                "module": "cmpDocLibraryPanel",
-                "type": "cmpDocLibraryPanel.Right_Container.FileGallery.Container10.HtmlText1",
-                "member": "HtmlText"
-              }
-            }
-          ],
-          "properties": {
-            "level": "High"
-          }
-        },
-        {
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3,
-          "message": {
-            "id": "issue",
-            "arguments": [
-              "Coalesce"
-            ]
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "address": {
-                  "relativeAddress": 0,
-                  "fullyQualifiedName": "cmpDocLibraryPanel.Right_Container.FileGallery.Container10.HtmlText1.HtmlText"
-                },
-                "region": {
-                  "charOffset": 0,
-                  "charLength": 8,
-                  "snippet": {
-                    "text": "Coalesce"
-                  }
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "cmpDocLibraryPanel.Right_Container.FileGallery.Container10.HtmlText1.HtmlText"
-                }
-              ],
-              "properties": {
-                "module": "cmpDocLibraryPanel",
-                "type": "cmpDocLibraryPanel.Right_Container.FileGallery.Container10.HtmlText1",
-                "member": "HtmlText"
-              }
-            }
-          ],
-          "properties": {
-            "level": "High"
-          }
-        },
-        {
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 2,
+          "ruleIndex": 5,
           "message": {
             "id": "issue",
             "arguments": [
@@ -771,7 +567,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -801,7 +597,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -831,7 +627,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -861,7 +657,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -891,7 +687,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -921,7 +717,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -951,7 +747,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -981,7 +777,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -1011,7 +807,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -1041,7 +837,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -1071,7 +867,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -1101,7 +897,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -1131,7 +927,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -1161,7 +957,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -1191,7 +987,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -1221,7 +1017,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -1251,7 +1047,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -1281,7 +1077,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -1311,7 +1107,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -1341,7 +1137,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -1371,7 +1167,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -1401,7 +1197,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -1431,7 +1227,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -1461,7 +1257,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -1491,7 +1287,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -1521,7 +1317,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -1551,7 +1347,7 @@
         },
         {
           "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 9,
+          "ruleIndex": 10,
           "message": {
             "id": "issue"
           },
@@ -1581,7 +1377,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -1611,7 +1407,7 @@
         },
         {
           "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 9,
+          "ruleIndex": 10,
           "message": {
             "id": "issue"
           },
@@ -1641,7 +1437,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -1671,7 +1467,7 @@
         },
         {
           "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 9,
+          "ruleIndex": 10,
           "message": {
             "id": "issue"
           },
@@ -1701,7 +1497,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -1731,7 +1527,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -1761,7 +1557,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -1791,7 +1587,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -1821,7 +1617,7 @@
         },
         {
           "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 9,
+          "ruleIndex": 10,
           "message": {
             "id": "issue"
           },
@@ -1851,7 +1647,7 @@
         },
         {
           "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 9,
+          "ruleIndex": 10,
           "message": {
             "id": "issue"
           },
@@ -1881,7 +1677,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -1911,7 +1707,7 @@
         },
         {
           "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 9,
+          "ruleIndex": 10,
           "message": {
             "id": "issue"
           },
@@ -1941,7 +1737,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -1971,7 +1767,7 @@
         },
         {
           "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 9,
+          "ruleIndex": 10,
           "message": {
             "id": "issue"
           },
@@ -2001,7 +1797,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -2031,7 +1827,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -2061,7 +1857,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -2091,7 +1887,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -2121,7 +1917,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -2151,7 +1947,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -2181,7 +1977,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -2211,7 +2007,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -2241,7 +2037,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -2271,7 +2067,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -2301,7 +2097,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -2331,7 +2127,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -2361,7 +2157,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -2391,7 +2187,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -2421,7 +2217,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -2451,7 +2247,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -2481,7 +2277,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -2511,7 +2307,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -2541,7 +2337,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -2571,7 +2367,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -2601,7 +2397,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -2631,7 +2427,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -2661,7 +2457,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -2691,7 +2487,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -2721,7 +2517,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -2751,7 +2547,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -2781,7 +2577,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -2811,7 +2607,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -2841,7 +2637,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -2871,7 +2667,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -2901,7 +2697,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -2931,7 +2727,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -2961,7 +2757,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -2991,7 +2787,7 @@
         },
         {
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8,
+          "ruleIndex": 9,
           "message": {
             "id": "issue"
           },
@@ -3021,7 +2817,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -3051,7 +2847,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -3081,7 +2877,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -3111,7 +2907,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -3141,7 +2937,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -3171,7 +2967,7 @@
         },
         {
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7,
+          "ruleIndex": 8,
           "message": {
             "id": "issue"
           },
@@ -3201,7 +2997,7 @@
         },
         {
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6,
+          "ruleIndex": 7,
           "message": {
             "id": "issue"
           },
@@ -3231,7 +3027,7 @@
         },
         {
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10,
+          "ruleIndex": 11,
           "message": {
             "id": "issue"
           },
@@ -3261,7 +3057,7 @@
         },
         {
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10,
+          "ruleIndex": 11,
           "message": {
             "id": "issue"
           },
@@ -3291,7 +3087,7 @@
         },
         {
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10,
+          "ruleIndex": 11,
           "message": {
             "id": "issue"
           },
@@ -3321,7 +3117,7 @@
         },
         {
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10,
+          "ruleIndex": 11,
           "message": {
             "id": "issue"
           },
@@ -3351,7 +3147,7 @@
         },
         {
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10,
+          "ruleIndex": 11,
           "message": {
             "id": "issue"
           },
@@ -3381,7 +3177,7 @@
         },
         {
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 11,
+          "ruleIndex": 12,
           "message": {
             "id": "issue"
           },
@@ -3411,7 +3207,7 @@
         },
         {
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 11,
+          "ruleIndex": 12,
           "message": {
             "id": "issue"
           },
@@ -3441,7 +3237,7 @@
         },
         {
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 11,
+          "ruleIndex": 12,
           "message": {
             "id": "issue"
           },
@@ -3471,7 +3267,7 @@
         },
         {
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 11,
+          "ruleIndex": 12,
           "message": {
             "id": "issue"
           },
@@ -3501,7 +3297,7 @@
         },
         {
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 11,
+          "ruleIndex": 12,
           "message": {
             "id": "issue"
           },
@@ -3531,7 +3327,7 @@
         },
         {
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 11,
+          "ruleIndex": 12,
           "message": {
             "id": "issue"
           },
@@ -3561,7 +3357,7 @@
         },
         {
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 11,
+          "ruleIndex": 12,
           "message": {
             "id": "issue"
           },
@@ -3591,7 +3387,7 @@
         },
         {
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10,
+          "ruleIndex": 11,
           "message": {
             "id": "issue"
           },
@@ -3621,7 +3417,7 @@
         },
         {
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10,
+          "ruleIndex": 11,
           "message": {
             "id": "issue"
           },
@@ -3651,7 +3447,7 @@
         },
         {
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10,
+          "ruleIndex": 11,
           "message": {
             "id": "issue"
           },
@@ -3681,7 +3477,7 @@
         },
         {
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10,
+          "ruleIndex": 11,
           "message": {
             "id": "issue"
           },
@@ -3711,7 +3507,7 @@
         },
         {
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10,
+          "ruleIndex": 11,
           "message": {
             "id": "issue"
           },
@@ -3741,7 +3537,7 @@
         },
         {
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10,
+          "ruleIndex": 11,
           "message": {
             "id": "issue"
           },
@@ -3771,7 +3567,7 @@
         },
         {
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10,
+          "ruleIndex": 11,
           "message": {
             "id": "issue"
           },
@@ -3801,7 +3597,7 @@
         },
         {
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10,
+          "ruleIndex": 11,
           "message": {
             "id": "issue"
           },
@@ -3831,7 +3627,7 @@
         },
         {
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10,
+          "ruleIndex": 11,
           "message": {
             "id": "issue"
           },
@@ -3905,16 +3701,13 @@
               }
             },
             {
-              "id": "app-ErrInvalidName",
+              "id": "app-ErrExpectedIdentifierArg-Name",
               "messageStrings": {
                 "issue": {
-                  "text": "Name isn't valid. '{0}' isn't recognized."
+                  "text": "Expected identifier name"
                 }
               },
               "properties": {
-                "howToFix": [
-                  "Remove or correct the reference to the name that isn't valid."
-                ],
                 "whyFix": "",
                 "level": "High",
                 "componentType": "app",
@@ -3936,6 +3729,37 @@
               }
             },
             {
+              "id": "app-ErrColDNE-Name",
+              "messageStrings": {
+                "issue": {
+                  "text": "The specified column '{0}' does not exist."
+                }
+              },
+              "properties": {
+                "whyFix": "",
+                "level": "High",
+                "componentType": "app",
+                "primaryCategory": "formula"
+              }
+            },
+            {
+              "id": "app-ErrInvalidName",
+              "messageStrings": {
+                "issue": {
+                  "text": "Name isn't valid. '{0}' isn't recognized."
+                }
+              },
+              "properties": {
+                "howToFix": [
+                  "Remove or correct the reference to the name that isn't valid."
+                ],
+                "whyFix": "",
+                "level": "High",
+                "componentType": "app",
+                "primaryCategory": "formula"
+              }
+            },
+            {
               "id": "app-ErrIncompatibleTypesForEquality-Left-Right",
               "messageStrings": {
                 "issue": {
@@ -3946,23 +3770,6 @@
                 "howToFix": [
                   "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
                   "If you’re comparing records or tables, the field or column types must match exactly."
-                ],
-                "whyFix": "",
-                "level": "High",
-                "componentType": "app",
-                "primaryCategory": "formula"
-              }
-            },
-            {
-              "id": "app-ErrColumnTypeMismatch-ColName-ExpectedType-ActualType",
-              "messageStrings": {
-                "issue": {
-                  "text": "Incompatible type. The '{0}' column in the data source you’re updating expects a '{1}' type and you’re using a '{2}' type."
-                }
-              },
-              "properties": {
-                "howToFix": [
-                  "You might need to convert the value to the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value or a string to a number."
                 ],
                 "whyFix": "",
                 "level": "High",

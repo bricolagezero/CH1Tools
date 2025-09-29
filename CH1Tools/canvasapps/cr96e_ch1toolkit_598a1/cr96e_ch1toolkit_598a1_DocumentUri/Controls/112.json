@@ -103,7 +103,7 @@
       "ContentLanguage"
     ],
     "IsLocked": false,
-    "ControlUniqueId": "113",
+    "ControlUniqueId": "112",
     "Children": [
       {
         "Type": "ControlInfo",
@@ -331,7 +331,7 @@
           "ContentLanguage"
         ],
         "IsLocked": false,
-        "ControlUniqueId": "114",
+        "ControlUniqueId": "113",
         "Children": []
       },
       {
@@ -614,7 +614,7 @@
           "DropShadow"
         ],
         "IsLocked": false,
-        "ControlUniqueId": "115",
+        "ControlUniqueId": "114",
         "Children": [
           {
             "Type": "ControlInfo",
@@ -938,7 +938,7 @@
               "DropShadow"
             ],
             "IsLocked": false,
-            "ControlUniqueId": "116",
+            "ControlUniqueId": "115",
             "Children": [
               {
                 "Type": "ControlInfo",
@@ -947,7 +947,7 @@
                 "Template": {
                   "Id": "http://microsoft.com/appmagic/Component",
                   "Version": "1.0",
-                  "LastModifiedTimestamp": "638947143629403689",
+                  "LastModifiedTimestamp": "638947152309354546",
                   "Name": "0ca280d68792401ab63e42bec22b9619",
                   "FirstParty": true,
                   "IsPremiumPcfControl": false,
@@ -1001,7 +1001,7 @@
                   "ComponentType": "CanvasComponent",
                   "ComponentDefinitionInfo": {
                     "Name": "cmpNav",
-                    "LastModifiedTimestamp": "638947143629403689",
+                    "LastModifiedTimestamp": "638947152309354546",
                     "AllowAccessToGlobals": true,
                     "Rules": [
                       {
@@ -4051,7 +4051,7 @@
                   "OnReset"
                 ],
                 "IsLocked": false,
-                "ControlUniqueId": "117",
+                "ControlUniqueId": "116",
                 "Metadata": {
                   "Description": "",
                   "AllowCustomization": true,
@@ -4383,7 +4383,7 @@
               "DropShadow"
             ],
             "IsLocked": false,
-            "ControlUniqueId": "118",
+            "ControlUniqueId": "117",
             "Children": [
               {
                 "Type": "ControlInfo",
@@ -4665,7 +4665,7 @@
                   "DropShadow"
                 ],
                 "IsLocked": false,
-                "ControlUniqueId": "119",
+                "ControlUniqueId": "118",
                 "Children": [
                   {
                     "Type": "ControlInfo",
@@ -4989,7 +4989,7 @@
                       "DropShadow"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "120",
+                    "ControlUniqueId": "119",
                     "Children": [
                       {
                         "Type": "ControlInfo",
@@ -5474,7 +5474,7 @@
                           "minimumWidth"
                         ],
                         "IsLocked": false,
-                        "ControlUniqueId": "121",
+                        "ControlUniqueId": "120",
                         "Children": []
                       }
                     ]
@@ -5801,7 +5801,7 @@
                       "DropShadow"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "122",
+                    "ControlUniqueId": "121",
                     "Children": [
                       {
                         "Type": "ControlInfo",
@@ -6202,7 +6202,7 @@
                           "#CopilotOverlayVisible"
                         ],
                         "IsLocked": false,
-                        "ControlUniqueId": "123",
+                        "ControlUniqueId": "122",
                         "Children": [
                           {
                             "Type": "ControlInfo",
@@ -6253,7 +6253,7 @@
                               "TemplateFill"
                             ],
                             "IsLocked": false,
-                            "ControlUniqueId": "124",
+                            "ControlUniqueId": "123",
                             "Children": []
                           },
                           {
@@ -6634,7 +6634,7 @@
                               "minimumWidth"
                             ],
                             "IsLocked": false,
-                            "ControlUniqueId": "125",
+                            "ControlUniqueId": "124",
                             "Children": []
                           }
                         ]
@@ -6963,7 +6963,7 @@
                       "DropShadow"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "126",
+                    "ControlUniqueId": "125",
                     "Children": [
                       {
                         "Type": "ControlInfo",
@@ -7254,7 +7254,7 @@
                           "ContentLanguage"
                         ],
                         "IsLocked": false,
-                        "ControlUniqueId": "127",
+                        "ControlUniqueId": "126",
                         "Children": []
                       }
                     ]
@@ -7541,7 +7541,7 @@
                   "DropShadow"
                 ],
                 "IsLocked": false,
-                "ControlUniqueId": "128",
+                "ControlUniqueId": "127",
                 "Children": [
                   {
                     "Type": "ControlInfo",
@@ -7823,7 +7823,7 @@
                       "DropShadow"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "129",
+                    "ControlUniqueId": "128",
                     "Children": [
                       {
                         "Type": "ControlInfo",
@@ -8147,7 +8147,7 @@
                           "DropShadow"
                         ],
                         "IsLocked": false,
-                        "ControlUniqueId": "130",
+                        "ControlUniqueId": "129",
                         "Children": [
                           {
                             "Type": "ControlInfo",
@@ -8471,7 +8471,7 @@
                               "DropShadow"
                             ],
                             "IsLocked": false,
-                            "ControlUniqueId": "131",
+                            "ControlUniqueId": "130",
                             "Children": [
                               {
                                 "Type": "ControlInfo",
@@ -8907,7 +8907,7 @@
                                   "maximumHeight"
                                 ],
                                 "IsLocked": false,
-                                "ControlUniqueId": "132",
+                                "ControlUniqueId": "131",
                                 "Children": []
                               },
                               {
@@ -9344,7 +9344,7 @@
                                   "maximumHeight"
                                 ],
                                 "IsLocked": false,
-                                "ControlUniqueId": "133",
+                                "ControlUniqueId": "132",
                                 "Children": []
                               }
                             ]
@@ -9624,7 +9624,7 @@
                               "ContentLanguage"
                             ],
                             "IsLocked": false,
-                            "ControlUniqueId": "134",
+                            "ControlUniqueId": "133",
                             "Children": []
                           }
                         ]
@@ -9951,7 +9951,7 @@
                           "DropShadow"
                         ],
                         "IsLocked": false,
-                        "ControlUniqueId": "135",
+                        "ControlUniqueId": "134",
                         "Children": [
                           {
                             "Type": "ControlInfo",
@@ -10387,7 +10387,7 @@
                               "maximumHeight"
                             ],
                             "IsLocked": false,
-                            "ControlUniqueId": "136",
+                            "ControlUniqueId": "135",
                             "Children": []
                           },
                           {
@@ -10684,7 +10684,7 @@
                               "maximumHeight"
                             ],
                             "IsLocked": false,
-                            "ControlUniqueId": "137",
+                            "ControlUniqueId": "136",
                             "Children": []
                           },
                           {
@@ -10976,7 +10976,7 @@
                               "ContentLanguage"
                             ],
                             "IsLocked": false,
-                            "ControlUniqueId": "138",
+                            "ControlUniqueId": "137",
                             "Children": []
                           }
                         ]
@@ -11263,7 +11263,7 @@
                       "DropShadow"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "139",
+                    "ControlUniqueId": "138",
                     "Children": [
                       {
                         "Type": "ControlInfo",
@@ -11538,7 +11538,7 @@
                           "TabIndex"
                         ],
                         "IsLocked": false,
-                        "ControlUniqueId": "140",
+                        "ControlUniqueId": "139",
                         "Children": [
                           {
                             "Type": "ControlInfo",
@@ -11771,7 +11771,7 @@
                               "MaxLength"
                             ],
                             "IsLocked": false,
-                            "ControlUniqueId": "141",
+                            "ControlUniqueId": "140",
                             "Children": [
                               {
                                 "Type": "ControlInfo",
@@ -12165,7 +12165,7 @@
                                   "maximumHeight"
                                 ],
                                 "IsLocked": false,
-                                "ControlUniqueId": "142",
+                                "ControlUniqueId": "141",
                                 "Children": []
                               },
                               {
@@ -12616,7 +12616,7 @@
                                   "minimumWidth"
                                 ],
                                 "IsLocked": false,
-                                "ControlUniqueId": "143",
+                                "ControlUniqueId": "142",
                                 "Children": []
                               },
                               {
@@ -13011,7 +13011,7 @@
                                   "maximumHeight"
                                 ],
                                 "IsLocked": false,
-                                "ControlUniqueId": "144",
+                                "ControlUniqueId": "143",
                                 "Children": []
                               }
                             ]
@@ -13240,7 +13240,7 @@
                               "Update"
                             ],
                             "IsLocked": false,
-                            "ControlUniqueId": "145",
+                            "ControlUniqueId": "144",
                             "Children": [
                               {
                                 "Type": "ControlInfo",
@@ -13634,7 +13634,7 @@
                                   "maximumHeight"
                                 ],
                                 "IsLocked": false,
-                                "ControlUniqueId": "146",
+                                "ControlUniqueId": "145",
                                 "Children": []
                               },
                               {
@@ -14169,7 +14169,7 @@
                                   "maximumHeight"
                                 ],
                                 "IsLocked": false,
-                                "ControlUniqueId": "147",
+                                "ControlUniqueId": "146",
                                 "Children": []
                               },
                               {
@@ -14564,7 +14564,7 @@
                                   "maximumHeight"
                                 ],
                                 "IsLocked": false,
-                                "ControlUniqueId": "148",
+                                "ControlUniqueId": "147",
                                 "Children": []
                               }
                             ]
@@ -14800,7 +14800,7 @@
                               "MaxLength"
                             ],
                             "IsLocked": false,
-                            "ControlUniqueId": "149",
+                            "ControlUniqueId": "148",
                             "Children": [
                               {
                                 "Type": "ControlInfo",
@@ -15194,7 +15194,7 @@
                                   "maximumHeight"
                                 ],
                                 "IsLocked": false,
-                                "ControlUniqueId": "150",
+                                "ControlUniqueId": "149",
                                 "Children": []
                               },
                               {
@@ -15645,7 +15645,7 @@
                                   "minimumWidth"
                                 ],
                                 "IsLocked": false,
-                                "ControlUniqueId": "151",
+                                "ControlUniqueId": "150",
                                 "Children": []
                               },
                               {
@@ -16040,7 +16040,7 @@
                                   "maximumHeight"
                                 ],
                                 "IsLocked": false,
-                                "ControlUniqueId": "152",
+                                "ControlUniqueId": "151",
                                 "Children": []
                               }
                             ]
@@ -16276,7 +16276,7 @@
                               "MaxLength"
                             ],
                             "IsLocked": false,
-                            "ControlUniqueId": "153",
+                            "ControlUniqueId": "152",
                             "Children": [
                               {
                                 "Type": "ControlInfo",
@@ -16453,7 +16453,7 @@
                                   "maximumHeight"
                                 ],
                                 "IsLocked": false,
-                                "ControlUniqueId": "154",
+                                "ControlUniqueId": "153",
                                 "Children": []
                               }
                             ]
@@ -16782,7 +16782,7 @@
                           "DropShadow"
                         ],
                         "IsLocked": false,
-                        "ControlUniqueId": "155",
+                        "ControlUniqueId": "154",
                         "Children": [
                           {
                             "Type": "ControlInfo",
@@ -17066,7 +17066,7 @@
                               "ContentLanguage"
                             ],
                             "IsLocked": false,
-                            "ControlUniqueId": "156",
+                            "ControlUniqueId": "155",
                             "Children": []
                           },
                           {
@@ -17344,7 +17344,7 @@
                               "ContentLanguage"
                             ],
                             "IsLocked": false,
-                            "ControlUniqueId": "157",
+                            "ControlUniqueId": "156",
                             "Children": []
                           }
                         ]
@@ -17710,7 +17710,7 @@
                   "#CopilotOverlayVisible"
                 ],
                 "IsLocked": false,
-                "ControlUniqueId": "158",
+                "ControlUniqueId": "157",
                 "Children": [
                   {
                     "Type": "ControlInfo",
@@ -17761,7 +17761,7 @@
                       "TemplateFill"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "159",
+                    "ControlUniqueId": "158",
                     "Children": []
                   },
                   {
@@ -18044,7 +18044,7 @@
                       "DropShadow"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "160",
+                    "ControlUniqueId": "159",
                     "Children": []
                   },
                   {
@@ -18439,7 +18439,7 @@
                       "maximumHeight"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "161",
+                    "ControlUniqueId": "160",
                     "Children": []
                   },
                   {
@@ -18834,7 +18834,7 @@
                       "maximumHeight"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "162",
+                    "ControlUniqueId": "161",
                     "Children": []
                   },
                   {
@@ -19077,7 +19077,7 @@
                       "ContentLanguage"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "163",
+                    "ControlUniqueId": "162",
                     "Children": []
                   },
                   {
@@ -19472,7 +19472,7 @@
                       "maximumHeight"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "164",
+                    "ControlUniqueId": "163",
                     "Children": []
                   },
                   {
@@ -19867,7 +19867,7 @@
                       "maximumHeight"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "165",
+                    "ControlUniqueId": "164",
                     "Children": []
                   }
                 ]

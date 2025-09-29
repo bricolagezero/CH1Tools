@@ -5,7 +5,7 @@
     "Template": {
       "Id": "http://microsoft.com/appmagic/Component",
       "Version": "1.0",
-      "LastModifiedTimestamp": "638947147173682529",
+      "LastModifiedTimestamp": "638947153402949172",
       "Name": "2f5d109d71d545aa9d93906dad0f3019",
       "FirstParty": true,
       "IsPremiumPcfControl": false,
@@ -1774,7 +1774,7 @@
                   {
                     "Property": "Items",
                     "Category": "Data",
-                    "InvariantScript": "Sort(\n    Distinct(colCategoryStrings, CategoryText),\n    Result,\n    SortOrder.Ascending\n)",
+                    "InvariantScript": "With(\n    {\n        categories: RenameColumns(\n            Distinct(colCategoryStrings, CategoryText),\n            \"Result\",\n            \"CategoryValue\"\n        )\n    },\n    SortByColumns(categories, \"CategoryValue\", SortOrder.Ascending)\n)\n",
                     "RuleProviderType": "Unknown"
                   },
                   {
@@ -2192,7 +2192,7 @@
                       {
                         "Property": "Text",
                         "Category": "Data",
-                        "InvariantScript": "ThisItem.Result",
+                        "InvariantScript": "ThisItem.CategoryValue",
                         "RuleProviderType": "User"
                       },
                       {
@@ -2324,7 +2324,7 @@
                       {
                         "Property": "Fill",
                         "Category": "Design",
-                        "InvariantScript": "If(\n    CountIf(colCatPick, Value = ThisItem.Result) > 0,\n    RGBA(240, 243, 226, 1),\n    RGBA(44, 47, 37, 0.2)\n)\n\n",
+                        "InvariantScript": "If(\n    CountIf(colCatPick, Value = ThisItem.CategoryValue) > 0,\n    RGBA(240, 243, 226, 1),\n    RGBA(44, 47, 37, 0.2)\n)",
                         "RuleProviderType": "User"
                       },
                       {
@@ -2480,7 +2480,7 @@
                       {
                         "Property": "OnSelect",
                         "Category": "Behavior",
-                        "InvariantScript": "With(\n    { val: ThisItem.Result },\n    If(\n        CountIf(colCatPick, Value = val) > 0,\n        RemoveIf(colCatPick, Value = val),\n        Collect(colCatPick, { Value: val })\n    )\n)\n\n",
+                        "InvariantScript": "With(\n    { val: Text(ThisItem.CategoryValue) },\n    If(\n        CountIf(colCatPick, Value = val) > 0,\n        RemoveIf(colCatPick, Value = val),\n        Collect(colCatPick, { Value: val })\n    )\n)\n",
                         "RuleProviderType": "User"
                       }
                     ],
@@ -3497,7 +3497,7 @@
               {
                 "Property": "Items",
                 "Category": "Data",
-                "InvariantScript": "With(\r\n    {\r\n        picks: colCatPick,\r\n        q: Lower(Trim(txtKBSearch_1.Text)),\r\n        currentFolder: Last(colDocPanelCrumbs).Path\r\n    },\r\n    Filter(\r\n        cmpDocLibraryPanel.FolderSource,\r\n        !IsFolder,\r\n        'Folder path' = currentFolder,\r\n        IsEmpty(picks) || CountIf(picks, Value = Coalesce(Category.Value, \"\")) > 0,\r\n        Len(q) = 0\r\n            || StartsWith(Lower(Coalesce('Title', Title, \"\")), q)\r\n            || StartsWith(Lower(Coalesce(Description, \"\")), q)\r\n    )\r\n)\r\n",
+                "InvariantScript": "With(\r\n    {\r\n        picks: colCatPick,\r\n        q: Lower(Trim(txtKBSearch_1.Text)),\r\n        currentFolder: Last(colDocPanelCrumbs).Path\r\n    },\r\n    Filter(\r\n        cmpDocLibraryPanel.FolderSource,\r\n        !IsFolder,\r\n        'Folder path' = currentFolder,\r\n        IsEmpty(picks) || CountIf(picks, Value = Coalesce(Category.Value, \"\")) > 0,\r\n        Len(q) = 0\r\n            || StartsWith(Lower(Coalesce(Title, \"\")), q)\r\n            || StartsWith(Lower(Coalesce('OData__ExtendedDescription', \"\")), q)\r\n    )\r\n)",
                 "RuleProviderType": "Unknown"
               },
               {
@@ -4319,7 +4319,7 @@
                       {
                         "Property": "HtmlText",
                         "Category": "Data",
-                        "InvariantScript": "Coalesce(ThisItem.Description, \"\")",
+                        "InvariantScript": "Coalesce(ThisItem.'OData__ExtendedDescription', \"\")",
                         "RuleProviderType": "User"
                       },
                       {
@@ -4743,7 +4743,7 @@
                       "RadiusBottomLeft"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "36",
+                    "ControlUniqueId": "35",
                     "Children": []
                   },
                   {
@@ -4853,7 +4853,7 @@
                       }
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "37",
+                    "ControlUniqueId": "36",
                     "Children": []
                   }
                 ]
@@ -5105,7 +5105,7 @@
               "Visible"
             ],
             "IsLocked": false,
-            "ControlUniqueId": "38",
+            "ControlUniqueId": "37",
             "Children": [
               {
                 "Type": "ControlInfo",
@@ -5163,7 +5163,7 @@
                   }
                 ],
                 "IsLocked": false,
-                "ControlUniqueId": "39",
+                "ControlUniqueId": "38",
                 "Children": []
               },
               {
@@ -5411,7 +5411,7 @@
                   }
                 ],
                 "IsLocked": false,
-                "ControlUniqueId": "40",
+                "ControlUniqueId": "39",
                 "Children": [
                   {
                     "Type": "ControlInfo",
@@ -5693,7 +5693,7 @@
                       "RadiusBottomLeft"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "41",
+                    "ControlUniqueId": "40",
                     "Children": []
                   },
                   {
@@ -5997,7 +5997,7 @@
                       "Size"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "42",
+                    "ControlUniqueId": "41",
                     "Children": []
                   },
                   {
@@ -6259,7 +6259,7 @@
                       "FocusedBorderThickness"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "43",
+                    "ControlUniqueId": "42",
                     "Children": []
                   },
                   {
@@ -6577,7 +6577,7 @@
                       "Size"
                     ],
                     "IsLocked": false,
-                    "ControlUniqueId": "44",
+                    "ControlUniqueId": "43",
                     "Children": []
                   }
                 ]

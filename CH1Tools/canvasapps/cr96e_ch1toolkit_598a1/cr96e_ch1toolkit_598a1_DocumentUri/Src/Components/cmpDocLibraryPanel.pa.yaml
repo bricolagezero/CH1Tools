@@ -309,7 +309,7 @@ ComponentDefinitions:
                 Variant: BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0
                 Properties:
                   Height: =543
-                  Items: |+
+                  Items: |-
                     =With(
                         {
                             picks: colCatPick,
@@ -322,8 +322,8 @@ ComponentDefinitions:
                             'Folder path' = currentFolder,
                             IsEmpty(picks) || CountIf(picks, Value = Coalesce(Category.Value, "")) > 0,
                             Len(q) = 0
-                                || StartsWith(Lower(Coalesce('Title', Title, "")), q)
-                                || StartsWith(Lower(Coalesce(Description, "")), q)
+                                || StartsWith(Lower(Coalesce(Title, "")), q)
+                                || StartsWith(Lower(Coalesce('OData__ExtendedDescription', "")), q)
                         )
                     )
                   ShowNavigation: =true
@@ -396,7 +396,7 @@ ComponentDefinitions:
                             Control: HtmlViewer@2.1.0
                             Properties:
                               Height: =114
-                              HtmlText: =Coalesce(ThisItem.Description, "")
+                              HtmlText: =Coalesce(ThisItem.'OData__ExtendedDescription', "")
                               Size: =8
                               Width: =197
                               X: =3
@@ -486,11 +486,16 @@ ComponentDefinitions:
                       Variant: BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0
                       Properties:
                         Height: =40
-                        Items: |-
-                          =Sort(
-                              Distinct(colCategoryStrings, CategoryText),
-                              Result,
-                              SortOrder.Ascending
+                        Items: |
+                          =With(
+                              {
+                                  categories: RenameColumns(
+                                      Distinct(colCategoryStrings, CategoryText),
+                                      "Result",
+                                      "CategoryValue"
+                                  )
+                              },
+                              SortByColumns(categories, "CategoryValue", SortOrder.Ascending)
                           )
                         LayoutMinHeight: =50
                         OnSelect: =
@@ -512,32 +517,30 @@ ComponentDefinitions:
                               DisabledBorderColor: =
                               DisabledColor: =
                               DisabledFill: =
-                              Fill: |+
+                              Fill: |-
                                 =If(
-                                    CountIf(colCatPick, Value = ThisItem.Result) > 0,
+                                    CountIf(colCatPick, Value = ThisItem.CategoryValue) > 0,
                                     RGBA(240, 243, 226, 1),
                                     RGBA(44, 47, 37, 0.2)
                                 )
-
                               Height: =25
                               HoverBorderColor: =
                               HoverColor: =
                               HoverFill: =
-                              OnSelect: |+
+                              OnSelect: |
                                 =With(
-                                    { val: ThisItem.Result },
+                                    { val: Text(ThisItem.CategoryValue) },
                                     If(
                                         CountIf(colCatPick, Value = val) > 0,
                                         RemoveIf(colCatPick, Value = val),
                                         Collect(colCatPick, { Value: val })
                                     )
                                 )
-
                               PressedBorderColor: =
                               PressedColor: =
                               PressedFill: =
                               Size: =10
-                              Text: =ThisItem.Result
+                              Text: =ThisItem.CategoryValue
                               Width: =92
                               Y: =30
             - Add Knowledge_1:

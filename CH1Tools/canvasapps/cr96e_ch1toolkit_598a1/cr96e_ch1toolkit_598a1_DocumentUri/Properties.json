@@ -111,14 +111,14 @@
   "DefaultConnectedDataSourceMaxGetRowsCount": 500,
   "ContainsThirdPartyPcfControls": false,
   "ParserErrorCount": 0,
-  "BindingErrorCount": 16,
+  "BindingErrorCount": 11,
   "ConnectionString": "",
   "EnableInstrumentation": false,
   "ControlCount": {
     "0ca280d68792401ab63e42bec22b9619": 3,
     "groupContainer": 53,
     "image": 10,
-    "label": 29,
+    "label": 28,
     "gallery": 11,
     "galleryTemplate": 11,
     "icon": 4,
@@ -143,6 +143,6 @@
     "combobox": 1,
     "richTextEditor": 1
   },
-  "DeserializationLoadTime": 2.3915244,
-  "AnalysisLoadTime": 3.0153677
+  "DeserializationLoadTime": 1.6612362,
+  "AnalysisLoadTime": 3.3532415
 }

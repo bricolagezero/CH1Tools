@@ -302,7 +302,7 @@
           "PropertyDataTypeKey": "Void",
           "Hidden": false,
           "PropertyScopeKey": {
-            "PropertyScopeRuleNamespaceKey": "45",
+            "PropertyScopeRuleNamespaceKey": "44",
             "PropertyScopeRulesKey": []
           },
           "DisplayName": "OnExpandSelect",
@@ -315,7 +315,7 @@
           "PropertyDataTypeKey": "Void",
           "Hidden": false,
           "PropertyScopeKey": {
-            "PropertyScopeRuleNamespaceKey": "45",
+            "PropertyScopeRuleNamespaceKey": "44",
             "PropertyScopeRulesKey": []
           },
           "DisplayName": "OnButtonSelect",
@@ -355,7 +355,7 @@
           "PropertyDataTypeKey": "String",
           "Hidden": true,
           "PropertyScopeKey": {
-            "PropertyScopeRuleNamespaceKey": "45",
+            "PropertyScopeRuleNamespaceKey": "44",
             "PropertyScopeRulesKey": [
               {
                 "Name": "GetMenuIconPath_IconName",
@@ -508,7 +508,7 @@
           "PropertyDataTypeKey": "Void",
           "Hidden": false,
           "PropertyScopeKey": {
-            "PropertyScopeRuleNamespaceKey": "53",
+            "PropertyScopeRuleNamespaceKey": "52",
             "PropertyScopeRulesKey": []
           },
           "DisplayName": "OnCloseSelect",
@@ -521,7 +521,7 @@
           "PropertyDataTypeKey": "Void",
           "Hidden": false,
           "PropertyScopeKey": {
-            "PropertyScopeRuleNamespaceKey": "53",
+            "PropertyScopeRuleNamespaceKey": "52",
             "PropertyScopeRulesKey": []
           },
           "DisplayName": "OnButtonSelect",
@@ -618,7 +618,7 @@
           "PropertyDataTypeKey": "Void",
           "Hidden": false,
           "PropertyScopeKey": {
-            "PropertyScopeRuleNamespaceKey": "70",
+            "PropertyScopeRuleNamespaceKey": "69",
             "PropertyScopeRulesKey": []
           },
           "DisplayName": "OnLeftButtonSelect",
@@ -649,7 +649,7 @@
           "PropertyDataTypeKey": "Void",
           "Hidden": false,
           "PropertyScopeKey": {
-            "PropertyScopeRuleNamespaceKey": "70",
+            "PropertyScopeRuleNamespaceKey": "69",
             "PropertyScopeRulesKey": []
           },
           "DisplayName": "OnRightButtonSelect",
@@ -662,7 +662,7 @@
           "PropertyDataTypeKey": "Void",
           "Hidden": false,
           "PropertyScopeKey": {
-            "PropertyScopeRuleNamespaceKey": "70",
+            "PropertyScopeRuleNamespaceKey": "69",
             "PropertyScopeRulesKey": []
           },
           "DisplayName": "OnBackSelect",
@@ -941,7 +941,7 @@
           "PropertyDataTypeKey": "Void",
           "Hidden": false,
           "PropertyScopeKey": {
-            "PropertyScopeRuleNamespaceKey": "82",
+            "PropertyScopeRuleNamespaceKey": "81",
             "PropertyScopeRulesKey": []
           },
           "DisplayName": "OnCloseSelect",
@@ -954,7 +954,7 @@
           "PropertyDataTypeKey": "Void",
           "Hidden": false,
           "PropertyScopeKey": {
-            "PropertyScopeRuleNamespaceKey": "82",
+            "PropertyScopeRuleNamespaceKey": "81",
             "PropertyScopeRulesKey": []
           },
           "DisplayName": "OnButtonSelect",

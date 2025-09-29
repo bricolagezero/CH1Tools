@@ -5,7 +5,7 @@
     "Template": {
       "Id": "http://microsoft.com/appmagic/Component",
       "Version": "638288588242886857",
-      "LastModifiedTimestamp": "638947143629607163",
+      "LastModifiedTimestamp": "638947152309554451",
       "Name": "1ddea17d5a9f4289b177bfd0e40b3239",
       "FirstParty": true,
       "IsPremiumPcfControl": false,
@@ -395,7 +395,7 @@
       }
     ],
     "IsLocked": false,
-    "ControlUniqueId": "80",
+    "ControlUniqueId": "79",
     "Children": [
       {
         "Type": "ControlInfo",
@@ -649,7 +649,7 @@
           "Size"
         ],
         "IsLocked": false,
-        "ControlUniqueId": "81",
+        "ControlUniqueId": "80",
         "Children": []
       }
     ]
